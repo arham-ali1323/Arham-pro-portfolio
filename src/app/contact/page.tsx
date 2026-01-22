@@ -1,0 +1,151 @@
+"use client";
+import React from "react";
+import { Button } from "@/components/ui/button";
+import { Textarea } from "@/components/ui/textarea";
+import { Input } from "@/components/ui/input";
+import { FaPhoneAlt, FaEnvelope, FaMapMarkedAlt } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { sendEmail } from "@/actions/sendEmail";
+import toast from "react-hot-toast";
+
+import Link from "next/link";
+import Head from "next/head";
+
+const info = [
+  {
+    icons: <FaPhoneAlt />,
+    title: "Phone",
+    description: (
+      <Button className="bg-transparent p-0 text-blue-400 font-bold hover:text-blue-500 hover:bg-transparent">
+        <Link href="https://wa.me/+923211051323">Contact Directly</Link>
+      </Button>
+    ),
+  },
+  {
+    icons: <FaEnvelope />,
+    title: "Email Directly",
+    description: (
+      <a className="underline" href="mailto:arhamali.dev@gmail.com">
+        &quot;arhamali.dev@gmail.com&quot;
+      </a>
+    ),
+  },
+  {
+    icons: <FaMapMarkedAlt />,
+    title: "Adress",
+    description: " W2 Global",
+  },
+];
+const page = () => {
+  return (
+    <>
+      <Head>
+        <title>Contact Us | Arham Ali</title>
+        <meta
+          name="description"
+          content="Reach out for inquiries, support, or collaborations. Email, phone, and location provided."
+        />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ContactPage",
+            name: "Arham Ali",
+            headline: "Contact Us",
+            description: "Contact page for inquiries",
+            url: "https://arhamali.me/contact",
+            telephone: "+923211051323",
+            email: "arhamali.dev@gmail.com",
+            address: {
+              "@type": "PostalAddress",
+              streetAddress: "W2 Global",
+              addressLocality: "City",
+              addressRegion: "State",
+              postalCode: "00000",
+              addressCountry: "PK",
+            },
+          })}
+        </script>
+      </Head>
+      <motion.section
+        initial={{ opacity: 0 }}
+        animate={{
+          opacity: 1,
+          transition: { delay: 1.5, duration: 0.5, ease: "easeOut" },
+        }}
+        className="container  "
+      >
+        <div className="flex flex-col item-center  gap-8 justify-center  xl:lg:flex-row ">
+          {/* form */}
+          <div className="xl:lg:pl-32 p-8 order-2  xl:lg:order-none">
+            <form
+              action={async (formData) => {
+                const { data, error } = await sendEmail(formData);
+                if (error) {
+                  toast.error;
+                  return;
+                }
+                toast.success("Email sent successfully");
+              }}
+              className="flex flex-col gap-4 p-8 bg-slate-300 dark:text-white text-black/80  dark:bg-[#27272c] rounded-xl"
+            >
+              <h3 className=" text-2xl font-bold text-blue-500">
+                Let&apos;s Conect
+              </h3>
+              <p className="text-lg">
+                Get in Connect regarding any query for further
+              </p>
+              <div>
+                <Input
+                  type="email"
+                  name="senderEmail"
+                  required
+                  maxLength={500}
+                  placeholder="Enter our Email"
+                />
+              </div>
+              {/* textarea */}
+              <Textarea
+                className="h-[150px]"
+                name="message"
+                placeholder="Type your message here"
+                required
+                maxLength={1000}
+              />
+              <Button
+                type="submit"
+                className=" text-lg font-light rounded-2xl   bg-blue-600   hover:bg-blue-800"
+              >
+                Send
+              </Button>
+            </form>
+          </div>
+          {/* info */}
+          <div
+            className="flex-1 flex items-center justify-center xl:lg:justify-end order-1 
+       xl:lg:order-none mb-  xl:lg:mb-0"
+          >
+            <ul className="flex  xl:lg:px-32 p-6 flex-col gap-12">
+              {info.map((items, index) => {
+                return (
+                  <li className="  flex items-center gap-6" key={index}>
+                    <div className="w-[52px] h-[52px] bg-slate-300 dark:bg-[#27272c] text-blue-500 rounded-md flex justify-center items-center">
+                      <div className="text-[28px]"> {items.icons}</div>
+                    </div>
+                    <div className="flex-1">
+                      <p>{items.title}</p>
+                      <h1 className=" font-bold text-blue-400">
+                        {items.description}
+                      </h1>
+                    </div>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        </div>
+      </motion.section>
+    </>
+  );
+};
+
+export default page;

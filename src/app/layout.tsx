@@ -1,0 +1,68 @@
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
+import { JetBrains_Mono } from "next/font/google";
+import Header from "@/components/main/Header";
+import PageTransition from "@/components/main/PageTransition";
+import BracketTransition from "@/components/main/BracketTransition";
+import { Toaster } from "react-hot-toast";
+import ThemeSwitch from "@/components/theme-switch";
+
+const inter = Inter({ subsets: ["latin"] });
+const JetBrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
+  variable: "--font-JetBrains_Mono",
+});
+export const metadata: Metadata = {
+  title: "Arham Ali | Frontend Engineer (Next.js, AI, React)",
+  description:
+    "Full-stack developer & AI engineer specializing in Next.js, generative AI, and cloud-native apps. Let's build the future.",
+  icons: "/arham-avater.png",
+  alternates: {
+    canonical: "https://arhamali.me",
+  },
+  openGraph: {
+    title: "Arham Ali | Frontend Engineer (Next.js, AI, React)",
+    description:
+      "I build performant web apps and AI solutions. Hire me for your project!",
+    url: "https://arhamali.me",
+    type: "website",
+    images: [
+      {
+        url: "/arham-avater.png", // Replace with your OpenGraph image
+        width: 1200,
+        height: 630,
+        alt: "Arham Ali - Frontend Engineer",
+      },
+    ],
+    siteName: "Arham Ali",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Arham Ali | Frontend Engineer (Next.js, AI, React)",
+    description:
+      "I build performant web apps and AI solutions. Hire me for your project!",
+    images: ["/arham-avater.png"], // Same as OpenGraph image
+  },
+  metadataBase: new URL("https://arhamali.me"),
+};
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <body
+        className={`${JetBrainsMono.variable} text-black font-bold dark:font-normal bg-white/10  dark:text-white  dark:bg-[#030014]  `}
+      >
+        <Toaster position="top-center" />
+        <ThemeSwitch />
+        <Header />
+        <BracketTransition />
+        <PageTransition>{children}</PageTransition>
+      </body>
+    </html>
+  );
+}
