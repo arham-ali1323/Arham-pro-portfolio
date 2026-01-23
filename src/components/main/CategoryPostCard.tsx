@@ -1,3 +1,4 @@
+"use client";
 import Image from 'next/image';
 import Link from 'next/link';
 import { format } from 'date-fns';
@@ -32,9 +33,10 @@ export function CategoryPostCard({ post }: CategoryPostCardProps) {
     <div className="flex flex-col md:flex-row rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300  md:max-w-5xl md:mx-32 lg:max-w-6xl lg:mx-8 md:h-56 lg:h-64 ">
       {/* Left side - Image section (3/4 width) */}
       <div className="relative w-full md:w-3/4 h-32 sm:h-56 md:h-56 lg:h-64">
-        <img
+        <Image
           src={getPlaceholderImage('post')}
           alt={post.title}
+          fill
           className="object-cover w-full h-full "
         />
 
@@ -62,7 +64,7 @@ export function CategoryPostCard({ post }: CategoryPostCardProps) {
         {/* Author Info */}
         <div className="flex flex-col items-center">
           {post.author?.image && (
-            <img
+            <Image
               src={getPlaceholderImage('author')}
               alt={post.author.name}
               width={60}
