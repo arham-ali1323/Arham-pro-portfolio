@@ -38,7 +38,7 @@ const Stats = () => {
                   end ={stats.num}
                   duration={5}
                   delay={2}
-                  className="text-4xl xl:text-6xl  text-blue-400 font-bold"/>
+                  className="text-4xl xl:text-6xl  text-orange-400 font-bold"/>
                   <p className={`${stats.text.length < 10 ? "max-w-[60px] ": "max-w-[100px] font-bold  text-xl"}`}>
                     {stats.text}
                   </p>

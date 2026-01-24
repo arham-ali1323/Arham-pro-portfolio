@@ -8,91 +8,94 @@ import Head from "next/head";
 const projects = [
   {
     num: "01",
-    category: "Full-Stack-Development",
-    title: "isStartup",
+    category: "E-Commerce",
+    title: "ShopHub",
     description:
-      "A Next.js 15 platform for entrepreneurs to submit, browse, and showcase startup ideas in virtual pitch competitions. ",
+      "A modern e-commerce platform with sleek design and seamless shopping experience, featuring product listings, cart management, and secure checkout.",
     stack: [
-      { name: "Next.js 15" },
       { name: "React 19" },
-      { name: "NextAuth" },
-      { name: "Typescript" },
+      { name: "Next.js 15" },
+      { name: "TypeScript" },
       { name: "TailwindCSS" },
       { name: "Shadcn UI" },
+      { name: "Framer Motion" },
     ],
-    image: "/asset/isSUimg.PNG",
-    live: "https://is-startup-app.vercel.app/",
-    github: "https://github.com/arham-ali1323/isStartup-app",
+    image: "/asset/ShopHub.png",
+    live: "https://shop-hub-demo.vercel.app/",
+    github: "https://github.com/arham-ali1323/shop-hub",
   },
   {
     num: "02",
-    category: "Full-Stack-Development",
-    title: "AuraCart",
+    category: "Travel & Booking",
+    title: "CarRental Pro",
     description:
-      "A modern e-commerce platform built with Next.js, Clerk, Stripe, and PostgreSQL secure authentication, real-time data fetching, and smooth checkout processing.",
+      "A comprehensive car rental booking platform with vehicle search, availability checking, and reservation management system.",
     stack: [
-      { name: "Next.js 15" },
       { name: "React 19" },
-      { name: "Stripe" },
-      { name: "Clerk " },
-      { name: "Typescript" },
+      { name: "Next.js 15" },
+      { name: "TypeScript" },
       { name: "TailwindCSS" },
+      { name: "React Hook Form" },
+      { name: "Zustand" },
     ],
-    image: "/asset/ACimg.PNG",
-    live: "https://aura-cart-app.vercel.app/",
-    github: "https://github.com/arham-ali1323/AuraCart-app",
+    image: "/asset/CarRental.png",
+    live: "https://car-rental-pro.vercel.app/",
+    github: "https://github.com/arham-ali1323/car-rental-pro",
   },
 
   {
     num: "03",
-    category: "Full-Stack-Development",
-    title: "Photo Gallery using Cloudinary",
+    category: "Portfolio",
+    title: "Personal Portfolio",
     description:
-      "This is full-Enhanced Photo Gallery in Next.js along with Cloudinary backend",
+      "Professional portfolio website showcasing personal projects, skills, and experience with modern design and smooth animations.",
     stack: [
+      { name: "React 19" },
       { name: "Next.js" },
-      { name: "React" },
-      { name: "Typescript" },
-      { name: "Cloudianry" },
-      { name: "ContextApi" },
+      { name: "TypeScript" },
+      { name: "TailwindCSS" },
+      { name: "Framer Motion" },
+      { name: "React Icons" },
     ],
-    image: "/asset/c-app.png",
-    live: "",
-    github: "https://github.com/arham-ali1323/cloudary-photos-app",
+    image: "/asset/arham.png",
+    live: "https://portfolio-demo.vercel.app/",
+    github: "https://github.com/arham-ali1323/personal-portfolio",
   },
   {
     num: "04",
-    category: "Full-Stack-Development",
-    title: "E-Commerce Marketplace (Dine Market)",
+    category: "Fitness & Health",
+    title: "FitLife Manager",
     description:
-      "Full-Stack Web-app having elegent UI along with Full-fledged functionalities",
+      "A comprehensive fitness and gym management platform with workout tracking, class scheduling, and membership management.",
     stack: [
+      { name: "React 19" },
       { name: "Next.js" },
-      { name: "Tailwind CSS" },
-      { name: "React" },
-      { name: "Typescript" },
-      { name: "ReduxTK" },
+      { name: "TypeScript" },
+      { name: "TailwindCSS" },
+      { name: "Chart.js" },
+      { name: "React Query" },
     ],
-    image: "/asset/dmart.png",
-    live: "",
-    github: "https://github.com/arham-ali1323/hackathon-app",
+    image: "/asset/Gym and Fitness.png",
+    live: "https://fitlife-manager.vercel.app/",
+    github: "https://github.com/arham-ali1323/fitlife-manager",
   },
   {
     num: "05",
-    category: "Full-Stack-Development",
-    title: "Multilangual News Website (NewsLand)",
+    category: "Business Management",
+    title: "AlphaSoft 360",
     description:
-      "Multilangual News Website in both English and Urdu. Using Next.js ,Strapi as Backend",
+      "A versatile business management solution for companies, featuring CRM, project tracking, and team collaboration tools.",
     stack: [
+      { name: "React 19" },
       { name: "Next.js" },
-      { name: "Tailwind CSS" },
-      { name: "React" },
-      { name: "Typescript" },
-      { name: "Strapi" },
+      { name: "TypeScript" },
+      { name: "TailwindCSS" },
+      { name: "React DnD" },
+      { name: "Date-fns" },
     ],
-    image: "/asset/NL-app.png",
-    live: "",
-    github: "https://github.com/arham-ali1323/newsland-prototype-app",
+    image: "/asset/AlphaSoft360.png",
+    live: "https://alphasoft-360.vercel.app/",
+    github: "https://github.com/arham-ali1323/alphasoft-360",
   },
 ];
 const page = () => {
@@ -144,13 +147,13 @@ function Project({
   github,
 }: ProjectProps) {
   return (
-    <section className=" group bg-slate-400 dark:bg-slate-900  max-h-[220rem] max-w-[142rem] borer-2 rounded-lg overflow-hidden sm:pr-8  sm:h-[20rem] relative  even:pl-8 hover:bg-slate-300 transition">
+    <section className=" group bg-orange-200 dark:bg-orange-950/50  max-h-[220rem] max-w-[142rem] borer-2 rounded-lg overflow-hidden sm:pr-8  sm:h-[20rem] relative  even:pl-8 hover:bg-orange-300 dark:hover:bg-orange-900/70 transition">
       <div className="py-2 px-4 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col  ">
         <h3 className="text-2xl font-bold ">{title}</h3>
-        <h4 className="mt-2 text-xl leading-relaxed font-bold  text-white/80 dark:text-blue-300">
+        <h4 className="mt-2 text-xl leading-relaxed font-bold  text-white/80 dark:text-orange-300">
           {category}
         </h4>
-        <p className="mt-2 leading-relaxed dark:text-gray-300  text-black/30">
+        <p className="mt-2 leading-relaxed dark:text-gray-300  text-black/60">
           {description}
         </p>
         <ul className="flex gap-2 pt-4 flex-wrap  ml-6">
@@ -158,7 +161,7 @@ function Project({
             return (
               <li
                 key={index}
-                className="font-bold flex    bg-slate-700 py-2 px-4 rounded-lg text-blue-500"
+                className="font-bold flex    bg-yellow-700 py-2 px-4 rounded-lg text-white dark:bg-yellow-600 dark:text-gray-900"
               >
                 {tag.name}
               </li>

@@ -30,7 +30,7 @@ const Bracket = () => {
     className='h-full w-full dark:bg-[#030014]  bg-white  relative' 
    
     >
-        <div className='h-screen  font-extrabold dark:font-bold text-green-400 pt-48 flex item-center text-9xl justify-center' >
+        <div className='h-screen  font-extrabold dark:font-bold text-orange-400 pt-48 flex item-center text-9xl justify-center' >
     
             <p> &#60; 	&#47; &#62;</p>
             

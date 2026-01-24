@@ -51,7 +51,7 @@ export function CategoryPostCard({ post }: CategoryPostCardProps) {
           <Link
             href={`/blog/${post.slug}`}
             className="self-start    sm:px-4 sm:py-2  text-xs sm:text-sm transition-colors
-            rounded-full bg-black-100 font-medium text-[16px] hover:bg-green-700  bg-gray-900 text-white px-5 py-3"
+            rounded-full bg-black-100 font-medium text-[16px] hover:bg-orange-700  bg-gray-900 text-white px-5 py-3"
           
           >
             Read Now
@@ -60,7 +60,7 @@ export function CategoryPostCard({ post }: CategoryPostCardProps) {
       </div>
 
       {/* Right side - Author and Metadata (1/4 width) */}
-      <div className="w-full md:w-1/4 flex flex-col items-center justify-center p-2 sm:p-4 bg-gray-100  hover:bg-green-200 border-2 border-gray-200 h-42 sm:h-56 md:h-64 lg:h-72">
+      <div className="w-full md:w-1/4 flex flex-col items-center justify-center p-2 sm:p-4 bg-gray-100  hover:bg-orange-200 border-2 border-gray-200 h-42 sm:h-56 md:h-64 lg:h-72">
         {/* Author Info */}
         <div className="flex flex-col items-center">
           {post.author?.image && (

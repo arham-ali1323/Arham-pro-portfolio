@@ -16,7 +16,7 @@ const info = [
     icons: <FaPhoneAlt />,
     title: "Phone",
     description: (
-      <Button className="bg-transparent p-0 text-blue-400 font-bold hover:text-blue-500 hover:bg-transparent">
+      <Button className="bg-transparent p-0 text-orange-400 font-bold hover:text-orange-500 hover:bg-transparent">
         <Link href="https://wa.me/+923211051323">Contact Directly</Link>
       </Button>
     ),
@@ -88,7 +88,7 @@ const page = () => {
               }}
               className="flex flex-col gap-4 p-8 bg-slate-300 dark:text-white text-black/80  dark:bg-[#27272c] rounded-xl"
             >
-              <h3 className=" text-2xl font-bold text-blue-500">
+              <h3 className=" text-2xl font-bold text-orange-500">
                 Let&apos;s Conect
               </h3>
               <p className="text-lg">
@@ -113,7 +113,7 @@ const page = () => {
               />
               <Button
                 type="submit"
-                className=" text-lg font-light rounded-2xl   bg-blue-600   hover:bg-blue-800"
+                className=" text-lg font-light rounded-2xl   bg-orange-600   hover:bg-orange-800"
               >
                 Send
               </Button>
@@ -128,12 +128,12 @@ const page = () => {
               {info.map((items, index) => {
                 return (
                   <li className="  flex items-center gap-6" key={index}>
-                    <div className="w-[52px] h-[52px] bg-slate-300 dark:bg-[#27272c] text-blue-500 rounded-md flex justify-center items-center">
+                    <div className="w-[52px] h-[52px] bg-slate-300 dark:bg-[#27272c] text-orange-500 rounded-md flex justify-center items-center">
                       <div className="text-[28px]"> {items.icons}</div>
                     </div>
                     <div className="flex-1">
                       <p>{items.title}</p>
-                      <h1 className=" font-bold text-blue-400">
+                      <h1 className=" font-bold text-orange-400">
                         {items.description}
                       </h1>
                     </div>

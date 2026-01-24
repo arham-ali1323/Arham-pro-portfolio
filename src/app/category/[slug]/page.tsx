@@ -40,13 +40,13 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
     <div className="max-w-4xl mx-auto px-4 ">
       {/* Category Header */}
       <header className="mb-1 flex flex-col items-center justify-center text-center">
-        <h1 className="text-4xl font-bold my-12 text-blue-500 mb-4">{category.title}</h1>
+        <h1 className="text-4xl font-bold my-12 text-orange-500 mb-4">{category.title}</h1>
         {category.description && (
           <p className="text-lg  my-8 text-gray-400 dark:text-gray-600 max-w-4xl text-center">{category.description}</p>
         )}
       </header>
 
-      <h2 className="text-3xl text-center font-bold  text-blue-800 mb-12">Related Posts</h2>
+      <h2 className="text-3xl text-center font-bold  text-orange-800 mb-12">Related Posts</h2>
 
       {/* Posts List */}
       <div className="space-y-8">

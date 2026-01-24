@@ -2,11 +2,11 @@
 
 // const AboutPage = () => {
 //   const highlight = (text: string) => (
-//     <span className="text-green-400 font-bold">{text}</span>
+//     <span className="text-orange-400 font-bold">{text}</span>
 //   );
 
 //   const abbreviation = (title: string, text: string) => (
-//     <abbr className="text-green-400 font-bold" title={title}>{text}</abbr>
+//     <abbr className="text-orange-400 font-bold" title={title}>{text}</abbr>
 //   );
 
 //   return (
@@ -15,7 +15,7 @@
 //         {/* Main Content */}
 //         <article className="text-center text-black/70 dark:text-white text-lg pt-6 lg:pt-8 lg:px-8  mx-auto">
 //           <p>
-//             <span className="text-2xl text-green-400 font-bold">Muazam Mughal, </span>
+//             <span className="text-2xl text-orange-400 font-bold">Muazam Mughal, </span>
 //             <br /><br />
 //             After my Pre-Engineering degree, I decided to pursue my passion for {highlight("Programming")}. 
 //             I started graduation in Engineering Software {abbreviation("Bachelor in Science Software Engineer", "BSSE")}. 
@@ -91,15 +91,15 @@ const AboutPage = () => {
     <section className="relative h-full overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute inset-0 -z-10 opacity-10 dark:opacity-5">
-        <div className="absolute top-0 left-20 w-64 h-64 bg-blue-400 rounded-full filter blur-3xl"></div>
-        <div className="absolute bottom-10 right-32 w-48 h-48 bg-purple-500 rounded-full filter blur-3xl"></div>
+        <div className="absolute top-0 left-20 w-64 h-64 bg-orange-400 rounded-full filter blur-3xl"></div>
+        <div className="absolute bottom-10 right-32 w-48 h-48 bg-yellow-500 rounded-full filter blur-3xl"></div>
       </div>
 
       <div className="container mx-auto px-4 py-12 lg:py-20">
         {/* Hero Section */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="text-blue-400">Building</span> The Future&apos;s
+            <span className="text-orange-400">Building</span> The Future&apos;s
             <br />Digital Foundations
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300  mx-auto">
@@ -111,36 +111,36 @@ const AboutPage = () => {
         <div className="grid md:grid-cols-2 gap-12 mb-20">
           <div>
             <h2 className="text-2xl font-bold mb-6 flex items-center">
-              <span className="w-8 h-1 bg-blue-400 mr-4"></span>
+              <span className="w-8 h-1 bg-orange-400 mr-4"></span>
               My Journey
             </h2>
             <div className="space-y-6 text-gray-700 dark:text-gray-300">
               <p>
-                My coding journey began with the raw simplicity of <span className="text-blue-400 font-medium">GWBasic</span> and <span className="text-blue-400 font-medium">C++</span>, where I first discovered the thrill of making computers solve problems.
+                My coding journey began with the raw simplicity of <span className="text-orange-400 font-medium">GWBasic</span> and <span className="text-orange-400 font-medium">C++</span>, where I first discovered the thrill of making computers solve problems.
               </p>
               <p>
-                During my <span className="text-blue-400 font-medium">Software Engineering degree</span>, I immersed myself in full-stack development, mastering modern frameworks while maintaining appreciation for foundational concepts.
+                During my <span className="text-orange-400 font-medium">Software Engineering degree</span>, I immersed myself in full-stack development, mastering modern frameworks while maintaining appreciation for foundational concepts.
               </p>
               <p>
-                Today, I stand at the intersection of <span className="text-blue-400 font-medium">web architecture</span> and <span className="text-blue-400 font-medium">AI engineering</span>, building systems that leverage the best of both worlds.
+                Today, I stand at the intersection of <span className="text-orange-400 font-medium">web architecture</span> and <span className="text-orange-400 font-medium">AI engineering</span>, building systems that leverage the best of both worlds.
               </p>
             </div>
           </div>
 
           <div>
             <h2 className="text-2xl font-bold mb-6 flex items-center">
-              <span className="w-8 h-1 bg-blue-400 mr-4"></span>
+              <span className="w-8 h-1 bg-orange-400 mr-4"></span>
               My Approach
             </h2>
             <div className="space-y-6 text-gray-700 dark:text-gray-300">
               <p>
-                I build <span className="text-blue-400 font-medium">scalable foundations</span> first - clean architecture, type safety, and robust data layers.
+                I build <span className="text-orange-400 font-medium">scalable foundations</span> first - clean architecture, type safety, and robust data layers.
               </p>
               <p>
-                Then layer in <span className="text-blue-400 font-medium">intelligent capabilities</span> where they create real value - never as gimmicks.
+                Then layer in <span className="text-orange-400 font-medium">intelligent capabilities</span> where they create real value - never as gimmicks.
               </p>
               <p>
-                Every system is designed for <span className="text-blue-400 font-medium">continuous evolution</span> as new technologies emerge.
+                Every system is designed for <span className="text-orange-400 font-medium">continuous evolution</span> as new technologies emerge.
               </p>
             </div>
           </div>
@@ -152,14 +152,14 @@ const AboutPage = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {techStack.map((stack) => (
               <div key={stack.category} className="bg-white dark:bg-gray-800/50 p-6 rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-md transition-shadow">
-                <div className="flex items-center mb-4 text-blue-400">
+                <div className="flex items-center mb-4 text-orange-400">
                   {stack.icon}
                   <h3 className="ml-2 font-semibold">{stack.category}</h3>
                 </div>
                 <ul className="space-y-2">
                   {stack.items.map((item) => (
                     <li key={item} className="flex items-center">
-                      <span className="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>
+                      <span className="w-2 h-2 bg-orange-400 rounded-full mr-2"></span>
                       {item}
                     </li>
                   ))}
@@ -170,17 +170,17 @@ const AboutPage = () => {
         </div>
 
         {/* Current Focus */}
-        <div className="bg-gradient-to-r from-blue-400/10 to-purple-500/10 p-8 rounded-2xl mb-20">
+        <div className="bg-gradient-to-r from-orange-400/10 to-yellow-500/10 p-8 rounded-2xl mb-20">
           <h2 className="text-3xl font-bold mb-6 text-center" >Current Focus</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-xl font-semibold mb-4 text-blue-400">Agentic AI Systems</h3>
+              <h3 className="text-xl font-semibold mb-4 text-orange-400">Agentic AI Systems</h3>
               <p className="text-gray-700 dark:text-gray-300">
                 Building autonomous AI agents that can plan, reason, and execute complex workflows - bridging the gap between LLMs and practical applications.
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold mb-4 text-blue-400">Generative Interfaces</h3>
+              <h3 className="text-xl font-semibold mb-4 text-orange-400">Generative Interfaces</h3>
               <p className="text-gray-700 dark:text-gray-300">
                 Creating Next.js components that dynamically adapt using AI - imagine UIs that evolve based on user behavior and context.
               </p>
@@ -191,7 +191,7 @@ const AboutPage = () => {
         <div className="text-center">
           <Link 
             href="/work" 
-            className="inline-flex items-center px-6 py-3 bg-blue-500 hover:bg-blue-500 text-white rounded-full font-medium transition-colors"
+            className="inline-flex items-center px-6 py-3 bg-orange-500 hover:bg-orange-600 text-white rounded-full font-medium transition-colors"
           >
             See My Projects
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">

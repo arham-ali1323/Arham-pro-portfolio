@@ -46,7 +46,7 @@ const MobileNav = () => {
   return (
     <Sheet>
         <SheetTrigger className='flex item-center justify-center '>
-            <CiMenuFries className='   text-4xl  text-green-300'/>
+            <CiMenuFries className='   text-4xl  text-orange-300'/>
         </SheetTrigger>
         <SheetContent className='flex flex-col bg-white/30 dark:bg-[#27272c]'>
             {/* adding the logo to the sheets */}
@@ -54,7 +54,7 @@ const MobileNav = () => {
             <Link href={"/"}>
                     <h1 className='font-bold  ml-32 text-3xl flex '>
                         <Image src={Muazam_Avatar} alt='logo' className='h-15 w-16'>
-                        </Image> <span className='pt-6  text-green-400'>.</span> 
+                        </Image> <span className='pt-6  text-orange-400'>.</span> 
                     </h1>
                 </Link>
 
@@ -65,8 +65,8 @@ const MobileNav = () => {
                     <Link href={link.path} 
                     key={index}
                     className={`${link.path == pathname&&
-                        " text-green-300 border-b-4  px-12 border-green-800"}
-                        text-xl font-semibold  px-12 text-green-200 rounded-md p-2 transition-all hover:bg-green-900`}>
+                        " text-orange-300 border-b-4  px-12 border-orange-800"}
+                        text-xl font-semibold  px-12 text-orange-200 rounded-md p-2 transition-all hover:bg-orange-900`}>
                         {link.name}
                     </Link>
                     )

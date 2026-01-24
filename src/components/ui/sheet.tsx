@@ -66,8 +66,8 @@ const SheetContent = React.forwardRef<
       {...props}
     >
       {children}
-      <SheetPrimitive.Close className="  hover:opacity-50 border-green-800 absolute right-8 top-8 rounded-sm outline-none">
-        <GiAxeSword className="h-7 w-12  text-green-300" />
+      <SheetPrimitive.Close className="  hover:opacity-50 border-orange-800 absolute right-8 top-8 rounded-sm outline-none">
+        <GiAxeSword className="h-7 w-12  text-orange-300" />
         <span className="sr-only">Close</span>
       </SheetPrimitive.Close>
     </SheetPrimitive.Content>

@@ -76,7 +76,7 @@ const Hero = () => {
                 <h1 className=" text-3xl mt-3 font-medium text-slate-800 dark:text-gray-200">
                   Coding is My &quot;{" "}
                 </h1>
-                <h1 className="text-3xl mt-3 text-blue-500 tracking-wide font-medium">
+                <h1 className="text-3xl mt-3 text-orange-500 tracking-wide font-medium">
                   <Typewriter
                     options={{
                       strings: [" Present", " Passion", " Pleasure"],
@@ -91,7 +91,7 @@ const Hero = () => {
 
           <div className="lg:md:pl-36 pt-8">
             <Link href={"/"}>
-              <Button className=" text-lg hover:text-slate-200 rounded-2xl px-5  bg-transparent dark:bg-black font-medium text-blue-600 hover:bg-blue-600 border-2 border-blue-600">
+              <Button className=" text-lg hover:text-slate-200 rounded-2xl px-5  bg-transparent dark:bg-black font-medium text-orange-600 hover:bg-orange-600 border-2 border-orange-600">
                 Download CV
               </Button>
             </Link>

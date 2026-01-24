@@ -22,7 +22,7 @@ const Social = () => {
           <Link
             key={index}
             href={social.path}
-            className="  hover:text-slate-200 text-3xl md:text-2xl xl:lg:text-2xl m-1 bg-transparent dark:bg-black font-medium text-blue-600"
+            className="  hover:text-slate-200 text-3xl md:text-2xl xl:lg:text-2xl m-1 bg-transparent dark:bg-black font-medium text-orange-600"
           >
             {social.icons}
           </Link>

@@ -47,9 +47,9 @@ const ThemeSwitch = () => {
 
   return (
     <Button className='fixed bottom-5 right-5 w-[3rem] h-[3rem] bg-opacity-10
-     backdrop-blur-[0.5rem] border border-green-700 border-opacity-40 shadow-2xl
+     backdrop-blur-[0.5rem] border border-orange-700 border-opacity-40 shadow-2xl
      rounded-full flex items-center justify-center hover:scale-[1.15] active:scale-105
-     transition-all fornt-bold text-2xl text-green-700 '
+     transition-all fornt-bold text-2xl text-orange-700 '
      onClick={()=>setDarkMode(!darkmode)}>
 
         {darkmode ? <BsMoon />:<BsSun />}

@@ -30,7 +30,7 @@ export function Post({ post }: PostProps) {
   return (
     <article className="max-w-5xl mx-auto px-4 py-8">
       {/* Title - Centered at Top */}
-      <h1 className="text-4xl font-bold text-green-600 text-center mb-6">
+      <h1 className="text-4xl font-bold text-orange-600 text-center mb-6">
         {post.title}
       </h1>
 
@@ -69,7 +69,7 @@ export function Post({ post }: PostProps) {
               />
             </div>
           )}
-          <p className="font-medium mt-2 text-green-400">{post.author.name}</p>
+          <p className="font-medium mt-2 text-orange-400">{post.author.name}</p>
         </div>
 
         {/* Categories - Right Side */}
@@ -81,7 +81,7 @@ export function Post({ post }: PostProps) {
               {post.categories.map((category) => (
                 <span
                   key={category._id}
-                  className="font-medium rounded-3xl px-4 py-2 bg-black-100 text-white bg hover:bg-green-700  bg-gray-900 text-[16px] "
+                  className="font-medium rounded-3xl px-4 py-2 bg-black-100 text-white bg hover:bg-orange-700  bg-gray-900 text-[16px] "
                 >
                   {category.title}
                 </span>

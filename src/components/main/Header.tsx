@@ -20,14 +20,14 @@ const Header = () => {
                         </Image>
 
                         {/* <span className=' pt-4 text-lime-200 text-opacity-50 font-primary '>Muazam Mughal</span>
-                       */} <span className='pt-5  text-blue-400'>.</span>
+                       */} <span className='pt-5  text-orange-400'>.</span>
                     </h1>
                 </Link>
                 {/* thier we gona add the  nevbar */}
                 <div className=' hidden lg:flex xl:flex items-center pt-2 gap-6'>
                     <Nav />
                     <Link href={"https://join.skype.com/invite/Obnbkt2VCmvB"}>
-                        <Button className=' text-lg  rounded-2xl px-5  bg-blue-500  hover:text-white/90  hover:bg-blue-700'>
+                        <Button className=' text-lg  rounded-2xl px-5  bg-orange-500  hover:text-white/90  hover:bg-orange-700'>
                             Hire Me
                         </Button>
                     </Link>
