@@ -31,7 +31,7 @@ let data
 try{
    data= await resend.emails.send({
         from: 'Portfolio Connect <onboarding@resend.dev>',
-        to: 'muazammughal11111@gmail.com',
+        to: 'arhamali.dev@gmail.com',
         subject: 'This is the msg from the protfoio Query Connect',
         html: ` ${sender}<br/>${message}<p>Get an email from portfolio  <strong>Connect</strong>!</p>"`,
         reply_to: sender as string, 
