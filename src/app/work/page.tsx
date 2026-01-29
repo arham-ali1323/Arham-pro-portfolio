@@ -57,14 +57,14 @@ const projects = [
       { name: "Framer Motion" },
       { name: "React Icons" },
     ],
-    image: "/asset/arham.png",
+    image: "/asset/personal portfolio.png",
     live: "https://portfolio-demo.vercel.app/",
     github: "https://github.com/arham-ali1323/personal-portfolio",
   },
   {
     num: "04",
-    category: "Fitness & Health",
-    title: "FitLife Manager",
+    category: "German Fitness",
+    title: "Gym Manager",
     description:
       "A comprehensive fitness and gym management platform with workout tracking, class scheduling, and membership management.",
     stack: [
@@ -75,7 +75,7 @@ const projects = [
       { name: "Chart.js" },
       { name: "React Query" },
     ],
-    image: "/asset/Gym and Fitness.png",
+    image: "/asset/Gym &.png",
     live: "https://fitlife-manager.vercel.app/",
     github: "https://github.com/arham-ali1323/fitlife-manager",
   },

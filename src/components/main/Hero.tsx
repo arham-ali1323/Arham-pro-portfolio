@@ -69,24 +69,32 @@ const Hero = () => {
               <Social />
             </div>
 
-            <div className=" opacity-75 text-center  transition-all  text-lg lg:md:pl-24 lg:text-left xl:text-left">
-              <p>Unleash the Power of Elegant Digital Experiences</p>
-              <p className="pl-"> Express Your Creativity in Code.</p>
-              <div className="flex flex-col items-center lg:md:flex-row">
-                <h1 className=" text-3xl mt-3 font-medium text-slate-800 dark:text-gray-200">
-                  Coding is My &quot;{" "}
-                </h1>
-                <h1 className="text-3xl mt-3 text-orange-500 tracking-wide font-medium">
-                  <Typewriter
-                    options={{
-                      strings: [" Present", " Passion", " Pleasure"],
-                      autoStart: true,
-                      loop: true,
-                    }}
-                  />
-                </h1>
-              </div>
-            </div>
+            <div className="opacity-75 text-center transition-all text-lg lg:pl-24 lg:text-left xl:text-left">
+  <p className="text-gray-600 dark:text-gray-300">
+    Building modern, fast, and scalable web interfaces
+  </p>
+  <p className="text-gray-600 dark:text-gray-300">
+    Focused on clean UI, performance, and real-world usability.
+  </p>
+
+<div className="flex flex-col items-center lg:flex-row">
+  <h1 className="text-3xl mt-3 font-medium text-slate-800 dark:text-gray-200">
+    Frontend Development is my
+  </h1>
+
+  <h1 className="text-3xl mt-3 ml-2 text-orange-500 tracking-wide font-medium">
+    <Typewriter
+      options={{
+        strings: [" Core Skill", "Strength", " Expertise"],
+        autoStart: true,
+        loop: true,
+      }}
+    />
+  </h1>
+</div>
+
+</div>
+
           </div>
 
           <div className="lg:md:pl-36 pt-8">
