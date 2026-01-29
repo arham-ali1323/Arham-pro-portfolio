@@ -57,7 +57,7 @@ const projects = [
       { name: "Framer Motion" },
       { name: "React Icons" },
     ],
-    image: "/asset/personal portfolio.png",
+    image: "/asset/arham.png",
     live: "https://portfolio-demo.vercel.app/",
     github: "https://github.com/arham-ali1323/personal-portfolio",
   },
