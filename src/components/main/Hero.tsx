@@ -98,11 +98,19 @@ const Hero = () => {
           </div>
 
           <div className="lg:md:pl-36 pt-8">
-            <Link href={"/"}>
-              <Button className=" text-lg hover:text-slate-200 rounded-2xl px-5  bg-transparent dark:bg-black font-medium text-orange-600 hover:bg-orange-600 border-2 border-orange-600">
-                Download CV
-              </Button>
-            </Link>
+            <Button 
+              onClick={() => {
+                const link = document.createElement('a');
+                link.href = '/Arham_Ali_Junior_React_Developer.pdf';
+                link.download = 'Arham_Ali_Junior_React_Developer.pdf';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              }}
+              className=" text-lg hover:text-slate-200 rounded-2xl px-5  bg-transparent dark:bg-black font-medium text-orange-600 hover:bg-orange-600 border-2 border-orange-600"
+            >
+              Download CV
+            </Button>
           </div>
           <div className=" md:hidden xl:lg:hidden items-center">
             <Social />
