@@ -85,7 +85,7 @@ const Hero = () => {
   <h1 className="text-3xl mt-3 ml-2 text-orange-500 tracking-wide font-medium">
     <Typewriter
       options={{
-        strings: [" Core Skill", "Strength", " Expertise"],
+        strings: [" Core Skill", "Strength", " Expertise", "Passion", "Craft"],
         autoStart: true,
         loop: true,
       }}
