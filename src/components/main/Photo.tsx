@@ -19,6 +19,7 @@ const Photo = () => {
           className='w-[220px] h-[200px] md:w-[450px] md:h-[400px] lg:w-[450px] lg:h-[500px]'
           whileHover={{
             scale: 1.05, // 5% larger on hover
+            rotate: 2, // subtle rotation on hover
             transition: { 
               duration: 0.3,
               ease: "easeOut"
