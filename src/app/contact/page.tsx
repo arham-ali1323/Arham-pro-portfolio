@@ -32,7 +32,7 @@ const info = [
   },
   {
     icons: <FaMapMarkedAlt />,
-    title: "Adress",
+    title: "Address",
     description: " W2 Global",
   },
 ];
@@ -81,7 +81,7 @@ const page = () => {
               action={async (formData) => {
                 const { data, error } = await sendEmail(formData);
                 if (error) {
-                  toast.error;
+                  toast.error(error);
                   return;
                 }
                 toast.success("Email sent successfully");
@@ -89,7 +89,7 @@ const page = () => {
               className="flex flex-col gap-4 p-8 bg-slate-300 dark:text-white text-black/80  dark:bg-[#27272c] rounded-xl"
             >
               <h3 className=" text-2xl font-bold text-orange-500">
-                Let&apos;s Conect
+                Let&apos;s Connect
               </h3>
               <p className="text-lg">
                 Get in Connect regarding any query for further

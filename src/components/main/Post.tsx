@@ -1,7 +1,4 @@
 import Image from 'next/image'
-import { format } from 'date-fns'
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
-import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs'
 import Link from 'next/link'
 
 interface Post {
@@ -39,7 +36,7 @@ export function Post({ post }: PostProps) {
         dateTime={post.publishedAt} 
         className="block text-sm text-gray-500 text-center mb-4"
       >
-        {`( ${format(new Date(post.publishedAt), 'MMMM d, yyyy')} )`}
+        {`( ${new Date(post.publishedAt).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })} )`}
       </time>
 
       {/* Featured Image */}

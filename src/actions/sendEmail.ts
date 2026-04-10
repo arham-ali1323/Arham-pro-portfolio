@@ -39,7 +39,7 @@ try{
 
     })
 }catch(error:unknown){
-return{error}
+return{error: error instanceof Error ? error.message : 'Something went wrong'}
     
 }
 return{

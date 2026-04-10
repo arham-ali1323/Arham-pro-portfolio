@@ -2,8 +2,6 @@
 import React from 'react'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
-import path from 'path'
-import { text } from 'stream/consumers'
 interface link {
     name: string,
     path: string
@@ -37,7 +35,6 @@ const links = [
 ]
 const Nav = () => {
     const pathname = usePathname()
-    console.log(pathname)
     return (
         <nav className='flex gap-6'>
             {links.map((link: link, index) => {
