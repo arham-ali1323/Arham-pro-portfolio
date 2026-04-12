@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import Head from "next/head";
 
-const page = () => {
+const Page = () => {
   useEffect(() => {
     // Load Calendly widget script
     const script = document.createElement('script');
@@ -63,7 +63,7 @@ const page = () => {
 
           <div className="mt-8 text-center">
             <p className="text-gray-600 dark:text-gray-300">
-              Can't find a suitable time? <a href="/contact" className="text-orange-500 hover:text-orange-600 underline">Contact me directly</a> and we'll work something out.
+              Can&apos;t find a suitable time? <a href="/contact" className="text-orange-500 hover:text-orange-600 underline">Contact me directly</a> and we&apos;ll work something out.
             </p>
           </div>
         </div>
@@ -72,4 +72,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

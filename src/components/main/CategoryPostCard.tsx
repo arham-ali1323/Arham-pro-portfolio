@@ -8,10 +8,18 @@ interface PostPreview {
   title: string;
   excerpt: string;
   slug: string;
-  mainImage: string;
+  mainImage: {
+    asset: {
+      _ref: string;
+    };
+  };
   author: {
     name: string;
-    image: string;
+    image: {
+      asset: {
+        _ref: string;
+      };
+    };
   };
   publishedAt: string;
 }
@@ -26,7 +34,7 @@ export function CategoryPostCard({ post }: CategoryPostCardProps) {
       {/* Left side - Image section (3/4 width) */}
       <div className="relative w-full md:w-3/4 h-32 sm:h-56 md:h-56 lg:h-64">
         <Image
-          src={post.mainImage || "/asset/portofolio.png"}
+          src="/asset/portofolio.png"
           alt={post.title}
           fill
           className="object-cover w-full h-full "
@@ -57,7 +65,7 @@ export function CategoryPostCard({ post }: CategoryPostCardProps) {
         <div className="flex flex-col items-center">
           {post.author?.image && (
             <Image
-              src={post.author.image || "/arham-avater.png"}
+              src="/arham-avater.png"
               alt={post.author.name}
               width={60}
               height={60}
