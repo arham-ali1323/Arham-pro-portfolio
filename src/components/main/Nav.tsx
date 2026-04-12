@@ -32,6 +32,10 @@ const links = [
         name: "Contact",
         path: "/contact"
     },
+    {
+        name: "Schedule Meeting",
+        path: "/schedule"
+    },
 ]
 const Nav = () => {
     const pathname = usePathname()
@@ -41,6 +45,8 @@ const Nav = () => {
                 return (
                     <Link href={link.path}
                         key={index}
+                        target={link.path.startsWith('http') ? '_blank' : '_self'}
+                        rel={link.path.startsWith('http') ? 'noopener noreferrer' : ''}
                         className={`${link.path == pathname &&
                             " text-orange-300 border-b-4 font-bold  border-orange-800"}
            font-medium  text-slate-900  dark:text-white rounded-md p-2 transition-all hover:bg-orange-600`}>
