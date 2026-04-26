@@ -1,10 +1,11 @@
-
-
 "use client";
 import { motion } from "framer-motion";
 import Image from 'next/image';
+import { useTheme } from '@/hooks/useTheme';
 
 const Photo = () => {
+  const isDarkMode = useTheme();
+
   return (
     <div className='w-full h-full relative'>
       <motion.div 
@@ -27,11 +28,11 @@ const Photo = () => {
           }}
         >
           <Image
-            src="/asset/arham.png"
+            src={isDarkMode ? "/asset/arham-dark.png" : "/asset/arham-light.png"}
             alt="Portrait of Arham Ali"
             fill
             priority
-            className='object-contain opacity-90 rounded-b-full mix-blend-lighten hover:mix-blend-normal transition-all duration-300'
+            className='object-contain opacity-90 rounded-b-full mix-blend-darken hover:mix-blend-normal transition-all duration-300'
             sizes="(max-width: 768px) 220px, (max-width: 1024px) 450px, 450px"
           />
         </motion.div>

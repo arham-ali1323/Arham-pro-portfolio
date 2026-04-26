@@ -8,7 +8,8 @@ import {
   FaGithub,
   FaReact,
   FaFigma,
-  FaPython,FaDocker
+  FaPython,FaDocker,
+  FaJs
 } from 'react-icons/fa'
 import {
   SiNextdotjs,
@@ -19,6 +20,7 @@ import {
   SiClerk,
   SiPostgresql,
   SiVercel,
+  SiBootstrap,
   SiPrisma,
   SiDrizzle
 } from "react-icons/si"
@@ -96,10 +98,17 @@ const skills = {
     },{
       icons: <SiTypescript />,
       name: "TypeScript"
+    },
+    {
+      icons: <FaJs />,
+      name: "JavaScript"
     } 
      , {
       icons: <SiTailwindcss />,
       name: "TailwindCSS"
+    },   {
+      icons: <SiBootstrap />,
+      name: "Bootstrap"
     },   {
       icons: <FaFigma />,
       name: "Figma"
