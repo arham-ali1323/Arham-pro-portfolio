@@ -32,7 +32,7 @@ const Photo = () => {
             alt="Portrait of Arham Ali"
             fill
             priority
-            className='object-contain opacity-90 rounded-b-full mix-blend-darken hover:mix-blend-normal transition-all duration-300'
+            className={`object-contain opacity-90 rounded-b-full ${isDarkMode ? 'mix-blend-lighten' : 'mix-blend-darken'} hover:mix-blend-normal transition-all duration-300`}
             sizes="(max-width: 768px) 220px, (max-width: 1024px) 450px, 450px"
           />
         </motion.div>
