@@ -120,10 +120,10 @@ const page = () => {
         animate={{ opacity: 1 }}
         className="min-h-[80vh] "
       >
-        <div className="container  mb-20 flex flex-col  gap-10  mt-10 mx-auto">
+        <div className="container mb-20 flex flex-col gap-10 mt-10 mx-auto px-4 sm:px-6 lg:px-8">
           {projects.map((project, index) => {
             return (
-              <div key={index} className="flex flex-col mx-20 ">
+              <div key={index} className="flex flex-col">
                 <Project {...project} />
               </div>
             );
@@ -147,55 +147,63 @@ function Project({
   github,
 }: ProjectProps) {
   return (
-    <section className=" group bg-orange-200 dark:bg-orange-950/50  max-h-[220rem] max-w-[142rem] borer-2 rounded-lg overflow-hidden sm:pr-8  sm:h-[20rem] relative  even:pl-8 hover:bg-orange-300 dark:hover:bg-orange-900/70 transition">
-      <div className="py-2 px-4 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col  ">
-        <h3 className="text-2xl font-bold ">{title}</h3>
-        <h4 className="mt-2 text-xl leading-relaxed font-bold  text-white/80 dark:text-orange-300">
-          {category}
-        </h4>
-        <p className="mt-2 leading-relaxed dark:text-gray-300  text-black/60">
-          {description}
-        </p>
-        <ul className="flex gap-2 pt-4 flex-wrap  ml-6">
-          {stack.map((tag, index) => {
-            return (
-              <li
-                key={index}
-                className="font-bold flex    bg-yellow-700 py-2 px-4 rounded-lg text-white dark:bg-yellow-600 dark:text-gray-900"
-              >
-                {tag.name}
-              </li>
-            );
-          })}
-        </ul>
-        <Link href={github} className="">
-          <Image
-            src={image}
-            alt={title}
-            quality={10}
-            width={2000}
-            height={2000}
-            className=" absolute  lg:xl:top-8 lg:xl:-right-40 lg:xl:w-[38.25rem] lg:xl:rounded-t-lg
-md:top-8 md:-right-40 md:w-[28.25rem] w-[22rem] md:rounded-t-lg shadow-2xl  
-transition
-lg:xl:group-hover:scale-[1.04]
- lg:xl:group-hover:-translate-x-6
- lg:xl:group-hover:-translate-y-6
- lg:xl:group-hover:-rotate-2
+    <section className="group bg-orange-200 dark:bg-orange-950/50 rounded-lg overflow-hidden relative hover:bg-orange-300 dark:hover:bg-orange-900/70 transition">
+      <div className="flex flex-col lg:flex-row">
+        {/* Content Section */}
+        <div className="flex-1 p-6 sm:p-8 lg:p-10 flex flex-col">
+          <h3 className="text-2xl sm:text-3xl font-bold">{title}</h3>
+          <h4 className="mt-2 text-lg sm:text-xl leading-relaxed font-bold text-white/80 dark:text-orange-300">
+            {category}
+          </h4>
+          <p className="mt-2 leading-relaxed dark:text-gray-300 text-black/60">
+            {description}
+          </p>
+          <ul className="flex gap-2 pt-4 flex-wrap">
+            {stack.map((tag, index) => {
+              return (
+                <li
+                  key={index}
+                  className="font-bold bg-yellow-700 py-2 px-4 rounded-lg text-white dark:bg-yellow-600 dark:text-gray-900"
+                >
+                  {tag.name}
+                </li>
+              );
+            })}
+          </ul>
+          <div className="flex gap-4 mt-6">
+            <Link
+              href={github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition dark:bg-white dark:text-black dark:hover:bg-gray-200"
+            >
+              GitHub
+            </Link>
+            <Link
+              href={live}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-orange-600 text-white px-6 py-3 rounded-lg hover:bg-orange-700 transition"
+            >
+              Live Demo
+            </Link>
+          </div>
+        </div>
 
- md:group-hover:scale-[1.04]
- md:group-hover:-translate-x-6
- md:group-hover:-translate-y-6
- md:group-hover:-rotate-2
-   
-  
-  group-hover:bottom-1
-group-hover:-rotate-2
-group-hover:scale-[1.0]
-   
-  "
-          />
-        </Link>
+        {/* Image Section */}
+        <div className="relative w-full lg:w-1/2 aspect-video sm:aspect-[4/3] lg:aspect-auto lg:h-auto">
+          <Link href={github} target="_blank" rel="noopener noreferrer">
+            <Image
+              src={image}
+              alt={title}
+              quality={85}
+              width={800}
+              height={600}
+              className="w-full h-full object-cover rounded-lg shadow-2xl transition-transform duration-300 group-hover:scale-[1.02]"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 40vw"
+            />
+          </Link>
+        </div>
       </div>
     </section>
   );

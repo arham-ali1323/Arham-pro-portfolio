@@ -64,12 +64,12 @@ const Hero = () => {
           }}
         >
           {/* this is for the text beneth */}
-          <div className="flex flex-row items-center justify-center lg:md:justify-normal">
+          <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-normal">
             <div className="hidden lg:flex xl:flex items-center">
               <Social />
             </div>
 
-            <div className="opacity-75 text-center transition-all text-lg lg:pl-24 lg:text-left xl:text-left">
+            <div className="opacity-75 text-center transition-all text-lg lg:pl-24 lg:text-left xl:text-left lg:mt-0 mt-4">
   <p className="text-gray-600 dark:text-gray-300">
     Building modern, fast, and scalable web interfaces
   </p>
@@ -77,7 +77,7 @@ const Hero = () => {
     Focused on clean UI, performance, and real-world usability.
   </p>
 
-<div className="flex flex-col items-center lg:flex-row">
+<div className="flex flex-col items-center lg:flex-row lg:items-center">
   <h1 className="text-3xl mt-3 font-medium text-slate-800 dark:text-gray-200">
     Frontend Development is my
   </h1>
@@ -97,7 +97,7 @@ const Hero = () => {
 
           </div>
 
-          <div className="lg:md:pl-36 pt-8">
+          <div className="lg:pl-36 pt-8 flex justify-center lg:justify-start">
             <Button 
               onClick={() => {
                 const link = document.createElement('a');
