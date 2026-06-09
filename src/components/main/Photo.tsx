@@ -17,7 +17,7 @@ const Photo = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1, duration: 0.2, ease: "easeIn" }}
-          className='w-[220px] h-[200px] md:w-[450px] md:h-[400px] lg:w-[450px] lg:h-[500px]'
+          className='w-[220px] h-[200px] md:w-[450px] md:h-[400px] lg:w-[450px] lg:h-[500px] relative'
           whileHover={{
             scale: 1.05, // 5% larger on hover
             rotate: 2, // subtle rotation on hover

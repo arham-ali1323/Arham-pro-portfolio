@@ -1,7 +1,7 @@
 "use client"
 import { usePathname } from 'next/navigation'
 import React from 'react'
-import { Sheet, SheetContent, SheetTrigger } from '../ui/sheet'
+import { Sheet, SheetContent, SheetTrigger, SheetClose } from '../ui/sheet'
 import { CiMenuFries } from 'react-icons/ci'
 import Link from 'next/link'
 import Muazam_Avatar from "@/../public/arham-avater.png"
@@ -62,13 +62,14 @@ const MobileNav = () => {
             <nav className='flex flex-col gap-4 items-center justify-center'>
                 {links.map((link, index) =>{
                     return(
+                    <SheetClose asChild key={index}>
                     <Link href={link.path} 
-                    key={index}
                     className={`${link.path == pathname&&
                         " text-orange-300 border-b-4  px-12 border-orange-800"}
                         text-xl font-semibold  px-12 text-orange-200 rounded-md p-2 transition-all hover:bg-orange-900`}>
                         {link.name}
                     </Link>
+                    </SheetClose>
                     )
                 })}
             </nav>
