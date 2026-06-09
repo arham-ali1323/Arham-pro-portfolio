@@ -103,6 +103,23 @@ const page = () => {
                   placeholder="Enter our Email"
                 />
               </div>
+              <div>
+                <select
+                  name="user_projectType"
+                  className="flex h-10 w-full rounded-md border-white/15 bg-slate-500 dark:bg-[#27272c] px-3 py-2 text-sm ring-offset-background placeholder:text-orange-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 border-2"
+                  required
+                >
+                  <option value="">Select Project Type</option>
+                  <option value="E-Commerce Website">E-Commerce Website</option>
+                  <option value="Health and Fitness Website">Health and Fitness Website</option>
+                  <option value="Education and E-Learning Website">Education and E-Learning Website</option>
+                  <option value="Finance and Banking Website">Finance and Banking Website</option>
+                  <option value="Real Estate Website">Real Estate Website</option>
+                  <option value="Food and Beverage Website">Food and Beverage Website</option>
+                  <option value="Event Management Website">Event Management Website</option>
+                  <option value="Weather Website">Weather Website</option>
+                </select>
+              </div>
               {/* textarea */}
               <Textarea
                 className="h-[150px]"
@@ -113,7 +130,7 @@ const page = () => {
               />
               <Button
                 type="submit"
-                className=" text-lg font-light rounded-2xl   bg-orange-600   hover:bg-orange-800"
+                className="text-white text-lg font-light rounded-2xl bg-orange-600 hover:bg-orange-800"
               >
                 Send
               </Button>
