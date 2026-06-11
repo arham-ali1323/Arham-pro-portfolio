@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+// @ts-ignore — allow side-effect CSS import without type declarations
 import "./globals.css";
 import { JetBrains_Mono } from "next/font/google";
 import Header from "@/components/main/Header";
@@ -17,7 +18,7 @@ const JetBrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Arham Ali | Frontend Engineer (Next.js, AI, React)",
   description:
-    "Full-stack developer & AI engineer specializing in Next.js, generative AI, and cloud-native apps. Let's build the future.",
+    "Front end developer & AI engineer specializing in Next.js, generative AI, and cloud-native apps. Let's build the future.",
   icons: "/arham-avater.png",
   alternates: {
     canonical: "https://arhamali.me",

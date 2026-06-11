@@ -73,4 +73,11 @@
     body {
       @apply bg-background text-foreground;
     }
+    /* Make all h2 headings use the app orange color */
+    h2 {
+      @apply text-orange-600;
+    }
+    .dark h2 {
+      @apply text-orange-400;
+    }
   }
