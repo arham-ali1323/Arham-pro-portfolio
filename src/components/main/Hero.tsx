@@ -30,12 +30,13 @@ const Hero = () => {
             className="relative flex items-center h-[220px] "
           >
             <MouseParallaxChild>
-              <div className=" ">
+              <div>
                 <Image
                   src={eng}
                   height={230}
-                  alt="image"
-                  className=" pl-4 opacity-30 "
+                  alt="Decorative element - Frontend development pattern"
+                  className="pl-4 opacity-30"
+                  aria-hidden="true"
                 />
               </div>
             </MouseParallaxChild>
@@ -45,12 +46,13 @@ const Hero = () => {
               factorX={0.5}
               factorY={0.5}
             >
-              <div className=" ">
+              <div>
                 <Image
                   src={mm}
                   height={500}
-                  alt="image"
-                  className=" pt-24 lg:xl:pt-36  opacity- "
+                  alt="Abstract technology visualization - Next.js and React development"
+                  className="pt-24 lg:xl:pt-36 opacity-"
+                  aria-hidden="true"
                 />
               </div>
             </MouseParallaxChild>
@@ -65,36 +67,36 @@ const Hero = () => {
         >
           {/* this is for the text beneth */}
           <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-normal">
-            <div className="hidden lg:flex xl:flex items-center">
+            <div className="hidden lg:flex xl:flex items-center" role="region" aria-label="Social media links">
               <Social />
             </div>
 
-            <div className="opacity-75 text-center transition-all text-lg lg:pl-24 lg:text-left xl:text-left lg:mt-0 mt-4">
-  <p className="text-gray-600 dark:text-gray-300">
-    Building modern, fast, and scalable web interfaces
-  </p>
-  <p className="text-gray-600 dark:text-gray-300">
-    Focused on clean UI, performance, and real-world usability.
-  </p>
+            <section className="opacity-75 text-center transition-all text-lg lg:pl-24 lg:text-left xl:text-left lg:mt-0 mt-4">
+              <p className="text-gray-600 dark:text-gray-300">
+                Building modern, fast, and scalable web interfaces
+              </p>
+              <p className="text-gray-600 dark:text-gray-300">
+                Focused on clean UI, performance, and real-world usability.
+              </p>
 
-<div className="flex flex-col items-center lg:flex-row lg:items-center">
-  <h1 className="text-3xl mt-3 font-medium text-slate-800 dark:text-gray-200">
-    Frontend Development is my
-  </h1>
-
-  <h1 className="text-3xl mt-3 ml-2 text-orange-500 tracking-wide font-medium">
-    <Typewriter
-      options={{
-        strings: [" Core Skill", "Strength", " Expertise", "Passion", "Craft"],
-        autoStart: true,
-        loop: true,
-      }}
-    />
-  </h1>
-</div>
-
-</div>
-
+              <div className="flex flex-col items-center lg:flex-row lg:items-center">
+                <h1 className="text-3xl mt-3 font-medium text-slate-800 dark:text-gray-200">
+                  Frontend Development is my{" "}
+                  <span 
+                    className="text-orange-500 tracking-wide font-medium"
+                    aria-label="Core skill, strength, expertise, passion, and craft"
+                  >
+                    <Typewriter
+                      options={{
+                        strings: [" Core Skill", "Strength", " Expertise", "Passion", "Craft"],
+                        autoStart: true,
+                        loop: true,
+                      }}
+                    />
+                  </span>
+                </h1>
+              </div>
+            </section>
           </div>
 
           <div className="lg:pl-36 pt-8 flex justify-center lg:justify-start">
@@ -108,11 +110,12 @@ const Hero = () => {
                 document.body.removeChild(link);
               }}
               className=" text-lg hover:text-slate-200 rounded-2xl px-5  bg-transparent dark:bg-black font-medium text-orange-600 hover:bg-orange-600 border-2 border-orange-600"
+              aria-label="Download my CV in PDF format"
             >
               Download CV
             </Button>
           </div>
-          <div className=" md:hidden xl:lg:hidden items-center">
+          <div className=" md:hidden xl:lg:hidden items-center" role="region" aria-label="Mobile social media links">
             <Social />
           </div>
         </motion.div>
