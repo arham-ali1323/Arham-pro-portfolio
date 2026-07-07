@@ -71,7 +71,7 @@ const ChatWindow: React.FC<ChatWindowProps> = ({
                 <div className="absolute bottom-0 right-0 w-3 h-3 bg-green-400 rounded-full border-2 border-orange-600" />
               </div>
               <div>
-                <h3 className="font-bold">Arham's Assistant</h3>
+                <h3 className="font-bold">Arham&apos;s Assistant</h3>
                 <p className="text-xs text-orange-100">Online • Ready to help</p>
               </div>
             </div>
@@ -103,10 +103,10 @@ const ChatWindow: React.FC<ChatWindowProps> = ({
                 className="text-center py-8"
               >
                 <p className="text-black/60 dark:text-gray-400 mb-2">
-                  👋 Hi! I'm Arham's portfolio assistant
+                  👋 Hi! I&apos;m Arham&apos;s portfolio assistant
                 </p>
                 <p className="text-sm text-black/40 dark:text-gray-500">
-                  Ask me anything about Arham's work, projects, or skills
+                  Ask me anything about Arham&apos;s work, projects, or skills
                 </p>
               </motion.div>
             )}
