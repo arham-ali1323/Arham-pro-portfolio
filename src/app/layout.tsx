@@ -9,6 +9,7 @@ import BracketTransition from "@/components/main/BracketTransition";
 import { Toaster } from "react-hot-toast";
 import ThemeSwitch from "@/components/theme-switch";
 import SchemaMarkup from "@/components/seo/SchemaMarkup";
+import ChatBot from "@/components/chatbot/ChatBot";
 
 const inter = Inter({ subsets: ["latin"] });
 const JetBrainsMono = JetBrains_Mono({
@@ -146,6 +147,7 @@ export default function RootLayout({
         <Header />
         <BracketTransition />
         <PageTransition>{children}</PageTransition>
+        <ChatBot />
       </body>
     </html>
   );
