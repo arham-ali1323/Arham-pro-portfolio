@@ -1,19 +1,123 @@
 [
   {
+    "question": "Who are you and what do you do?",
+    "answer": "I'm Arham Ali, a Frontend Engineer & Full Stack Developer specializing in React, Next.js, and TypeScript. I build modern web applications with AI integration and focus on creating high-performance, user-centric experiences."
+  },
+  {
+    "question": "Tell me about yourself",
+    "answer": "I'm Arham Ali, a passionate developer with expertise in React, Next.js, TypeScript, and modern web technologies. I specialize in creating high-performance, user-centric applications with seamless user experiences. I'm based at W2 Global and am available for freelance and full-time opportunities."
+  },
+  {
+    "question": "What is your background?",
+    "answer": "I have a Bachelor's degree in Computer Science from the University of Technology (2018-2022). I'm currently working as a Full Stack Developer at W2 Global, building web applications using React, Next.js, and Node.js."
+  },
+  {
+    "question": "Where are you located?",
+    "answer": "I'm based at W2 Global and I'm fully set up for remote work, collaborating with distributed teams globally."
+  },
+  {
+    "question": "What technologies do you use?",
+    "answer": "My tech stack includes React 19, Next.js 14/15, TypeScript, TailwindCSS, Framer Motion, and Shadcn UI for frontend. For backend, I use Node.js, Express, and API development. I also work with Git, GitHub, Vercel, and various other development tools."
+  },
+  {
+    "question": "What is your tech stack?",
+    "answer": "My preferred tech stack is React 19, Next.js 14/15, TypeScript, and TailwindCSS for frontend development, combined with Node.js and Express for backend services. I also use Framer Motion for animations and Shadcn UI for components."
+  },
+  {
+    "question": "What programming languages do you know?",
+    "answer": "I'm proficient in JavaScript (ES6+), TypeScript, HTML5, and CSS3. I also have experience with SQL for database operations."
+  },
+  {
+    "question": "What frameworks are you experienced with?",
+    "answer": "I'm highly experienced with React 19, Next.js 14/15, and Framer Motion. I also work with React Hook Form, Zustand for state management, and various UI libraries like Shadcn UI."
+  },
+  {
+    "question": "Show me your projects",
+    "answer": "I've built several projects including ShopHub (e-commerce), CarRental Pro (car booking), Personal Portfolio (this site), Gym Manager (fitness platform), and AlphaSoft 360 (business management). You can view them in the Projects section."
+  },
+  {
+    "question": "Tell me about your experience",
+    "answer": "I'm currently a Full Stack Developer at W2 Global (2022-Present), where I develop web applications using React, Next.js, and Node.js. I've successfully delivered 5+ production applications and improved application performance by 40%."
+  },
+  {
+    "question": "What have you worked on?",
+    "answer": "I've worked on e-commerce platforms, car rental booking systems, portfolio websites, fitness management platforms, and business management solutions. My projects span various industries including retail, travel, healthcare, and business services."
+  },
+  {
+    "question": "Tell me about German Fitness",
+    "answer": "German Fitness (Gym Manager) is a comprehensive fitness and gym management platform I built with workout tracking, class scheduling, and membership management. It uses React 19, Next.js, TypeScript, TailwindCSS, Chart.js, and React Query."
+  },
+  {
+    "question": "What is your most challenging project?",
+    "answer": "AlphaSoft 360 was particularly challenging as it required building a complete business management solution with CRM, project tracking, and team collaboration tools. I implemented drag-and-drop interfaces and complex state management using React DnD."
+  },
+  {
+    "question": "What services do you offer?",
+    "answer": "I offer Frontend Development (modern web apps), Full Stack Development (end-to-end solutions), E-Commerce Solutions (custom platforms), and Portfolio Websites (professional sites for developers and businesses)."
+  },
+  {
     "question": "Are you available for freelance work?",
     "answer": "Yes, I am available for freelance projects. Feel free to reach out through the contact form or email to discuss your project requirements."
   },
   {
-    "question": "What is your typical response time?",
+    "question": "Can you work full-time?",
+    "answer": "Yes, I'm open to full-time opportunities as well as freelance work. I'm available for remote positions and can relocate if needed."
+  },
+  {
+    "question": "What is your pricing?",
+    "answer": "My pricing depends on the project scope, complexity, and timeline. I offer both fixed-price and hourly rate options. Contact me with your project details for a customized quote."
+  },
+  {
+    "question": "How can I hire you?",
+    "answer": "You can hire me by reaching out through the contact form on this website, emailing me at arhamali.dev@gmail.com, or connecting with me on LinkedIn. We can discuss your project requirements and timeline."
+  },
+  {
+    "question": "How can I contact you?",
+    "answer": "You can contact me via email at arhamali.dev@gmail.com, phone at +923211051323, LinkedIn at https://www.linkedin.com/in/arham-ali-973359289/, or GitHub at https://github.com/arham-ali1323."
+  },
+  {
+    "question": "What is your email?",
+    "answer": "My email is arhamali.dev@gmail.com. I typically respond within 24 hours."
+  },
+  {
+    "question": "What is your response time?",
     "answer": "I typically respond to inquiries within 24 hours. For urgent matters, please mention it in your message."
+  },
+  {
+    "question": "Do you have a LinkedIn?",
+    "answer": "Yes, you can find me on LinkedIn at https://www.linkedin.com/in/arham-ali-973359289/"
+  },
+  {
+    "question": "Do you have a GitHub?",
+    "answer": "Yes, my GitHub profile is https://github.com/arham-ali1323 where you can see my open source contributions and project repositories."
+  },
+  {
+    "question": "What is your education?",
+    "answer": "I hold a Bachelor of Computer Science degree from the University of Technology (2018-2022). My coursework included Data Structures and Algorithms, Web Development, Database Management Systems, and Software Engineering."
+  },
+  {
+    "question": "What have you learned recently?",
+    "answer": "I've been focusing on advanced React patterns, AI integration with OpenAI APIs, and implementing RAG (Retrieval-Augmented Generation) architectures for intelligent chatbots."
+  },
+  {
+    "question": "Do you have a degree?",
+    "answer": "Yes, I have a Bachelor of Computer Science degree from the University of Technology, graduated in 2022."
+  },
+  {
+    "question": "Show me your resume",
+    "answer": "You can view and download my resume from the Resume page on this website, or I can send you a copy via email upon request."
+  },
+  {
+    "question": "Do you have a live demo?",
+    "answer": "Yes, all my projects have live demos. You can find links in the Projects section, or ask me about a specific project and I'll provide the live demo link."
+  },
+  {
+    "question": "Can I see the code?",
+    "answer": "Most of my projects are open source. You can find the code on my GitHub at https://github.com/arham-ali1323. Each project repository includes the source code and setup instructions."
   },
   {
     "question": "Do you work with startups?",
     "answer": "Absolutely! I enjoy working with startups and helping them build their products from the ground up. I understand the unique challenges startups face and can adapt to rapid development cycles."
-  },
-  {
-    "question": "What is your preferred tech stack?",
-    "answer": "My preferred tech stack includes React, Next.js, TypeScript, and TailwindCSS for frontend development, combined with Node.js and Express for backend services. However, I'm flexible and can work with various technologies based on project requirements."
   },
   {
     "question": "Can you help with existing projects?",
@@ -22,10 +126,6 @@
   {
     "question": "Do you offer maintenance services?",
     "answer": "Yes, I offer ongoing maintenance and support services to ensure your applications run smoothly. This includes bug fixes, security updates, and performance monitoring."
-  },
-  {
-    "question": "What is your pricing model?",
-    "answer": "My pricing depends on the project scope, complexity, and timeline. I offer both fixed-price and hourly rate options. Contact me with your project details for a customized quote."
   },
   {
     "question": "Are you open to remote work?",
