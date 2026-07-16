@@ -24,71 +24,64 @@ const ChatBot: React.FC = () => {
     setShowProjects(undefined);
     setShowContactActions(false);
 
-    const lowerMessage = message.toLowerCase();
-    let fallbackResponse: string | null = null;
-
-    if (lowerMessage.includes('hello') || lowerMessage.includes('hi') || lowerMessage.includes('hey')) {
-      fallbackResponse = "Hello! I'm Arham's portfolio assistant. How can I help you today?";
-    } else if (lowerMessage.includes('who') && lowerMessage.includes('arham')) {
-      fallbackResponse = `Arham Ali is a Frontend Engineer & Full Stack Developer specializing in React, Next.js, and TypeScript. He builds modern web applications with AI integration.`;
-    } else if (lowerMessage.includes('skill') || lowerMessage.includes('technology') || lowerMessage.includes('stack')) {
-      fallbackResponse = `Arham's skills include:\n\nFrontend: React 19, Next.js 14/15, TypeScript, TailwindCSS, Framer Motion, Shadcn UI\n\nBackend: Node.js, Express, API Development\n\nTools: Git, GitHub, Vercel, VS Code, Postman`;
-    } else if (lowerMessage.includes('project') || lowerMessage.includes('work')) {
-      fallbackResponse = "Here are some of Arham's recent projects:";
-      setShowProjects(portfolioContext.projects.slice(0, 3));
-    } else if (lowerMessage.includes('contact') || lowerMessage.includes('email') || lowerMessage.includes('hire')) {
-      fallbackResponse = "You can contact Arham through:";
-      setShowContactActions(true);
-    } else if (lowerMessage.includes('service')) {
-      fallbackResponse = `Arham provides:\n\n1. Frontend Development - Modern web apps with React & Next.js\n2. Full Stack Development - End-to-end solutions\n3. E-Commerce Solutions - Custom platforms\n4. Portfolio Websites - Professional sites`;
-    } else if (lowerMessage.includes('github')) {
-      fallbackResponse = `You can find Arham's GitHub at: ${portfolioContext.personal.github}`;
-    } else if (lowerMessage.includes('linkedin')) {
-      fallbackResponse = `You can find Arham's LinkedIn at: ${portfolioContext.personal.linkedin}`;
-    } else if (lowerMessage.includes('resume') || lowerMessage.includes('cv')) {
-      fallbackResponse = "You can download Arham's resume from the Resume page.";
-    }
-
-    if (fallbackResponse) {
-      setTimeout(() => {
-        const aiMessage: Message = { role: 'assistant', content: fallbackResponse! };
-        setMessages((prev) => [...prev, aiMessage]);
-        setIsTyping(false);
-      }, 500);
-      return;
-    }
-
     try {
       const response = await fetch('/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ messages: [...messages, newMessage] }),
+        body: JSON.stringify({ 
+          messages: [...messages, newMessage],
+          stream: true 
+        }),
       });
 
-      const data = await response.json();
-
       if (!response.ok) {
-        console.error('API Error:', data.error);
+        const errorData = await response.json();
+        console.error('API Error:', errorData.error);
         setMessages((prev) => [
           ...prev,
           { role: 'assistant', content: 'I can help with questions about Arham\'s skills, projects, services, or contact information. Try asking about those!' },
         ]);
+        setIsTyping(false);
         return;
       }
 
-      if (data.response) {
-        const aiMessage: Message = { role: 'assistant', content: data.response };
-        setMessages((prev) => [...prev, aiMessage]);
-
-        const lowerResponse = data.response.toLowerCase();
-        if (lowerResponse.includes('project') || lowerResponse.includes('work')) {
-          setShowProjects(portfolioContext.projects.slice(0, 3));
-        }
-
-        if (lowerResponse.includes('contact') || lowerResponse.includes('hire') || lowerResponse.includes('reach')) {
-          setShowContactActions(true);
-        }
+      // Handle streaming response
+      const reader = response.body?.getReader();
+      const decoder = new TextDecoder();
+      
+      if (!reader) {
+        throw new Error('Response body is not readable');
       }
+
+      let aiMessage: Message = { role: 'assistant', content: '' };
+      setMessages((prev) => [...prev, aiMessage]);
+
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+
+        const chunk = decoder.decode(value);
+        setMessages((prev) => {
+          const updated = [...prev];
+          updated[updated.length - 1] = {
+            ...updated[updated.length - 1],
+            content: updated[updated.length - 1].content + chunk,
+          };
+          return updated;
+        });
+      }
+
+      // Check if response contains project-related keywords
+      const finalMessage = messages[messages.length - 1];
+      const lowerResponse = finalMessage.content.toLowerCase();
+      if (lowerResponse.includes('project') || lowerResponse.includes('work')) {
+        setShowProjects(portfolioContext.projects.slice(0, 3));
+      }
+
+      if (lowerResponse.includes('contact') || lowerResponse.includes('hire') || lowerResponse.includes('reach')) {
+        setShowContactActions(true);
+      }
+
     } catch (error) {
       console.error('Error sending message:', error);
       setMessages((prev) => [

@@ -1,0 +1,41 @@
+{
+  "frontend": [
+    "React 19",
+    "Next.js 14/15",
+    "TypeScript",
+    "TailwindCSS",
+    "Framer Motion",
+    "Shadcn UI",
+    "React Icons",
+    "HTML5",
+    "CSS3",
+    "JavaScript (ES6+)"
+  ],
+  "backend": [
+    "Node.js",
+    "Express",
+    "API Development",
+    "Server Actions",
+    "REST APIs",
+    "GraphQL"
+  ],
+  "tools": [
+    "Git",
+    "GitHub",
+    "Vercel",
+    "VS Code",
+    "Postman",
+    "Netlify",
+    "NPM",
+    "Webpack"
+  ],
+  "other": [
+    "Responsive Design",
+    "UI/UX Design",
+    "Performance Optimization",
+    "SEO",
+    "Progressive Web Apps (PWA)",
+    "Accessibility (WCAG)",
+    "Cross-browser Compatibility"
+  ]
+}

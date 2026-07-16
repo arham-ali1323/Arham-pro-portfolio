@@ -1,0 +1,34 @@
+[
+  {
+    "question": "Are you available for freelance work?",
+    "answer": "Yes, I am available for freelance projects. Feel free to reach out through the contact form or email to discuss your project requirements."
+  },
+  {
+    "question": "What is your typical response time?",
+    "answer": "I typically respond to inquiries within 24 hours. For urgent matters, please mention it in your message."
+  },
+  {
+    "question": "Do you work with startups?",
+    "answer": "Absolutely! I enjoy working with startups and helping them build their products from the ground up. I understand the unique challenges startups face and can adapt to rapid development cycles."
+  },
+  {
+    "question": "What is your preferred tech stack?",
+    "answer": "My preferred tech stack includes React, Next.js, TypeScript, and TailwindCSS for frontend development, combined with Node.js and Express for backend services. However, I'm flexible and can work with various technologies based on project requirements."
+  },
+  {
+    "question": "Can you help with existing projects?",
+    "answer": "Yes, I can help with existing projects including bug fixes, feature additions, refactoring, and performance optimization. I'm experienced in working with legacy codebases."
+  },
+  {
+    "question": "Do you offer maintenance services?",
+    "answer": "Yes, I offer ongoing maintenance and support services to ensure your applications run smoothly. This includes bug fixes, security updates, and performance monitoring."
+  },
+  {
+    "question": "What is your pricing model?",
+    "answer": "My pricing depends on the project scope, complexity, and timeline. I offer both fixed-price and hourly rate options. Contact me with your project details for a customized quote."
+  },
+  {
+    "question": "Are you open to remote work?",
+    "answer": "Yes, I'm fully set up for remote work and have experience collaborating with distributed teams. I use various communication and project management tools to ensure smooth collaboration."
+  }
+]

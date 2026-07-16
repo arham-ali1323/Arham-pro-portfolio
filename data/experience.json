@@ -1,0 +1,23 @@
+[
+  {
+    "id": "exp1",
+    "title": "Full Stack Developer",
+    "company": "W2 Global",
+    "location": "Remote",
+    "period": "2022 - Present",
+    "description": "Developing full-stack web applications using React, Next.js, and Node.js. Building scalable solutions for clients across various industries.",
+    "responsibilities": [
+      "Develop and maintain web applications using React and Next.js",
+      "Build RESTful APIs using Node.js and Express",
+      "Implement responsive designs with TailwindCSS",
+      "Collaborate with cross-functional teams",
+      "Optimize application performance",
+      "Implement authentication and authorization"
+    ],
+    "achievements": [
+      "Successfully delivered 5+ production applications",
+      "Improved application performance by 40%",
+      "Led a team of 3 developers on key projects"
+    ]
+  }
+]

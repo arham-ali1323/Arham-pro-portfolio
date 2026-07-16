@@ -1,0 +1,54 @@
+[
+  {
+    "id": "frontend",
+    "name": "Frontend Development",
+    "description": "Building modern, responsive web applications with React and Next.js. Specializing in creating intuitive user interfaces with smooth animations and excellent performance.",
+    "technologies": ["React", "Next.js", "TypeScript", "TailwindCSS", "Framer Motion"],
+    "deliverables": [
+      "Responsive web applications",
+      "Single Page Applications (SPAs)",
+      "Progressive Web Apps (PWAs)",
+      "UI/UX implementation",
+      "Performance optimization"
+    ]
+  },
+  {
+    "id": "fullstack",
+    "name": "Full Stack Development",
+    "description": "End-to-end web application development with database integration, API development, and server-side logic. Building complete solutions from frontend to backend.",
+    "technologies": ["React", "Next.js", "Node.js", "Express", "PostgreSQL", "MongoDB"],
+    "deliverables": [
+      "Complete web applications",
+      "RESTful APIs",
+      "Database design and implementation",
+      "Authentication systems",
+      "Real-time features"
+    ]
+  },
+  {
+    "id": "ecommerce",
+    "name": "E-Commerce Solutions",
+    "description": "Custom e-commerce platforms with payment integration, inventory management, and order processing. Creating seamless shopping experiences for customers.",
+    "technologies": ["React", "Next.js", "Stripe", "PayPal", "PostgreSQL"],
+    "deliverables": [
+      "Online stores",
+      "Payment integration",
+      "Shopping cart systems",
+      "Inventory management",
+      "Order processing"
+    ]
+  },
+  {
+    "id": "portfolio",
+    "name": "Portfolio Websites",
+    "description": "Professional portfolio sites for developers and businesses. Showcasing work, skills, and experience with modern design and smooth animations.",
+    "technologies": ["React", "Next.js", "TypeScript", "TailwindCSS", "Framer Motion"],
+    "deliverables": [
+      "Personal portfolios",
+      "Company portfolios",
+      "Project showcases",
+      "Resume websites",
+      "Interactive galleries"
+    ]
+  }
+]

@@ -10,12 +10,11 @@ const SuggestedQuestions: React.FC<SuggestedQuestionsProps> = ({ onSelect }) => 
     'Tell me about yourself',
     'Show your projects',
     'What technologies do you use?',
-    'Show your skills',
-    'Download Resume',
-    'How can I hire you?',
-    'Contact Information',
-    'Show GitHub',
-    'Show LinkedIn',
+    'Tell me about German Fitness',
+    'Show my resume',
+    'What services do you offer?',
+    'How can I contact you?',
+    'Are you available for freelance work?',
   ];
 
   return (

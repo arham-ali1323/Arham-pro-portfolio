@@ -1,0 +1,18 @@
+[
+  {
+    "id": "edu1",
+    "degree": "Bachelor of Computer Science",
+    "institution": "University of Technology",
+    "location": "Pakistan",
+    "period": "2018 - 2022",
+    "description": "Comprehensive study of computer science fundamentals including algorithms, data structures, software engineering, and web development.",
+    "relevantCoursework": [
+      "Data Structures and Algorithms",
+      "Web Development",
+      "Database Management Systems",
+      "Software Engineering",
+      "Operating Systems",
+      "Computer Networks"
+    ]
+  }
+]
