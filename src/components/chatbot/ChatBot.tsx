@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import FloatingButton from './FloatingButton';
 import ChatWindow from './ChatWindow';
 import { portfolioContext, Project } from '@/lib/portfolioContext';
@@ -10,12 +10,44 @@ interface Message {
   content: string;
 }
 
+interface FAQ {
+  question: string;
+  answer: string;
+}
+
 const ChatBot: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([]);
   const [isTyping, setIsTyping] = useState(false);
   const [showProjects, setShowProjects] = useState<Project[] | undefined>();
   const [showContactActions, setShowContactActions] = useState(false);
+  const [faqData, setFaqData] = useState<FAQ[]>([]);
+
+  // Load FAQ data from file
+  useEffect(() => {
+    fetch('/data/faq.json')
+      .then(res => res.json())
+      .then(data => setFaqData(data))
+      .catch(err => console.error('Failed to load FAQ:', err));
+  }, []);
+
+  // Simple keyword matching for FAQ fallback
+  function findFAQAnswer(query: string): string | null {
+    const lowerQuery = query.toLowerCase();
+    
+    for (const faq of faqData) {
+      const lowerQuestion = faq.question.toLowerCase();
+      // Check if query contains key words from the question
+      const questionWords = lowerQuestion.split(' ').filter(w => w.length > 3);
+      const matchCount = questionWords.filter(word => lowerQuery.includes(word)).length;
+      
+      if (matchCount >= 2 || lowerQuery.includes(lowerQuestion.substring(0, 10))) {
+        return faq.answer;
+      }
+    }
+    
+    return null;
+  }
 
   const handleSendMessage = async (message: string) => {
     const newMessage: Message = { role: 'user', content: message };
@@ -37,10 +69,20 @@ const ChatBot: React.FC = () => {
       if (!response.ok) {
         const errorData = await response.json();
         console.error('API Error:', errorData.error);
-        setMessages((prev) => [
-          ...prev,
-          { role: 'assistant', content: 'I can help with questions about Arham\'s skills, projects, services, or contact information. Try asking about those!' },
-        ]);
+        
+        // Fallback to FAQ matching
+        const fallbackAnswer = findFAQAnswer(message);
+        if (fallbackAnswer) {
+          setMessages((prev) => [
+            ...prev,
+            { role: 'assistant', content: fallbackAnswer },
+          ]);
+        } else {
+          setMessages((prev) => [
+            ...prev,
+            { role: 'assistant', content: 'I can help with questions about Arham\'s skills, projects, services, or contact information. Try asking about those!' },
+          ]);
+        }
         setIsTyping(false);
         return;
       }
@@ -84,10 +126,20 @@ const ChatBot: React.FC = () => {
 
     } catch (error) {
       console.error('Error sending message:', error);
-      setMessages((prev) => [
-        ...prev,
-        { role: 'assistant', content: 'I can help with questions about Arham\'s skills, projects, services, or contact information. Try asking about those!' },
-      ]);
+      
+      // Fallback to FAQ matching on error
+      const fallbackAnswer = findFAQAnswer(message);
+      if (fallbackAnswer) {
+        setMessages((prev) => [
+          ...prev,
+          { role: 'assistant', content: fallbackAnswer },
+        ]);
+      } else {
+        setMessages((prev) => [
+          ...prev,
+          { role: 'assistant', content: 'I can help with questions about Arham\'s skills, projects, services, or contact information. Try asking about those!' },
+        ]);
+      }
     } finally {
       setIsTyping(false);
     }

@@ -7,7 +7,7 @@ import { getVectorStore, Document } from './vectorStore';
  * Load and parse knowledge base files from the data directory
  */
 export function loadKnowledgeBase(): Document[] {
-  const dataDir = join(process.cwd(), 'data');
+  const dataDir = join(process.cwd(), 'public/data');
   const documents: Document[] = [];
 
   try {
