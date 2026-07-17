@@ -43,34 +43,61 @@ const ChatBot: React.FC = () => {
       });
   }, []);
 
-  // Simple keyword matching for FAQ fallback
+  // Advanced keyword matching for FAQ fallback
   function findFAQAnswer(query: string): string | null {
     const lowerQuery = query.toLowerCase();
+    const queryWords = lowerQuery.split(' ').filter(w => w.length > 2);
     
-    // Check for exact or partial matches
+    let bestMatch: { answer: string; score: number } | null = null;
+
     for (const faq of faqData) {
       const lowerQuestion = faq.question.toLowerCase();
+      const questionWords = lowerQuestion.split(' ').filter(w => w.length > 2);
       
-      // Exact match
+      let score = 0;
+
+      // Exact match (highest score)
       if (lowerQuery === lowerQuestion) {
-        return faq.answer;
+        score = 100;
       }
-      
-      // Check if query contains the entire question (or most of it)
-      if (lowerQuery.includes(lowerQuestion) || lowerQuestion.includes(lowerQuery)) {
-        return faq.answer;
+      // Query contains the entire question
+      else if (lowerQuery.includes(lowerQuestion)) {
+        score = 80;
       }
-      
-      // Check for key word matches
-      const questionWords = lowerQuestion.split(' ').filter(w => w.length > 3);
-      const matchCount = questionWords.filter(word => lowerQuery.includes(word)).length;
-      
-      if (matchCount >= 2) {
-        return faq.answer;
+      // Question contains the entire query
+      else if (lowerQuestion.includes(lowerQuery)) {
+        score = 70;
+      }
+      else {
+        // Calculate word overlap score
+        const matchingWords = queryWords.filter(word => 
+          questionWords.some(qWord => 
+            qWord.includes(word) || word.includes(qWord)
+          )
+        );
+        
+        // Score based on percentage of matching words
+        const matchPercentage = matchingWords.length / Math.max(queryWords.length, questionWords.length);
+        score = matchPercentage * 50;
+        
+        // Bonus for matching important words (longer words are more important)
+        matchingWords.forEach(word => {
+          if (word.length > 5) score += 10;
+        });
+        
+        // Bonus for matching the first word (usually the main topic)
+        if (queryWords.length > 0 && questionWords[0].includes(queryWords[0])) {
+          score += 15;
+        }
+      }
+
+      // Update best match if this score is higher
+      if (score > 30 && (!bestMatch || score > bestMatch.score)) {
+        bestMatch = { answer: faq.answer, score };
       }
     }
-    
-    return null;
+
+    return bestMatch?.answer || null;
   }
 
   const handleSendMessage = async (message: string) => {
