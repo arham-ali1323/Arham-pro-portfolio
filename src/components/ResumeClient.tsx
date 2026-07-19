@@ -14,7 +14,7 @@ import {
 import {
   SiNextdotjs,
   SiTailwindcss, SiRedux, SiStrapi, SiPostman, SiTypescript,
-  SiFastapi, SiGooglegemini, SiStreamlit, SiMicrosoftazure,
+  SiFastapi, SiGooglegemini, SiStreamlit,
   SiStripe,
   SiShadcnui,
   SiClerk,
