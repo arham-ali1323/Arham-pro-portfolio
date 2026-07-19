@@ -13,8 +13,8 @@ import {
 } from 'react-icons/fa'
 import {
   SiNextdotjs,
-  SiTailwindcss, SiRedux, SiOpenai, SiStrapi, SiPostman, SiTypescript,
-  SiFastapi ,SiGooglegemini,SiStreamlit,SiMicrosoftazure,
+  SiTailwindcss, SiRedux, SiStrapi, SiPostman, SiTypescript,
+  SiFastapi, SiGooglegemini, SiStreamlit, SiMicrosoftazure,
   SiStripe,
   SiShadcnui,
   SiClerk,
@@ -117,10 +117,6 @@ const skills = {
       name: "Postman"
     },
     {
-      icons: <SiOpenai />,
-      name: "OpenAI"
-    },
-    {
       icons: <FaGithub />,
       name: "Git % Github"
     },
@@ -141,10 +137,6 @@ const skills = {
 }
 
 const enthusiast = [
-   {
-    icons: <SiOpenai />,
-    name: "OpenAI"
-  },
   {
     icons: <SiGooglegemini/>,
     name: "Gemini"
@@ -153,11 +145,11 @@ const enthusiast = [
     icons: <SiStreamlit />,
     name: "Streamlit"
   },
- 
+
   {
     icons: < FaDocker/>,
     name: "Docker"
-  },  
+  },
   {
     icons: <SiNextdotjs />,
     name: "Next.js"
