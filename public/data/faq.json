@@ -1,11 +1,11 @@
 [
   {
     "question": "Who are you and what do you do?",
-    "answer": "I'm Arham Ali, a Frontend Engineer & Full Stack Developer specializing in React, Next.js, and TypeScript. I build modern web applications with AI integration and focus on creating high-performance, user-centric experiences."
+    "answer": "I'm Arham Ali, a Frontend Engineer & Full Stack Developer specializing in React, Next.js, and  . I build modern web applications with AI integration and focus on creating high-performance, user-centric experiences."
   },
   {
     "question": "Tell me about yourself",
-    "answer": "I'm Arham Ali, a passionate developer with expertise in React, Next.js, TypeScript, and modern web technologies. I specialize in creating high-performance, user-centric applications with seamless user experiences. I'm based at W2 Global and am available for freelance and full-time opportunities."
+    "answer": "I'm Arham Ali, a passionate developer with expertise in React, Next.js,  , and modern web technologies. I specialize in creating high-performance, user-centric applications with seamless user experiences. I'm based at W2 Global and am available for freelance and full-time opportunities."
   },
   {
     "question": "What is your background?",
@@ -17,15 +17,15 @@
   },
   {
     "question": "What technologies do you use?",
-    "answer": "My tech stack includes React 19, Next.js 14/15, TypeScript, TailwindCSS, Framer Motion, and Shadcn UI for frontend. For backend, I use Node.js, Express, and API development. I also work with Git, GitHub, Vercel, and various other development tools."
+    "answer": "My tech stack includes React 19, Next.js 14/15,  , TailwindCSS, Framer Motion, and Shadcn UI for frontend. For backend, I use Node.js, Express, and API development. I also work with Git, GitHub, Vercel, and various other development tools."
   },
   {
     "question": "What is your tech stack?",
-    "answer": "My preferred tech stack is React 19, Next.js 14/15, TypeScript, and TailwindCSS for frontend development, combined with Node.js and Express for backend services. I also use Framer Motion for animations and Shadcn UI for components."
+    "answer": "My preferred tech stack is React 19, Next.js 14/15, JavaScript, and TailwindCSS for frontend development, combined with Node.js and Express for backend services. I also use Framer Motion for animations and Shadcn UI for components."
   },
   {
     "question": "What programming languages do you know?",
-    "answer": "I'm proficient in JavaScript (ES6+), TypeScript, HTML5, and CSS3. I also have experience with SQL for database operations."
+    "answer": "I'm proficient in JavaScript (ES6+),  , HTML5, and CSS3. I also have experience with SQL for database operations."
   },
   {
     "question": "What frameworks are you experienced with?",
@@ -45,7 +45,7 @@
   },
   {
     "question": "Tell me about German Fitness",
-    "answer": "German Fitness (Gym Manager) is a comprehensive fitness and gym management platform I built with workout tracking, class scheduling, and membership management. It uses React 19, Next.js, TypeScript, TailwindCSS, Chart.js, and React Query."
+    "answer": "German Fitness (Gym Manager) is a comprehensive fitness and gym management platform I built with workout tracking, class scheduling, and membership management. It uses React 19, Next.js,  , TailwindCSS, Chart.js, and React Query."
   },
   {
     "question": "What is your most challenging project?",

@@ -8,7 +8,7 @@
     "stack": [
       "React 19",
       "Next.js 15",
-      "TypeScript",
+      " ",
       "TailwindCSS",
       "Shadcn UI",
       "Framer Motion"
@@ -33,13 +33,13 @@
     "stack": [
       "React 19",
       "Next.js 15",
-      "TypeScript",
+      " ",
       "TailwindCSS",
       "React Hook Form",
       "Zustand"
     ],
     "image": "/asset/CarRental.png",
-    "live": "https://car-rental-pro.vercel.app/",
+    "live": "https://car-rental-app-seven-hazel.vercel.app/",
     "github": "https://github.com/arham-ali1323/car-rental-pro",
     "features": [
       "Vehicle search and filtering",
@@ -58,7 +58,7 @@
     "stack": [
       "React 19",
       "Next.js",
-      "TypeScript",
+      " ",
       "TailwindCSS",
       "Framer Motion",
       "React Icons"
@@ -83,7 +83,7 @@
     "stack": [
       "React 19",
       "Next.js",
-      "TypeScript",
+      " ",
       "TailwindCSS",
       "Chart.js",
       "React Query"
@@ -108,7 +108,7 @@
     "stack": [
       "React 19",
       "Next.js",
-      "TypeScript",
+      " ",
       "TailwindCSS",
       "React DnD",
       "Date-fns"

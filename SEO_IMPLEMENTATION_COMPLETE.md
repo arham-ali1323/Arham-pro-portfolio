@@ -43,7 +43,7 @@ Your portfolio has been optimized for **Google First-Page SEO ranking** without 
 - ✅ Robots control (index, follow, no-cache)
 
 ### Key Features:
-```typescript
+``` 
 export const metadata: Metadata = {
   metadataBase: new URL("https://arham-pro-portfolio.vercel.app"),
   title: "Arham Ali | Frontend Engineer Specializing in Next.js & React",
@@ -78,7 +78,7 @@ export const metadata: Metadata = {
   - React (JavaScript Library)
   - Frontend Development (Web Development)
   - UI/UX Design
-  - TypeScript
+  -  
   - Tailwind CSS
   - AI Integration
   - Web Performance Optimization
@@ -175,7 +175,7 @@ aria-label="Core skill, strength, expertise, passion, and craft"
 ### robots.txt Configuration
 **File:** `src/app/robots.ts`
 
-```typescript
+``` 
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
@@ -216,7 +216,7 @@ export default function robots(): MetadataRoute.Robots {
 **Result:** Accessible at `https://arham-pro-portfolio.vercel.app/sitemap.xml`
 
 **For Dynamic Blog Posts:**
-```typescript
+``` 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const blogPosts = await fetchBlogPosts();
   const blogSitemap = blogPosts.map((post) => ({
@@ -319,7 +319,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
 ### Step 1: Update Social Profile Links
 In `src/components/seo/SchemaMarkup.tsx`:
-```typescript
+``` 
 sameAs: [
   "https://linkedin.com/in/YOUR_LINKEDIN",  // Update
   "https://github.com/YOUR_GITHUB",         // Update
@@ -329,7 +329,7 @@ sameAs: [
 
 ### Step 2: Add Google Verification Code
 In `src/app/layout.tsx`:
-```typescript
+``` 
 verification: {
   google: "YOUR_GOOGLE_VERIFICATION_CODE", // Add your code
 },

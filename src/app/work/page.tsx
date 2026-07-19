@@ -15,7 +15,7 @@ const projects = [
     stack: [
       { name: "React 19" },
       { name: "Next.js 15" },
-      { name: "TypeScript" },
+      { name: " " },
       { name: "TailwindCSS" },
       { name: "Shadcn UI" },
       { name: "Framer Motion" },
@@ -33,13 +33,13 @@ const projects = [
     stack: [
       { name: "React 19" },
       { name: "Next.js 15" },
-      { name: "TypeScript" },
+      { name: " " },
       { name: "TailwindCSS" },
       { name: "React Hook Form" },
       { name: "Zustand" },
     ],
     image: "/asset/CarRental.png",
-    live: "https://car-rental-pro.vercel.app/",
+    live: "https://car-rental-app-seven-hazel.vercel.app/",
     github: "https://github.com/arham-ali1323/car-rental-pro",
   },
 
@@ -52,13 +52,13 @@ const projects = [
     stack: [
       { name: "React 19" },
       { name: "Next.js" },
-      { name: "TypeScript" },
+      { name: " " },
       { name: "TailwindCSS" },
       { name: "Framer Motion" },
       { name: "React Icons" },
     ],
     image: "/asset/portofolio.png",
-    live: "https://portfolio-demo.vercel.app/",
+    live: "https://arham-pro-portfolio.vercel.app/",
     github: "https://github.com/arham-ali1323/personal-portfolio",
   },
   {
@@ -70,13 +70,13 @@ const projects = [
     stack: [
       { name: "React 19" },
       { name: "Next.js" },
-      { name: "TypeScript" },
+      { name: " " },
       { name: "TailwindCSS" },
       { name: "Chart.js" },
       { name: "React Query" },
     ],
     image: "/asset/Gym &.png",
-    live: "https://fitlife-manager.vercel.app/",
+    live: "https://german-fitness-sp.vercel.app/",
     github: "https://github.com/arham-ali1323/fitlife-manager",
   },
   {
@@ -88,7 +88,7 @@ const projects = [
     stack: [
       { name: "React 19" },
       { name: "Next.js" },
-      { name: "TypeScript" },
+      { name: " " },
       { name: "TailwindCSS" },
       { name: "React DnD" },
       { name: "Date-fns" },

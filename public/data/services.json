@@ -3,7 +3,7 @@
     "id": "frontend",
     "name": "Frontend Development",
     "description": "Building modern, responsive web applications with React and Next.js. Specializing in creating intuitive user interfaces with smooth animations and excellent performance.",
-    "technologies": ["React", "Next.js", "TypeScript", "TailwindCSS", "Framer Motion"],
+    "technologies": ["React", "Next.js", " ", "TailwindCSS", "Framer Motion"],
     "deliverables": [
       "Responsive web applications",
       "Single Page Applications (SPAs)",
@@ -42,7 +42,7 @@
     "id": "portfolio",
     "name": "Portfolio Websites",
     "description": "Professional portfolio sites for developers and businesses. Showcasing work, skills, and experience with modern design and smooth animations.",
-    "technologies": ["React", "Next.js", "TypeScript", "TailwindCSS", "Framer Motion"],
+    "technologies": ["React", "Next.js", " ", "TailwindCSS", "Framer Motion"],
     "deliverables": [
       "Personal portfolios",
       "Company portfolios",

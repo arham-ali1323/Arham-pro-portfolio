@@ -11,12 +11,12 @@
 
 ## Professional Summary
 
-Frontend Engineer & Full Stack Developer with expertise in React, Next.js, TypeScript, and modern web technologies. Passionate about building high-performance, user-centric applications with seamless user experiences.
+Frontend Engineer & Full Stack Developer with expertise in React, Next.js,  , and modern web technologies. Passionate about building high-performance, user-centric applications with seamless user experiences.
 
 ## Skills
 
 ### Frontend Development
-- React 19, Next.js 14/15, TypeScript
+- React 19, Next.js 14/15,  
 - TailwindCSS, Framer Motion, Shadcn UI
 - HTML5, CSS3, JavaScript (ES6+)
 - Responsive Design, UI/UX Design
@@ -69,31 +69,31 @@ Frontend Engineer & Full Stack Developer with expertise in React, Next.js, TypeS
 ## Projects
 
 ### ShopHub
-E-Commerce Platform | React 19, Next.js 15, TypeScript
+E-Commerce Platform | React 19, Next.js 15,  
 - Modern e-commerce platform with product listings, cart management, and secure checkout
 - [Live Demo](https://shop-hub-demo.vercel.app/)
 - [GitHub](https://github.com/arham-ali1323/shop-hub)
 
 ### CarRental Pro
-Car Rental Booking Platform | React 19, Next.js 15, TypeScript
+Car Rental Booking Platform | React 19, Next.js 15,  
 - Comprehensive car rental booking platform with vehicle search and reservation management
-- [Live Demo](https://car-rental-pro.vercel.app/)
+- [Live Demo](https://car-rental-app-seven-hazel.vercel.app/)
 - [GitHub](https://github.com/arham-ali1323/car-rental-pro)
 
 ### Personal Portfolio
-Portfolio Website | React 19, Next.js, TypeScript
+Portfolio Website | React 19, Next.js,  
 - Professional portfolio website with AI-powered chatbot
 - [Live Demo](https://arham-pro-portfolio.vercel.app/)
 - [GitHub](https://github.com/arham-ali1323/personal-portfolio)
 
 ### Gym Manager
-Fitness Management Platform | React 19, Next.js, TypeScript
+Fitness Management Platform | React 19, Next.js,  
 - Fitness and gym management platform with workout tracking and class scheduling
 - [Live Demo](https://german-fitness-sp.vercel.app/)
 - [GitHub](https://github.com/arham-ali1323/fitlife-manager)
 
 ### AlphaSoft 360
-Business Management Solution | React 19, Next.js, TypeScript
+Business Management Solution | React 19, Next.js,  
 - Business management solution with CRM, project tracking, and team collaboration
 - [Live Demo](https://alphasoft-360.vercel.app/)
 - [GitHub](https://github.com/arham-ali1323/alphasoft-360)

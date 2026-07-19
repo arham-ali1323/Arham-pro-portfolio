@@ -11,8 +11,8 @@ const BlogPage = () => {
     <>
           <Seo
             title="Blog | Arham Ali - Software Engineer Portfolio"
-            description="Read articles about web development, React, Next.js, TypeScript, and more by Arham Ali."
-            keywords="Arham Ali, Blog, Web Development, React, Next.js, TypeScript, Programming"
+            description="Read articles about web development, React, Next.js,  , and more by Arham Ali."
+            keywords="Arham Ali, Blog, Web Development, React, Next.js,  , Programming"
             url="/blog"
           />
 

@@ -25,7 +25,7 @@ export const portfolioContext = {
     frontend: [
       "React 19",
       "Next.js 14/15",
-      "TypeScript",
+      " ",
       "TailwindCSS",
       "Framer Motion",
       "Shadcn UI",
@@ -80,7 +80,7 @@ export const portfolioContext = {
       stack: [
         { name: "React 19" },
         { name: "Next.js 15" },
-        { name: "TypeScript" },
+        { name: " " },
         { name: "TailwindCSS" },
         { name: "Shadcn UI" },
         { name: "Framer Motion" },
@@ -98,13 +98,13 @@ export const portfolioContext = {
       stack: [
         { name: "React 19" },
         { name: "Next.js 15" },
-        { name: "TypeScript" },
+        { name: " " },
         { name: "TailwindCSS" },
         { name: "React Hook Form" },
         { name: "Zustand" },
       ],
       image: "/asset/CarRental.png",
-      live: "https://car-rental-pro.vercel.app/",
+      live: "https://car-rental-app-seven-hazel.vercel.app/",
       github: "https://github.com/arham-ali1323/car-rental-pro",
     },
     {
@@ -116,7 +116,7 @@ export const portfolioContext = {
       stack: [
         { name: "React 19" },
         { name: "Next.js" },
-        { name: "TypeScript" },
+        { name: " " },
         { name: "TailwindCSS" },
         { name: "Framer Motion" },
         { name: "React Icons" },
@@ -134,7 +134,7 @@ export const portfolioContext = {
       stack: [
         { name: "React 19" },
         { name: "Next.js" },
-        { name: "TypeScript" },
+        { name: " " },
         { name: "TailwindCSS" },
         { name: "Chart.js" },
         { name: "React Query" },
@@ -152,7 +152,7 @@ export const portfolioContext = {
       stack: [
         { name: "React 19" },
         { name: "Next.js" },
-        { name: "TypeScript" },
+        { name: " " },
         { name: "TailwindCSS" },
         { name: "React DnD" },
         { name: "Date-fns" },

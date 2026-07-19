@@ -74,7 +74,7 @@ export default function SchemaMarkup() {
       },
       {
         "@type": "Thing",
-        name: "TypeScript",
+        name: " ",
         category: "Programming Language",
       },
       {

@@ -57,7 +57,7 @@ export const metadata: Metadata = {
 export const aboutMetadata: Metadata = {
   title: "About Arham Ali | Frontend Engineer & Next.js Developer",
   description:
-    "Learn about my journey as a Frontend Engineer. Expertise in Next.js, React, TypeScript, and modern web development practices.",
+    "Learn about my journey as a Frontend Engineer. Expertise in Next.js, React,  , and modern web development practices.",
   keywords: ["Arham Ali", "Frontend Engineer", "About me", "Web Developer"],
   alternates: {
     canonical: "https://arham-pro-portfolio.vercel.app/aboutme",
@@ -268,7 +268,7 @@ export const contactMetadata: Metadata = {
 export const resumeMetadata: Metadata = {
   title: "Resume | Arham Ali - Frontend Engineer",
   description:
-    "Download my professional resume. Experience in Next.js, React, TypeScript, Tailwind CSS, and modern web development.",
+    "Download my professional resume. Experience in Next.js, React,  , Tailwind CSS, and modern web development.",
   keywords: [
     "Resume",
     "CV",

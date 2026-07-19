@@ -16,7 +16,7 @@ Arham Ali is a Frontend Engineer & Full Stack Developer specializing in building
 
 ## Professional Summary
 
-Arham is a passionate developer with expertise in React, Next.js, TypeScript, and modern web technologies. He specializes in creating high-performance, user-centric applications with seamless user experiences. His work spans e-commerce platforms, business management solutions, and professional portfolio websites.
+Arham is a passionate developer with expertise in React, Next.js, and modern web technologies. He specializes in creating high-performance, user-centric applications with seamless user experiences. His work spans e-commerce platforms, business management solutions, and professional portfolio websites.
 
 ## Development Philosophy
 

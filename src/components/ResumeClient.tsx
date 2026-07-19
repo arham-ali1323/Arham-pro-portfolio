@@ -64,7 +64,7 @@ const education =
 {
   icons: "/asset/cap.svg",
   title: "Education",
-  decription: "this is my education career secription",
+  decription: "this is my education career disecription",
   items: [
     {
       institutions: "University of Sahiwal",
@@ -72,7 +72,7 @@ const education =
       duration: "late 2020 - late 2024"
     },
      {
-      institutions: "CAST Postgraduation College Sahiwal",
+      institutions: "CAST Postgraduate College Sahiwal",
       degree: "Intermediate (I.C.S)",
       duration: "2018 - 2020",
     }, {
@@ -96,10 +96,6 @@ const skills = {
       icons: <FaReact />,
       name: "React"
     },{
-      icons: <SiTypescript />,
-      name: "TypeScript"
-    },
-    {
       icons: <FaJs />,
       name: "JavaScript"
     } 
@@ -130,10 +126,10 @@ const skills = {
     },
     {
       icons: <FaHtml5 />,
-      name: "html 5"
+      name: "HTML 5"
     }, {
       icons: <FaCss3 />,
-      name: "CSS"
+      name: "CSS 3"
     }, 
     {
       icons: <SiVercel/>,
