@@ -91,7 +91,10 @@ const BlogPostPage = ({ params }: BlogPostPageProps) => {
               {
                 (() => {
                   // first try same-category posts
-                  let related = blogPosts.filter((p) => p.id !== post.id && p.categories[0].slug === post.categories[0].slug);
+                  const currentCategorySlug = post.categories && post.categories[0] ? post.categories[0].slug : null;
+                  let related = currentCategorySlug
+                    ? blogPosts.filter((p) => p.id !== post.id && p.categories && p.categories[0] && p.categories[0].slug === currentCategorySlug)
+                    : [];
                   // if not enough, fill with other posts (excluding current and duplicates)
                   if (related.length < 2) {
                     const others = blogPosts.filter((p) => p.id !== post.id && !related.some(r => r.id === p.id)).slice(0, 2 - related.length);

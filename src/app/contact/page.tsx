@@ -103,10 +103,11 @@ const page = () => {
                   placeholder="Enter our Email"
                 />
               </div>
+              
               <div>
                 <select
                   name="user_projectType"
-                  className="flex h-10 w-full rounded-md border-white/15 bg-slate-500 dark:bg-[#27272c] px-3 py-2 text-sm ring-offset-background placeholder:text-orange-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 border-2"
+                  className="flex h-10 w-full rounded-md border-white/15 bg-slate-500 dark:bg-[#27272c] px-3 py-2 text-sm ring-offset-background placeholder:text-orange-300 text-orange-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 border-2"
                   required
                 >
                   <option value="">Select Project Type</option>

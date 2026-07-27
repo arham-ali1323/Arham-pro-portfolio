@@ -254,7 +254,7 @@ export const blogPosts: BlogPost[] = [
   publishedAt: "2025-01-05",
   author: { name: "Arham Ali", image: "/arham-avater.png" },
   mainImage: "/asset/CarRental.png",
-  categories: [{ _id: "3", title: " ", slug: " " }],
+  categories: [{ _id: "3", title: "TypeScript", slug: "typescript" }],
   readTime: "8 min read",
 },
 {
@@ -375,7 +375,38 @@ export const blogPosts: BlogPost[] = [
   ],
   readTime: "10 min read",
 },
-  // ... keep remaining posts as needed
+  {
+    id: "6",
+    title: "Next.js 15 Complete Guide: Features, Performance Improvements, SEO Benefits & React 19",
+    excerpt: "Learn everything about Next.js 15, including React 19 integration, caching improvements, Server Components, SEO enhancements, performance optimization, and best practices.",
+    content: `
+<h2>Introduction</h2>
+<p>Next.js 15 is one of the biggest releases...</p>
+<h2>What's New?</h2>
+<ul>
+<li>React 19 Support</li>
+<li>Better Performance</li>
+<li>Improved Caching</li>
+<li>Faster Builds</li>
+</ul>
+<h2>SEO Improvements</h2>
+<p>Next.js continues to provide excellent SEO...</p>
+`,
+    publishedAt: "2025-01-15",
+    author: {
+      name: "Arham Ali",
+      image: "/asset/blog-6.png"
+    },
+    mainImage: "/asset/blog-6.png",
+    categories: [
+      {
+        _id: "6",
+        title: "Next.js",
+        slug: "nextjs"
+      }
+    ],
+    readTime: "8 min read",
+  },
 ];
 
 export default blogPosts;
