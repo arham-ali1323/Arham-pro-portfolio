@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "author": "Arham Ali <arhamali.dev@gmail.com>",
-  "description": "Professional portfolio website for Arham Ali - Full Stack Developer",
+  "description": "Professional portfolio website for Arham Ali - Front end Developer",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

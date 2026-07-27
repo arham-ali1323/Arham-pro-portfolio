@@ -1,11 +1,11 @@
 # About Arham Ali
 
-Arham Ali is a Frontend Engineer & Full Stack Developer specializing in building modern, responsive web applications with cutting-edge technologies.
+Arham Ali is a Frontend Engineer & Front end Developer specializing in building modern, responsive web applications with cutting-edge technologies.
 
 ## Personal Information
 
 - **Name**: Arham Ali
-- **Role**: Frontend Engineer & Full Stack Developer
+- **Role**: Frontend Engineer
 - **Email**: arhamali.dev@gmail.com
 - **Phone**: +923211051323
 - **Location**: W2 Global

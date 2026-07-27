@@ -1,7 +1,7 @@
 [
   {
     "question": "Who are you and what do you do?",
-    "answer": "I'm Arham Ali, a Frontend Engineer & Full Stack Developer specializing in React, Next.js, and  . I build modern web applications with AI integration and focus on creating high-performance, user-centric experiences."
+    "answer": "I'm Arham Ali, a Frontend Engineer & Front end Developer specializing in React, Next.js, and  . I build modern web applications with AI integration and focus on creating high-performance, user-centric experiences."
   },
   {
     "question": "Tell me about yourself",
@@ -9,7 +9,7 @@
   },
   {
     "question": "What is your background?",
-    "answer": "I have a Bachelor's degree in Computer Science from the University of Technology (2018-2022). I'm currently working as a Full Stack Developer at W2 Global, building web applications using React, Next.js, and Node.js."
+    "answer": "I have a Bachelor's degree in Economics from the University of Sahiwal (2020-2024). I'm currently working as a Front End Developer at W2 Global, building web applications using React, Next.js, and Tailwind CSS."
   },
   {
     "question": "Where are you located?",
@@ -17,15 +17,15 @@
   },
   {
     "question": "What technologies do you use?",
-    "answer": "My tech stack includes React 19, Next.js 14/15,  , TailwindCSS, Framer Motion, and Shadcn UI for frontend. For backend, I use Node.js, Express, and API development. I also work with Git, GitHub, Vercel, and various other development tools."
+    "answer": "My tech stack includes React 19, Next.js 14/15, TailwindCSS, Framer Motion, and Shadcn UI for frontend. I also work with Git, GitHub, Vercel, and various other development tools."
   },
   {
     "question": "What is your tech stack?",
-    "answer": "My preferred tech stack is React 19, Next.js 14/15, JavaScript, and TailwindCSS for frontend development, combined with Node.js and Express for backend services. I also use Framer Motion for animations and Shadcn UI for components."
+    "answer": "My preferred tech stack is React 19, Next.js 14/15, JavaScript, and TailwindCSS for frontend development. I also use Framer Motion for animations and Shadcn UI for components."
   },
   {
     "question": "What programming languages do you know?",
-    "answer": "I'm proficient in JavaScript (ES6+),  , HTML5, and CSS3. I also have experience with SQL for database operations."
+    "answer": "I'm proficient in JavaScript (ES6+), HTML5, and CSS3."
   },
   {
     "question": "What frameworks are you experienced with?",
@@ -36,16 +36,12 @@
     "answer": "I've built several projects including ShopHub (e-commerce), CarRental Pro (car booking), Personal Portfolio (this site), Gym Manager (fitness platform), and AlphaSoft 360 (business management). You can view them in the Projects section."
   },
   {
-    "question": "Tell me about your experience",
-    "answer": "I'm currently a Full Stack Developer at W2 Global (2022-Present), where I develop web applications using React, Next.js, and Node.js. I've successfully delivered 5+ production applications and improved application performance by 40%."
-  },
-  {
     "question": "What have you worked on?",
     "answer": "I've worked on e-commerce platforms, car rental booking systems, portfolio websites, fitness management platforms, and business management solutions. My projects span various industries including retail, travel, healthcare, and business services."
   },
   {
     "question": "Tell me about German Fitness",
-    "answer": "German Fitness (Gym Manager) is a comprehensive fitness and gym management platform I built with workout tracking, class scheduling, and membership management. It uses React 19, Next.js,  , TailwindCSS, Chart.js, and React Query."
+    "answer": "German Fitness (Gym Manager) is a comprehensive fitness and gym management platform I built with workout tracking, class scheduling, and membership management. It uses React 19, Next.js, TailwindCSS."
   },
   {
     "question": "What is your most challenging project?",
@@ -53,7 +49,7 @@
   },
   {
     "question": "What services do you offer?",
-    "answer": "I offer Frontend Development (modern web apps), Full Stack Development (end-to-end solutions), E-Commerce Solutions (custom platforms), and Portfolio Websites (professional sites for developers and businesses)."
+    "answer": "I offer Frontend Development (modern web apps), E-Commerce Solutions (custom platforms), and Portfolio Websites (professional sites for developers and businesses)."
   },
   {
     "question": "Are you available for freelance work?",
@@ -93,7 +89,7 @@
   },
   {
     "question": "What is your education?",
-    "answer": "I hold a Bachelor of Computer Science degree from the University of Technology (2018-2022). My coursework included Data Structures and Algorithms, Web Development, Database Management Systems, and Software Engineering."
+    "answer": "I hold a Bachelor of Economics degree from the University of Sahiwal (2020-2024)."
   },
   {
     "question": "What have you learned recently?",
@@ -101,7 +97,7 @@
   },
   {
     "question": "Do you have a degree?",
-    "answer": "Yes, I have a Bachelor of Economics degree from the University of Technology, graduated in 2024."
+    "answer": "Yes, I have a Bachelor of Economics degree from the  University of Sahiwal, graduated in 2024."
   },
   {
     "question": "Show me your resume",

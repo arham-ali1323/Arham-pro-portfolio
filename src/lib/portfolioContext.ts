@@ -12,7 +12,7 @@ export interface Project {
 export const portfolioContext = {
   personal: {
     name: "Arham Ali",
-    role: "Frontend Engineer & Full Stack Developer",
+    role: "Frontend Engineer",
     email: "arhamali.dev@gmail.com",
     phone: "+923211051323",
     location: "W2 Global",
@@ -25,17 +25,10 @@ export const portfolioContext = {
     frontend: [
       "React 19",
       "Next.js 14/15",
-      " ",
       "TailwindCSS",
       "Framer Motion",
       "Shadcn UI",
       "React Icons",
-    ],
-    backend: [
-      "Node.js",
-      "Express",
-      "API Development",
-      "Server Actions",
     ],
     tools: [
       "Git",
@@ -58,10 +51,6 @@ export const portfolioContext = {
       description: "Building modern, responsive web applications with React and Next.js",
     },
     {
-      name: "Full Stack Development",
-      description: "End-to-end web application development with database integration",
-    },
-    {
       name: "E-Commerce Solutions",
       description: "Custom e-commerce platforms with payment integration",
     },
@@ -80,7 +69,7 @@ export const portfolioContext = {
       stack: [
         { name: "React 19" },
         { name: "Next.js 15" },
-        { name: " " },
+        { name: "TypeScript" },
         { name: "TailwindCSS" },
         { name: "Shadcn UI" },
         { name: "Framer Motion" },
@@ -98,7 +87,7 @@ export const portfolioContext = {
       stack: [
         { name: "React 19" },
         { name: "Next.js 15" },
-        { name: " " },
+        { name: "JavaScript" },
         { name: "TailwindCSS" },
         { name: "React Hook Form" },
         { name: "Zustand" },
@@ -116,7 +105,7 @@ export const portfolioContext = {
       stack: [
         { name: "React 19" },
         { name: "Next.js" },
-        { name: " " },
+        { name: "JavaScript" },
         { name: "TailwindCSS" },
         { name: "Framer Motion" },
         { name: "React Icons" },
@@ -134,7 +123,7 @@ export const portfolioContext = {
       stack: [
         { name: "React 19" },
         { name: "Next.js" },
-        { name: " " },
+        { name: "TypeScript" },
         { name: "TailwindCSS" },
         { name: "Chart.js" },
         { name: "React Query" },
@@ -152,7 +141,7 @@ export const portfolioContext = {
       stack: [
         { name: "React 19" },
         { name: "Next.js" },
-        { name: " " },
+        { name: "JavaScript" },
         { name: "TailwindCSS" },
         { name: "React DnD" },
         { name: "Date-fns" },

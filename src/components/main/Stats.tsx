@@ -1,14 +1,14 @@
 "use client"
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import CountUp from "react-countup"
 interface stats{
   num: number;
   text:string
 }
 
-const stat = [
+const staticStats = [
   {
-    num:0,
+    num:3,
     text:"Months of Experience"
   },
   {
@@ -19,12 +19,41 @@ const stat = [
     num:9,
     text:"Technologies Mastered "
   },
-  {
-    num:159,
-    text:"Code Commits"
-  },
 ]
+
 const Stats = () => {
+  const [commitCount, setCommitCount] = useState(159)
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    const fetchCommitCount = async () => {
+      try {
+        const response = await fetch('https://api.github.com/repos/arham-ali1323/Arham-pro-portfolio/stats/contributors')
+        if (response.ok) {
+          const data = await response.json()
+          if (Array.isArray(data) && data.length > 0) {
+            const totalCommits = data.reduce((sum: number, contributor: any) => 
+              sum + (contributor.total || 0), 0)
+            setCommitCount(totalCommits)
+          }
+        }
+      } catch (error) {
+        console.error('Failed to fetch commit count:', error)
+      } finally {
+        setLoading(false)
+      }
+    }
+
+    fetchCommitCount()
+  }, [])
+
+  const stat = [
+    ...staticStats,
+    {
+      num: commitCount,
+      text:"Code Commits"
+    },
+  ]
   return (
     <section>
       <div className='container mx-auto'>

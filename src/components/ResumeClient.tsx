@@ -8,21 +8,15 @@ import {
   FaGithub,
   FaReact,
   FaFigma,
-  FaPython,FaDocker,
-  FaJs
+  FaJs,
 } from 'react-icons/fa'
 import {
   SiNextdotjs,
-  SiTailwindcss, SiRedux, SiStrapi, SiPostman, SiTypescript,
-  SiFastapi, SiGooglegemini, SiStreamlit,
-  SiStripe,
-  SiShadcnui,
-  SiClerk,
-  SiPostgresql,
+  SiTailwindcss, SiRedux, SiPostman,
+  SiGooglegemini, SiStreamlit,
+  SiNetlify,
   SiVercel,
   SiBootstrap,
-  SiPrisma,
-  SiDrizzle
 } from "react-icons/si"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { PiBirdBold } from "react-icons/pi";
@@ -71,7 +65,7 @@ const education =
       degree: "BS Economics",
       duration: "late 2020 - late 2024"
     },
-     {
+    {
       institutions: "CAST Postgraduate College Sahiwal",
       degree: "Intermediate (I.C.S)",
       duration: "2018 - 2020",
@@ -88,27 +82,28 @@ const skills = {
   title: "My Skills",
   Description: "this is the description for the my skill segment",
   skillList: [
-    
+
     {
-      icons: <SiNextdotjs/>,
+      icons: <SiNextdotjs />,
       name: "Next.js 15"
-    },{
+    }, {
       icons: <FaReact />,
-      name: "React"
-    },{
+      name: "React 13"
+    }, {
       icons: <FaJs />,
       name: "JavaScript"
-    } 
-     , {
+    }
+    , {
       icons: <SiTailwindcss />,
       name: "TailwindCSS"
-    },   {
+    }, {
       icons: <SiBootstrap />,
-      name: "Bootstrap"
-    },   {
+      name: "Bootstrap 5"
+    }, {
       icons: <FaFigma />,
       name: "Figma"
-    },  {
+    },
+    {
       icons: <SiRedux />,
       name: "Redux"
     },
@@ -118,7 +113,7 @@ const skills = {
     },
     {
       icons: <FaGithub />,
-      name: "Git % Github"
+      name: "Git + Github"
     },
     {
       icons: <FaHtml5 />,
@@ -126,36 +121,18 @@ const skills = {
     }, {
       icons: <FaCss3 />,
       name: "CSS 3"
-    }, 
+    },
     {
-      icons: <SiVercel/>,
+      icons: <SiVercel />,
       name: "Vercel"
     },
-    
+    {
+      icons: <SiNetlify />,
+      name: "Netlify"
+    },
   ]
 
 }
-
-const enthusiast = [
-  {
-    icons: <SiGooglegemini/>,
-    name: "Gemini"
-  },
-  {
-    icons: <SiStreamlit />,
-    name: "Streamlit"
-  },
-
-  {
-    icons: < FaDocker/>,
-    name: "Docker"
-  },
-  {
-    icons: <SiNextdotjs />,
-    name: "Next.js"
-  },
-
-]
 
 const ResumeClient = () => {
   return (
@@ -174,8 +151,7 @@ const ResumeClient = () => {
           <TabsList
             className=' flex  flex-col w-full max-w-[380px] mx-auto lg:xl:mx-0 gap-6'>
             <TabsTrigger className='bg-slate-300 dark:text-white text-black/80 dark:bg-slate-900' value="Education">Education</TabsTrigger>
-            <TabsTrigger  className='bg-slate-300 dark:text-white text-black/80 dark:bg-slate-900' value="Skills">Skills</TabsTrigger>
-            <TabsTrigger className='bg-slate-300 dark:text-white text-black/80 dark:bg-slate-900' value="Learning Enthusiasm">Learning Enthusiasm</TabsTrigger>
+            <TabsTrigger className='bg-slate-300 dark:text-white text-black/80 dark:bg-slate-900' value="Skills">Skills</TabsTrigger>
           </TabsList>
           <div className=' w-full min-h-[]'>
             <TabsContent value="Education">
@@ -224,40 +200,6 @@ const ResumeClient = () => {
                   )
                 })}
               </ul>
-            </TabsContent>
-            <TabsContent value="Learning Enthusiasm">
-              <div className='flex flex-col  mt-10 lg:xl:mt-0 md:mt-0 gap-[15px] text-center '>
-                <h3 className='item-center  text-3xl font-bold text-orange-400'>Enthusiast To!</h3>
-                <div> 
-                  <p>
-                    As an <span className=" text-orange-400  font-bold">Learning Enthusiast</span>, I am currently learning <span className=" text-orange-400  font-bold">Cutting Edge</span>
-                    Tecnologies such as <br /> <span className=" text-orange-500 text-xl font-bold"> Cloud Applied Generative AI Engineering (GenEng)</span>
-                  </p>
-                  <div className='mt-4'>Stack included <br /> 
-                    <ul className='grid mt-8 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:lg:gap-[30px]'>
-                      {enthusiast.map((icons, index) => {
-                        return (
-                          <li key={index} >
-                            <TooltipProvider
-                              delayDuration={100}>
-                              <Tooltip>
-                                <TooltipTrigger className='w-full h-[120px] bg-slate-300 dark:bg-slate-900 rounded-xl flex items-center justify-center group'>
-                                  <div className='text-5xl group-hover:text-orange-400 transition-all duration-300'>
-                                    {icons.icons}
-                                  </div>
-                                </TooltipTrigger>
-                                <TooltipContent>
-                                  <p>{icons.name}</p>
-                                </TooltipContent>
-                              </Tooltip>
-                            </TooltipProvider>
-                          </li>
-                        )
-                      })}
-                    </ul>
-                  </div>
-                </div>
-              </div>
             </TabsContent>
           </div>
         </Tabs>

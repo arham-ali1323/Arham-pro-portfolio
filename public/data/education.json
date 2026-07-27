@@ -1,11 +1,11 @@
 [
   {
     "id": "edu1",
-    "degree": "Bachelor of Computer Science",
-    "institution": "University of Technology",
+    "degree": "Bachelor of Economics",
+    "institution": "University of Sahiwal",
     "location": "Pakistan",
-    "period": "2018 - 2022",
-    "description": "Comprehensive study of computer science fundamentals including algorithms, data structures, software engineering, and web development.",
+    "period": "2018 - 2024",
+    "description": "Comprehensive study of Economics fundamentals including algorithms, data structures, software engineering, and web development.",
     "relevantCoursework": [
       "Data Structures and Algorithms",
       "Web Development",

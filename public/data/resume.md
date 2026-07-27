@@ -11,7 +11,7 @@
 
 ## Professional Summary
 
-Frontend Engineer & Full Stack Developer with expertise in React, Next.js,  , and modern web technologies. Passionate about building high-performance, user-centric applications with seamless user experiences.
+Frontend Engineer & Front end Developer with expertise in React, Next.js,  , and modern web technologies. Passionate about building high-performance, user-centric applications with seamless user experiences.
 
 ## Skills
 
@@ -38,8 +38,8 @@ Frontend Engineer & Full Stack Developer with expertise in React, Next.js,  , an
 
 ## Work Experience
 
-### Full Stack Developer
-**W2 Global** | Remote | 2022 - Present
+### Front end Developer
+**W2 Global** | Remote | 2024 - Present
 
 - Develop and maintain web applications using React and Next.js
 - Build RESTful APIs using Node.js and Express
@@ -55,8 +55,8 @@ Frontend Engineer & Full Stack Developer with expertise in React, Next.js,  , an
 
 ## Education
 
-### Bachelor of Computer Science
-**University of Technology** | Pakistan | 2018 - 2022
+### Bachelor of Economics
+**University of Sahiwal** | Pakistan |2020 - 2024
 
 **Relevant Coursework:**
 - Data Structures and Algorithms

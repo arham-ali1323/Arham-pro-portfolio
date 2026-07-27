@@ -110,7 +110,7 @@ const page = () => {
         />
         <meta
           name="keywords"
-          content="Arham Ali, Software Engineer, Full Stack Developer, Next.js, Portfolio, Projects"
+          content="Arham Ali, Software Engineer, Front end Developer, Next.js, Portfolio, Projects"
         />
         <meta name="robots" content="index, follow" />
       </Head>
