@@ -11,27 +11,25 @@ type Theme = "light" | "dark"
 const ThemeSwitch = () => {
 
 
-    const [darkmode , setDarkMode] = useState(true)
+    const [darkmode , setDarkMode] = useState(false)
+    const [mounted, setMounted] = useState(false)
 
-
-    // const toggleTheme  = () => {
-    //     if (theme === "light") {
-    //         setTheme("dark")
-    //         window.localStorage.setItem("theme", "dark")
-    //         document.documentElement.classList.add("dark")
-    //     } else {
-    //         setTheme("light")
-    //         window.localStorage.setItem("theme", "light")
-    //         document.documentElement.classList.add("light")
-    //     } 
-    // } 
     useEffect(() => {
-        const theme = localStorage.getItem("theme") 
-
-    if (theme === "dark") setDarkMode(true)
-
+        setMounted(true)
+        const theme = localStorage.getItem("theme")
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+        
+        if (theme === "dark" || (!theme && systemPrefersDark)) {
+            setDarkMode(true)
+            document.documentElement.classList.add('dark')
+        } else {
+            setDarkMode(false)
+            document.documentElement.classList.remove('dark')
+        }
     }  , [])
     useEffect(() => {
+        if(!mounted) return
+        
         if(darkmode){
             document.documentElement.classList.add('dark')
             localStorage.setItem('theme',"dark")
@@ -39,7 +37,7 @@ const ThemeSwitch = () => {
             document.documentElement.classList.remove('dark')
             localStorage.setItem('theme',"light")
         }
-    } , [darkmode])
+    } , [darkmode, mounted])
      
         
           

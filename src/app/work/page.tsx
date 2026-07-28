@@ -15,7 +15,7 @@ const projects = [
     stack: [
       { name: "React 19" },
       { name: "Next.js 15" },
-      { name: " " },
+      { name: "Javascript" },
       { name: "TailwindCSS" },
       { name: "Shadcn UI" },
       { name: "Framer Motion" },
@@ -33,7 +33,7 @@ const projects = [
     stack: [
       { name: "React 19" },
       { name: "Next.js 15" },
-      { name: " " },
+      { name: "Javascript" },
       { name: "TailwindCSS" },
       { name: "React Hook Form" },
       { name: "Zustand" },
@@ -52,7 +52,7 @@ const projects = [
     stack: [
       { name: "React 19" },
       { name: "Next.js" },
-      { name: " " },
+      { name: "Javascript" },
       { name: "TailwindCSS" },
       { name: "Framer Motion" },
       { name: "React Icons" },
@@ -70,7 +70,7 @@ const projects = [
     stack: [
       { name: "React 19" },
       { name: "Next.js" },
-      { name: " " },
+      { name: "Javascript" },
       { name: "TailwindCSS" },
       { name: "Chart.js" },
       { name: "React Query" },
@@ -88,7 +88,7 @@ const projects = [
     stack: [
       { name: "React 19" },
       { name: "Next.js" },
-      { name: " " },
+      { name: "Javascript" },
       { name: "TailwindCSS" },
       { name: "React DnD" },
       { name: "Date-fns" },
