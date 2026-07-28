@@ -187,7 +187,7 @@ const ResumeClient = () => {
                         delayDuration={100}>
                         <Tooltip>
                           <TooltipTrigger className='w-full h-[120px] bg-slate-300 dark:bg-slate-900 rounded-xl flex items-center justify-center group'>
-                            <div className='text-5xl group-hover:text-orange-300 transition-all duration-300'>
+                            <div className='text-5xl group-hover:text-orange-700 transition-all duration-300'>
                               {skill.icons}
                             </div>
                           </TooltipTrigger>
