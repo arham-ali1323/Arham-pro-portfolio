@@ -3,7 +3,18 @@
 import React from "react";
 import Head from "next/head";
 import { motion } from "framer-motion";
-import { Shield, Eye, Database, Lock, User, Cookie, Server, Bot, ExternalLink, Clock } from "lucide-react";
+import {
+  Shield,
+  Eye,
+  Database,
+  Lock,
+  User,
+  Cookie,
+  Server,
+  Bot,
+  ExternalLink,
+  Clock,
+} from "lucide-react";
 
 const PrivacyPage = () => {
   const sections = [
@@ -12,15 +23,23 @@ const PrivacyPage = () => {
       title: "1. Information We Collect",
       content: (
         <div className="space-y-3">
-          <p>We may collect the following information when you use this website:</p>
+          <p>
+            We may collect the following information when you use this website:
+          </p>
           <ul className="list-disc list-inside space-y-2 ml-4">
             <li>Name (if submitted through a contact form)</li>
             <li>Email address</li>
             <li>Phone number (if provided)</li>
             <li>Messages sent through the contact form</li>
-            <li>Technical information such as browser type, device information, IP address, and pages visited (through analytics tools, if enabled)</li>
+            <li>
+              Technical information such as browser type, device information, IP
+              address, and pages visited (through analytics tools, if enabled)
+            </li>
           </ul>
-          <p className="text-orange-400 font-medium">We only collect information that is necessary to provide our services and improve your experience.</p>
+          <p className="text-orange-400 font-medium">
+            We only collect information that is necessary to provide our
+            services and improve your experience.
+          </p>
         </div>
       ),
     },
@@ -32,12 +51,16 @@ const PrivacyPage = () => {
           <p>Your information may be used to:</p>
           <ul className="list-disc list-inside space-y-2 ml-4">
             <li>Respond to your inquiries</li>
-            <li>Communicate regarding freelance projects or job opportunities</li>
+            <li>
+              Communicate regarding freelance projects or job opportunities
+            </li>
             <li>Improve website performance and user experience</li>
             <li>Monitor website traffic and usage</li>
             <li>Prevent spam, abuse, or unauthorized activities</li>
           </ul>
-          <p className="text-orange-400 font-medium">We do not sell or rent your personal information to third parties.</p>
+          <p className="text-orange-400 font-medium">
+            We do not sell or rent your personal information to third parties.
+          </p>
         </div>
       ),
     },
@@ -46,14 +69,21 @@ const PrivacyPage = () => {
       title: "3. Cookies",
       content: (
         <div className="space-y-3">
-          <p>This website may use cookies and similar technologies to improve functionality and analyze website traffic.</p>
-          <p className="font-semibold text-orange-400">Cookies may be used to:</p>
+          <p>
+            This website may use cookies and similar technologies to improve
+            functionality and analyze website traffic.
+          </p>
+          <p className="font-semibold text-orange-400">
+            Cookies may be used to:
+          </p>
           <ul className="list-disc list-inside space-y-2 ml-4">
             <li>Remember user preferences</li>
             <li>Improve website performance</li>
             <li>Analyze visitor behavior</li>
           </ul>
-          <p>You can disable cookies through your browser settings at any time.</p>
+          <p>
+            You can disable cookies through your browser settings at any time.
+          </p>
         </div>
       ),
     },
@@ -71,7 +101,10 @@ const PrivacyPage = () => {
             <li>Google Analytics (if enabled)</li>
             <li>OpenAI API (if an AI chatbot is available)</li>
           </ul>
-          <p>These services may collect information according to their own privacy policies.</p>
+          <p>
+            These services may collect information according to their own
+            privacy policies.
+          </p>
         </div>
       ),
     },
@@ -80,8 +113,14 @@ const PrivacyPage = () => {
       title: "5. Contact Form",
       content: (
         <div className="space-y-3">
-          <p>If you submit information through the contact form, the information is used only to respond to your inquiry.</p>
-          <p className="text-orange-400 font-medium">Your information will never be shared with third parties unless required by law.</p>
+          <p>
+            If you submit information through the contact form, the information
+            is used only to respond to your inquiry.
+          </p>
+          <p className="text-orange-400 font-medium">
+            Your information will never be shared with third parties unless
+            required by law.
+          </p>
         </div>
       ),
     },
@@ -90,8 +129,13 @@ const PrivacyPage = () => {
       title: "6. AI Assistant",
       content: (
         <div className="space-y-3">
-          <p>If this website includes an AI assistant, conversations may be temporarily processed to generate responses.</p>
-          <p className="font-semibold text-orange-400">Please avoid sharing sensitive information such as:</p>
+          <p>
+            If this website includes an AI assistant, conversations may be
+            temporarily processed to generate responses.
+          </p>
+          <p className="font-semibold text-orange-400">
+            Please avoid sharing sensitive information such as:
+          </p>
           <ul className="list-disc list-inside space-y-2 ml-4">
             <li>Passwords</li>
             <li>Credit card information</li>
@@ -107,8 +151,15 @@ const PrivacyPage = () => {
       title: "7. Data Security",
       content: (
         <div className="space-y-3">
-          <p>Reasonable technical and organizational measures are implemented to protect your information from unauthorized access, disclosure, alteration, or destruction.</p>
-          <p className="text-orange-400 font-medium">However, no method of data transmission over the internet can be guaranteed to be completely secure.</p>
+          <p>
+            Reasonable technical and organizational measures are implemented to
+            protect your information from unauthorized access, disclosure,
+            alteration, or destruction.
+          </p>
+          <p className="text-orange-400 font-medium">
+            However, no method of data transmission over the internet can be
+            guaranteed to be completely secure.
+          </p>
         </div>
       ),
     },
@@ -117,8 +168,14 @@ const PrivacyPage = () => {
       title: "8. External Links",
       content: (
         <div className="space-y-3">
-          <p>This website may contain links to external websites such as GitHub, LinkedIn, or other project demonstrations.</p>
-          <p className="text-orange-400 font-medium">We are not responsible for the privacy practices or content of those external websites.</p>
+          <p>
+            This website may contain links to external websites such as GitHub,
+            LinkedIn, or other project demonstrations.
+          </p>
+          <p className="text-orange-400 font-medium">
+            We are not responsible for the privacy practices or content of those
+            external websites.
+          </p>
         </div>
       ),
     },
@@ -134,7 +191,10 @@ const PrivacyPage = () => {
             <li>Request deletion of your personal information</li>
             <li>Withdraw consent where applicable</li>
           </ul>
-          <p>To exercise these rights, please contact us using the information below.</p>
+          <p>
+            To exercise these rights, please contact us using the information
+            below.
+          </p>
         </div>
       ),
     },
@@ -144,7 +204,9 @@ const PrivacyPage = () => {
       content: (
         <div className="space-y-3">
           <p>This website is not intended for children under the age of 13.</p>
-          <p className="text-orange-400 font-medium">We do not knowingly collect personal information from children.</p>
+          <p className="text-orange-400 font-medium">
+            We do not knowingly collect personal information from children.
+          </p>
         </div>
       ),
     },
@@ -153,8 +215,15 @@ const PrivacyPage = () => {
       title: "11. Changes to This Privacy Policy",
       content: (
         <div className="space-y-3">
-          <p>This Privacy Policy may be updated from time to time to reflect changes in legal requirements, website functionality, or business practices.</p>
-          <p className="text-orange-400 font-medium">The updated version will always be published on this page with the latest revision date.</p>
+          <p>
+            This Privacy Policy may be updated from time to time to reflect
+            changes in legal requirements, website functionality, or business
+            practices.
+          </p>
+          <p className="text-orange-400 font-medium">
+            The updated version will always be published on this page with the
+            latest revision date.
+          </p>
         </div>
       ),
     },
@@ -163,14 +232,66 @@ const PrivacyPage = () => {
       title: "12. Contact",
       content: (
         <div className="space-y-3">
-          <p>If you have any questions about this Privacy Policy or your personal information, you may contact:</p>
+          <p>
+            If you have any questions about this Privacy Policy or your personal
+            information, you may contact:
+          </p>
           <div className="bg-orange-50 dark:bg-orange-900/20 p-4 rounded-lg mt-4">
-            <p className="font-bold text-gray-900 dark:text-white mb-2">Arham Ali</p>
+            <p className="font-bold text-gray-900 dark:text-white mb-2">
+              Arham Ali
+            </p>
             <ul className="space-y-2">
-              <li><strong>Email:</strong> <a href="mailto:arhamali.dev@gmail.com" className="text-orange-400 hover:text-orange-500">arhamali.dev@gmail.com</a></li>
-              <li><strong>Portfolio:</strong> <a href="https://arham-pro-portfolio.vercel.app" target="_blank" rel="noopener noreferrer" className="text-orange-400 hover:text-orange-500">https://arham-pro-portfolio.vercel.app</a></li>
-              <li><strong>GitHub:</strong> <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-orange-400 hover:text-orange-500">https://github.com/yourusername</a></li>
-              <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="text-orange-400 hover:text-orange-500">https://linkedin.com/in/yourusername</a></li>
+              <li>
+                <strong>Email:</strong>{" "}
+                <a
+                  href="mailto:arhamali.dev@gmail.com"
+                  className="text-orange-400 hover:text-orange-500"
+                >
+                  arhamali.dev@gmail.com
+                </a>
+              </li>
+              <li>
+                <strong>Portfolio:</strong>{" "}
+                <a
+                  href="https://arham-pro-portfolio.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-orange-400 hover:text-orange-500"
+                >
+                  https://arham-pro-portfolio.vercel.app
+                </a>
+              </li>
+              <li>
+                <strong>GitHub:</strong>{" "}
+                <a
+                  href="https://github.com/arham-ali1323"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-orange-400 hover:text-orange-500"
+                >
+                  https://github.com/arham-ali1323
+                </a>
+              </li>
+              <li>
+                <strong>LinkedIn:</strong>{" "}
+                <a
+                  href="https://www.linkedin.com/in/arhamaliofficial/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-orange-400 hover:text-orange-500"
+                >
+                  https://www.linkedin.com/in/arhamaliofficial/
+                </a>
+              </li>
+              <li>
+                <strong>Phone:</strong>{" "}
+                <a
+                  href="tel:+923211051323"
+                  className="text-orange-400 hover:text-orange-500"
+                >
+                  +92 3211051323
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -187,10 +308,7 @@ const PrivacyPage = () => {
           content="Privacy policy for the Arham Ali portfolio website. Learn how I collect, use, and protect your personal information."
         />
         <meta name="robots" content="index, follow" />
-        <meta
-          property="og:title"
-          content="Privacy Policy | Arham Ali"
-        />
+        <meta property="og:title" content="Privacy Policy | Arham Ali" />
         <meta
           property="og:description"
           content="Privacy policy for the Arham Ali portfolio website."
@@ -215,10 +333,12 @@ const PrivacyPage = () => {
               <span className="text-orange-400">Privacy</span> Policy
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-4">
-              Welcome to <strong>Arham Ali Portfolio</strong>. Your privacy is important to us.
+              Welcome to <strong>Arham Ali Portfolio</strong>. Your privacy is
+              important to us.
             </p>
             <p className="text-gray-600 dark:text-gray-300 mb-4">
-              This Privacy Policy explains how information is collected, used, and protected when you visit this website.
+              This Privacy Policy explains how information is collected, used,
+              and protected when you visit this website.
             </p>
             <div className="mt-4 text-sm text-gray-500 dark:text-gray-400">
               Last Updated: August 7, 2026
@@ -268,7 +388,8 @@ const PrivacyPage = () => {
               Privacy Questions?
             </h3>
             <p className="text-gray-700 dark:text-gray-300 mb-4">
-              If you have any questions about this Privacy Policy or my data practices, please reach out.
+              If you have any questions about this Privacy Policy or my data
+              practices, please reach out.
             </p>
             <a
               href="mailto:arhamali.dev@gmail.com"
@@ -288,7 +409,10 @@ const PrivacyPage = () => {
             className="mt-8 p-6 border border-gray-200 dark:border-gray-700 rounded-xl text-center"
           >
             <p className="text-gray-700 dark:text-gray-300 text-sm">
-              <strong>By using this website, you acknowledge that you have read and understood this Privacy Policy and agree to its terms.</strong>
+              <strong>
+                By using this website, you acknowledge that you have read and
+                understood this Privacy Policy and agree to its terms.
+              </strong>
             </p>
           </motion.div>
         </div>
