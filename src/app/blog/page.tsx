@@ -57,7 +57,7 @@ const BlogPage = () => {
                 <div className="p-6">
                   {/* Category */}
                   <div className="mb-3">
-                    <span className="inline-block px-3 py-1 text-sm font-semibold text-orange-600 bg-orange-100 dark:bg-orange-900 dark:text-orange-300 rounded-full">
+                    <span className="inline-block px-3 py-1 text-sm font-semibold text-orange-600 bg-orange-300 dark:bg-orange-900 dark:text-orange-300 rounded-full">
                       {post.categories[0].title}
                     </span>
                   </div>

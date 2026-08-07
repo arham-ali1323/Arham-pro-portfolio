@@ -31,11 +31,7 @@ const links = [
     {
         name: "Contact",
         path: "/contact"
-    },
-    {
-        name: "Schedule Meeting",
-        path: "/schedule"
-    },
+    }
 ]
 const Nav = () => {
     const pathname = usePathname()

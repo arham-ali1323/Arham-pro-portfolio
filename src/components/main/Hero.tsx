@@ -67,7 +67,11 @@ const Hero = () => {
         >
           {/* this is for the text beneth */}
           <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-normal">
-            <div className="hidden lg:flex xl:flex items-center" role="region" aria-label="Social media links">
+            <div
+              className="hidden lg:flex xl:flex items-center"
+              role="region"
+              aria-label="Social media links"
+            >
               <Social />
             </div>
 
@@ -82,13 +86,20 @@ const Hero = () => {
               <div className="flex flex-col items-center lg:flex-row lg:items-center">
                 <h1 className="text-3xl mt-3 font-medium text-slate-800 dark:text-gray-200">
                   Frontend Development is my{" "}
-                  <span 
+                  <span
                     className="text-orange-500 tracking-wide font-medium"
-                    aria-label="Core skill, strength, expertise, passion, and craft"
+                    aria-label="Passion, Specialty, Profession, Expertise, Purpose, and Superpower"
                   >
                     <Typewriter
                       options={{
-                        strings: [" Core Skill", "Strength", " Expertise", "Passion", "Craft"],
+                        strings: [
+                          "Passion",
+                          "Specialty",
+                          "Expertise",
+                          "Profession",
+                          "Purpose",
+                          "Superpower",
+                        ],
                         autoStart: true,
                         loop: true,
                       }}
@@ -100,11 +111,11 @@ const Hero = () => {
           </div>
 
           <div className="lg:pl-36 pt-8 flex justify-center lg:justify-start">
-            <Button 
+            <Button
               onClick={() => {
-                const link = document.createElement('a');
-                link.href = '/Arham_Ali_Junior_React_Developer.pdf';
-                link.download = 'Arham_Ali_Junior_React_Developer.pdf';
+                const link = document.createElement("a");
+                link.href = "/Arham_Ali_Junior_React_Developer.pdf";
+                link.download = "Arham_Ali_Junior_React_Developer.pdf";
                 document.body.appendChild(link);
                 link.click();
                 document.body.removeChild(link);
@@ -115,7 +126,11 @@ const Hero = () => {
               Download CV
             </Button>
           </div>
-          <div className=" md:hidden xl:lg:hidden items-center" role="region" aria-label="Mobile social media links">
+          <div
+            className=" md:hidden xl:lg:hidden items-center"
+            role="region"
+            aria-label="Mobile social media links"
+          >
             <Social />
           </div>
         </motion.div>

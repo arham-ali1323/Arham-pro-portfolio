@@ -186,7 +186,14 @@ const AboutPage = () => {
           </div>
 
           {/* Current Focus */}
-          <div className="bg-gradient-to-r from-orange-800/10 to-yellow-900/10 p-8 rounded-2xl mb-20">
+          <div className="
+bg-gradient-to-r
+from-orange-300/40
+to-amber-400/30
+dark:from-orange-800/10
+dark:to-yellow-900/10
+p-8 rounded-2xl mb-20
+">
             <h2 className="text-3xl font-bold mb-6 text-center">
               Current Focus
             </h2>

@@ -125,6 +125,9 @@ export const metadata: Metadata = {
     statusBarStyle: "black-translucent",
     title: "Arham Ali",
   },
+  other: {
+    "mobile-web-app-capable": "yes",
+  },
   category: "Technology",
   classification: "Frontend Development",
 };

@@ -3,7 +3,7 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Input } from "@/components/ui/input";
-import { FaPhoneAlt, FaEnvelope, FaMapMarkedAlt } from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelope, FaMapMarkedAlt, FaFileContract } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { sendEmail } from "@/actions/sendEmail";
 import toast from "react-hot-toast";
@@ -25,15 +25,44 @@ const info = [
     icons: <FaEnvelope />,
     title: "Email Directly",
     description: (
-      <a className="underline" href="mailto:arhamali.dev@gmail.com">
+      <Link className="underline" href="mailto:arhamali.dev@gmail.com">
         &quot;arhamali.dev@gmail.com&quot;
-      </a>
+      </Link>
     ),
   },
   {
     icons: <FaMapMarkedAlt />,
     title: "Address",
-    description: " W2 Global",
+    description: (
+      <Link
+        className="underline"
+        href="https://maps.google.com/?q=Sahiwal,Punjab,Pakistan"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+         Sahiwal, 57000, Punjab, Pakistan
+      </Link>
+    ),
+  },
+  {
+    icons: <FaFileContract />,
+    title: "Legal",
+    description: (
+      <div className="flex flex-col gap-2">
+        <Link 
+          href="/terms" 
+          className="text-orange-400 hover:text-orange-500 underline font-medium"
+        >
+          Terms & Conditions
+        </Link>
+        <Link 
+          href="/privacy" 
+          className="text-orange-400 hover:text-orange-500 underline font-medium"
+        >
+          Privacy Policy
+        </Link>
+      </div>
+    ),
   },
 ];
 const page = () => {
@@ -58,11 +87,11 @@ const page = () => {
             address: {
               "@type": "PostalAddress",
               streetAddress: "W2 Global",
-              addressLocality: "City",
-              addressRegion: "State",
-              postalCode: "00000",
+              addressLocality: "Sahiwal",
+              addressRegion: "Punjab",
+              postalCode: "57000",
               addressCountry: "PK",
-            },
+            }
           })}
         </script>
       </Head>
@@ -72,7 +101,7 @@ const page = () => {
           opacity: 1,
           transition: { delay: 1.5, duration: 0.5, ease: "easeOut" },
         }}
-        className="container  "
+        className="container"
       >
         <div className="flex flex-col item-center  gap-8 justify-center  xl:lg:flex-row ">
           {/* form */}
@@ -159,6 +188,7 @@ const page = () => {
                 );
               })}
             </ul>
+
           </div>
         </div>
       </motion.section>
