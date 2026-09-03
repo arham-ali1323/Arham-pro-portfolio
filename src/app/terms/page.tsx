@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import Head from "next/head";
 import { motion } from "framer-motion";
 import { Shield, AlertCircle, Scale, FileText, Code, ExternalLink, Bot, AlertTriangle, Clock, CheckCircle } from "lucide-react";
 
@@ -139,26 +138,6 @@ const TermsPage = () => {
 
   return (
     <>
-      <Head>
-        <title>Terms & Conditions | Arham Ali</title>
-        <meta
-          name="description"
-          content="Terms and conditions for the Arham Ali portfolio website. Please read these terms carefully before using this website."
-        />
-        <meta name="robots" content="index, follow" />
-        <meta
-          property="og:title"
-          content="Terms & Conditions | Arham Ali"
-        />
-        <meta
-          property="og:description"
-          content="Terms and conditions for the Arham Ali portfolio website."
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://arhamali.me/terms" />
-        <link rel="canonical" href="https://arhamali.me/terms" />
-      </Head>
-
       <motion.section
         initial={{ opacity: 0 }}
         animate={{

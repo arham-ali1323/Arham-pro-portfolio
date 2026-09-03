@@ -52,10 +52,10 @@ const MobileNav = () => {
             {/* adding the logo to the sheets */}
             <div className=' mt-12 mb-6 text-center text-2xl' >
             <Link href={"/"}>
-                    <h1 className='font-bold  ml-32 text-3xl flex '>
+                    <div className='font-bold  ml-32 text-3xl flex ' aria-label='Arham Ali home'>
                         <Image src={Muazam_Avatar} alt='logo' className='h-15 w-16'>
                         </Image> <span className='pt-6  text-orange-400'>.</span> 
-                    </h1>
+                    </div>
                 </Link>
 
             </div>

@@ -85,7 +85,7 @@ const Hero = () => {
 
               <div className="flex flex-col items-center lg:flex-row lg:items-center">
                 <h1 className="text-3xl mt-3 font-medium text-slate-800 dark:text-gray-200">
-                  Frontend Development is my{" "}
+                  Frontend Developer building modern Next.js and React web experiences{" "}
                   <span
                     className="text-orange-500 tracking-wide font-medium"
                     aria-label="Passion, Specialty, Profession, Expertise, Purpose, and Superpower"

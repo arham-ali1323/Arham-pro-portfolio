@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Seo from "@/components/seo/Seo";
 import { notFound } from "next/navigation";
 import blogPosts from "@/lib/blogPosts";
 
@@ -22,16 +21,21 @@ const BlogPostPage = ({ params }: BlogPostPageProps) => {
 
   return (
     <>
-      <Seo
-        title={`${post.title} | Arham Ali - Software Engineer Portfolio`}
-        description={post.excerpt}
-        keywords={post.categories.map((c) => c.title).join(", ")}
-        url={`/blog/${post.id}`}
-        image={post.mainImage}
-        publishedAt={post.publishedAt}
-        authorName={post.author.name}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            headline: post.title,
+            description: post.excerpt,
+            datePublished: post.publishedAt,
+            image: post.mainImage,
+            url: `https://arham-pro-portfolio.vercel.app/blog/${post.id}`,
+            author: { "@type": "Person", name: post.author.name },
+          }),
+        }}
       />
-
       <motion.article
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

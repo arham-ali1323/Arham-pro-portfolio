@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import Head from "next/head";
 import { motion } from "framer-motion";
 import {
   Shield,
@@ -301,23 +300,6 @@ const PrivacyPage = () => {
 
   return (
     <>
-      <Head>
-        <title>Privacy Policy | Arham Ali</title>
-        <meta
-          name="description"
-          content="Privacy policy for the Arham Ali portfolio website. Learn how I collect, use, and protect your personal information."
-        />
-        <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="Privacy Policy | Arham Ali" />
-        <meta
-          property="og:description"
-          content="Privacy policy for the Arham Ali portfolio website."
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://arhamali.me/privacy" />
-        <link rel="canonical" href="https://arhamali.me/privacy" />
-      </Head>
-
       <motion.section
         initial={{ opacity: 0 }}
         animate={{

@@ -12,11 +12,10 @@ export default function SchemaMarkup() {
     
     // Core Identity
     name: "Arham Ali",
-    title: "Frontend Engineer",
-    description: "Expert Frontend Engineer specializing in Next.js, React, and AI integration",
+    description: "Frontend developer building responsive React and Next.js interfaces with practical AI integrations.",
     
     // Professional Role & Expertise
-    jobTitle: "Senior Frontend Engineer",
+    jobTitle: "Frontend Developer",
     worksFor: {
       "@type": "Organization",
       name: "Independent Contractor",
@@ -26,9 +25,8 @@ export default function SchemaMarkup() {
     // Website & Canonical URL
     url: "https://arham-pro-portfolio.vercel.app",
     sameAs: [
-      "https://linkedin.com/in/arhamali", // Update with your LinkedIn
-      "https://github.com/arhamali", // Update with your GitHub
-      "https://twitter.com/arhamali", // Update with your Twitter
+      "https://github.com/arham-ali1323",
+      "https://www.linkedin.com/in/arham-ali-973359289/",
     ],
     
     // Profile Image
@@ -39,16 +37,7 @@ export default function SchemaMarkup() {
       height: 400,
     },
     
-    // Contact Information
     email: "arhamali.dev@gmail.com",
-    telephone: "", // Add your phone if desired
-    
-    // Location
-    address: {
-      "@type": "PostalAddress",
-      addressCountry: "US", // Update as needed
-      // Add more address details if desired
-    },
     
     // Skills - Target Keywords
     skills: [
@@ -74,7 +63,7 @@ export default function SchemaMarkup() {
       },
       {
         "@type": "Thing",
-        name: " ",
+        name: "TypeScript",
         category: "Programming Language",
       },
       {
@@ -94,24 +83,29 @@ export default function SchemaMarkup() {
       },
     ],
     
-    // Professional Organization
-    memberOf: {
-      "@type": "Organization",
-      name: "Web Developer Community",
-    },
-    
-    // Highlights & Awards (optional - add real achievements)
-    award: [],
-    
-    // Educational Background (optional)
-    educationDetails: [],
   };
 
   return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
-      suppressHydrationWarning
-    />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+        suppressHydrationWarning
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "@id": "https://arham-pro-portfolio.vercel.app#website",
+            name: "Arham Ali Portfolio",
+            url: "https://arham-pro-portfolio.vercel.app",
+            publisher: { "@id": "https://arham-pro-portfolio.vercel.app#person" },
+          }),
+        }}
+        suppressHydrationWarning
+      />
+    </>
   );
 }

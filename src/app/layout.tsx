@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 // @ts-ignore — allow side-effect CSS import without type declarations
 import "./globals.css";
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   // Title & Description - SEO Optimized
   title: "Arham Ali | Expert Frontend Engineer & Next.js Developer",
   description:
-    "Frontend Engineer building fast, accessible web interfaces with Next.js, React, and practical AI integrations.",
+    "Arham Ali builds fast, accessible React and Next.js interfaces, responsive products, and practical AI experiences for modern teams across every screen size.",
   
   // Keywords for target search intent
   keywords: [
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     siteName: "Arham Ali - Frontend Engineer",
     title: "Arham Ali | Expert Frontend Engineer & Next.js Developer",
     description:
-      "Frontend Engineer building fast, accessible web interfaces with Next.js, React, and practical AI integrations.",
+      "Arham Ali builds fast, accessible React and Next.js interfaces, responsive products, and practical AI experiences for modern teams across every screen size.",
     images: [
       {
         url: "https://arham-pro-portfolio.vercel.app/arham-avater.png",
@@ -110,13 +110,6 @@ export const metadata: Metadata = {
     // other: {},
   },
 
-  // Viewport & viewport optimization
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 5,
-  },
-
   // Additional metadata
   applicationName: "Arham Ali Portfolio",
   referrer: "origin-when-cross-origin",
@@ -130,6 +123,11 @@ export const metadata: Metadata = {
   },
   category: "Technology",
   classification: "Frontend Development",
+};
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
 };
 export default function RootLayout({
   children,
@@ -149,7 +147,9 @@ export default function RootLayout({
         <ThemeSwitch />
         <Header />
         <BracketTransition />
-        <PageTransition>{children}</PageTransition>
+        <main>
+          <PageTransition>{children}</PageTransition>
+        </main>
         <ChatBot />
       </body>
     </html>

@@ -1,4 +1,5 @@
 import { MetadataRoute } from 'next';
+import blogPosts from '@/lib/blogPosts';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://arham-pro-portfolio.vercel.app';
@@ -65,7 +66,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // },
   ];
 
-  return pages;
+  const blogPages = blogPosts.map((post) => ({
+    url: `${baseUrl}/blog/${post.id}`,
+    lastModified: new Date(post.publishedAt),
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+  }));
+
+  return [...pages, ...blogPages];
 }
 
 /**

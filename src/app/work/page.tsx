@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Head from "next/head";
 
 const projects = [
   {
@@ -101,26 +100,13 @@ const projects = [
 const page = () => {
   return (
     <>
-      {/* SEO META TAGS */}
-      <Head>
-        <title>Projects | Arham Ali - Software Engineer Portfolio</title>
-        <meta
-          name="description"
-          content="Explore full-stack projects by Arham Ali including Next.js apps, e-commerce platforms, and more."
-        />
-        <meta
-          name="keywords"
-          content="Arham Ali, Software Engineer, Front end Developer, Next.js, Portfolio, Projects"
-        />
-        <meta name="robots" content="index, follow" />
-      </Head>
-
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         className="min-h-[80vh] "
       >
         <div className="container mb-20 flex flex-col gap-10 mt-10 mx-auto px-4 sm:px-6 lg:px-8">
+          <h1 className="text-4xl font-bold text-center text-orange-500">React and Next.js Projects</h1>
           {projects.map((project, index) => {
             return (
               <div key={index} className="flex flex-col">
@@ -151,10 +137,10 @@ function Project({
       <div className="flex flex-col lg:flex-row">
         {/* Content Section */}
         <div className="flex-1 p-6 sm:p-8 lg:p-10 flex flex-col">
-          <h3 className="text-2xl sm:text-3xl font-bold">{title}</h3>
-          <h4 className="mt-2 text-lg sm:text-xl leading-relaxed font-bold text-white/80 dark:text-orange-300">
+          <h2 className="text-2xl sm:text-3xl font-bold">{title}</h2>
+          <h3 className="mt-2 text-lg sm:text-xl leading-relaxed font-bold text-white/80 dark:text-orange-300">
             {category}
-          </h4>
+          </h3>
           <p className="mt-2 leading-relaxed dark:text-gray-300 text-black/60">
             {description}
           </p>

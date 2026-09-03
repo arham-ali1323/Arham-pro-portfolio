@@ -1,5 +1,6 @@
 import Hero from "@/components/main/Hero";
 import Photo from "@/components/main/Photo";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -22,6 +23,12 @@ export default function Home() {
 
       {/* Expertise Section - Improves heading structure & on-page content */}
       <div className="container px-6 pt-20 pb-10 mx-auto max-w-4xl">
+        <div className="flex flex-wrap justify-center gap-4 mb-12 text-orange-600 dark:text-orange-400">
+          <Link href="/aboutme" className="underline">Learn about my experience</Link>
+          <Link href="/work" className="underline">View my React and Next.js projects</Link>
+          <Link href="/services" className="underline">Explore web development services</Link>
+          <Link href="/contact" className="underline">Discuss a project</Link>
+        </div>
         <h2 className="text-2xl sm:text-3xl font-bold text-slate-800 dark:text-gray-100 mb-4 text-center">
           Frontend Engineering Focused on Performance and Scalability
         </h2>
@@ -126,6 +133,61 @@ export default function Home() {
                 product clearer for users and more sustainable for the team.
               </p>
             </article>
+          </div>
+
+          <section className="mt-16">
+            <h2 className="text-2xl sm:text-3xl font-bold text-slate-800 dark:text-gray-100 mb-4 text-center">
+              What I Bring to a Frontend Project
+            </h2>
+            <p className="text-gray-600 dark:text-gray-400 text-center max-w-2xl mx-auto leading-relaxed">
+              A successful interface needs more than attractive screens. It
+              needs a thoughtful structure, dependable data flows, and a clear
+              relationship between the product and the people using it. I bring
+              a frontend-first perspective to each of those decisions.
+            </p>
+
+            <div className="grid md:grid-cols-3 gap-8 mt-10">
+              <article>
+                <h3 className="text-xl font-semibold text-orange-600 dark:text-orange-400 mb-2">
+                  Clear Component Systems
+                </h3>
+                <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                  Reusable React components create consistency across a product
+                  and make future changes easier. I organize UI patterns around
+                  real product needs, with clear boundaries between presentation,
+                  state, and API integration.
+                </p>
+              </article>
+
+              <article>
+                <h3 className="text-xl font-semibold text-orange-600 dark:text-orange-400 mb-2">
+                  Responsive by Default
+                </h3>
+                <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                  Mobile users should receive the same thoughtful experience as
+                  desktop users. I use responsive layouts, semantic HTML, and
+                  careful interaction states so content remains readable and
+                  useful at every screen size.
+                </p>
+              </article>
+
+              <article>
+                <h3 className="text-xl font-semibold text-orange-600 dark:text-orange-400 mb-2">
+                  Reliable Delivery
+                </h3>
+                <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                  I value practical progress: understand the scope, build the
+                  most important flow, test the edge cases, and improve from
+                  feedback. My <Link href="/blog" className="text-orange-600 dark:text-orange-400 underline">frontend development articles</Link> share more of the principles behind that process.
+                </p>
+              </article>
+            </div>
+          </section>
+
+          <div className="text-center mt-16">
+            <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+              For a fuller view of my background, <Link href="/resume" className="text-orange-600 dark:text-orange-400 underline">review my frontend developer resume</Link> or <Link href="/contact" className="text-orange-600 dark:text-orange-400 underline">contact me about your project</Link>.
+            </p>
           </div>
         </section>
       </div>

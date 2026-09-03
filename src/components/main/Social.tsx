@@ -22,6 +22,9 @@ const Social = () => {
           <Link
             key={index}
             href={social.path}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`Visit Arham Ali on ${social.path.includes("github") ? "GitHub" : social.path.includes("linkedin") ? "LinkedIn" : "WhatsApp"}`}
             className="  hover:text-slate-200 text-3xl md:text-2xl xl:lg:text-2xl m-1 bg-transparent dark:bg-black font-medium text-orange-600"
           >
             {social.icons}

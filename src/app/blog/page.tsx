@@ -3,19 +3,11 @@ import { motion } from "framer-motion";
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Seo from "@/components/seo/Seo";
 import blogPosts from "@/lib/blogPosts";
 
 const BlogPage = () => {
   return (
     <>
-          <Seo
-            title="Blog | Arham Ali - Software Engineer Portfolio"
-            description="Read articles about web development, React, Next.js,  , and more by Arham Ali."
-            keywords="Arham Ali, Blog, Web Development, React, Next.js, JavaScript, Programming"
-            url="/blog"
-          />
-
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

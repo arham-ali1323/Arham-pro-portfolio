@@ -2,7 +2,6 @@
 
 import Stats from "@/components/main/Stats";
 import { Code, Cpu, Database, BrainCircuit } from "lucide-react";
-import Head from "next/head";
 import Link from "next/link";
 
 const AboutPage = () => {
@@ -31,45 +30,6 @@ const AboutPage = () => {
 
   return (
     <>
-      <Head>
-        <title>
-          About – Arham Ali | Frontend Developer | React | Next.js | Tailwind
-        </title>
-        <meta
-          name="description"
-          content="Learn more about Arham Ali, a Frontend Developer specializing in React, Next.js, and modern responsive web interfaces."
-        />
-        <meta name="robots" content="index, follow" />
-        <meta
-          property="og:title"
-          content="About – Arham Ali | Frontend Developer"
-        />
-        <meta
-          property="og:description"
-          content="Frontend-focused developer building fast, modern, and pixel-perfect web experiences."
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://arhamali.me/about" />
-        <meta
-          property="og:image"
-          content="https://arhamali.me/NewAvatar.png"
-        />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="About – Arham Ali | Frontend Developer"
-        />
-        <meta
-          name="twitter:description"
-          content="Get to know Arham Ali – a Frontend Developer focused on React, Next.js, and Tailwind CSS."
-        />
-        <meta
-          name="twitter:image"
-          content="https://arhamali.me/NewAvatar.png"
-        />
-        <link rel="canonical" href="https://arhamali.me/about" />
-      </Head>
-
       <section className="relative h-full overflow-hidden">
         {/* Background Effects */}
         <div className="absolute inset-0 -z-10 opacity-10 dark:opacity-5">
@@ -81,13 +41,16 @@ const AboutPage = () => {
           {/* Hero */}
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              <span className="text-orange-400">Crafting</span> Modern
+              <span className="text-orange-400">Frontend Developer</span>
               <br />
-              Web Interfaces
+              Crafting Modern Web Interfaces
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 mx-auto">
               Frontend Developer focused on React, Next.js, and scalable UI
               development
+            </p>
+            <p className="mt-4 text-gray-600 dark:text-gray-300">
+              Explore my <Link href="/work" className="text-orange-400 underline">recent projects</Link>, learn about my <Link href="/services" className="text-orange-400 underline">web development services</Link>, or <Link href="/contact" className="text-orange-400 underline">get in touch</Link> about a new idea.
             </p>
           </div>
 

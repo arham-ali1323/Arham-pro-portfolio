@@ -9,7 +9,6 @@ import { sendEmail } from "@/actions/sendEmail";
 import toast from "react-hot-toast";
 
 import Link from "next/link";
-import Head from "next/head";
 
 const info = [
   {
@@ -68,33 +67,6 @@ const info = [
 const page = () => {
   return (
     <>
-      <Head>
-        <title>Contact Us | Arham Ali</title>
-        <meta
-          name="description"
-          content="Reach out for inquiries, support, or collaborations. Email, phone, and location provided."
-        />
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ContactPage",
-            name: "Arham Ali",
-            headline: "Contact Us",
-            description: "Contact page for inquiries",
-            url: "https://arhamali.me/contact",
-            telephone: "+923211051323",
-            email: "arhamali.dev@gmail.com",
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "W2 Global",
-              addressLocality: "Sahiwal",
-              addressRegion: "Punjab",
-              postalCode: "57000",
-              addressCountry: "PK",
-            }
-          })}
-        </script>
-      </Head>
       <motion.section
         initial={{ opacity: 0 }}
         animate={{
@@ -103,6 +75,9 @@ const page = () => {
         }}
         className="container"
       >
+        <h1 className="text-4xl font-bold text-center text-orange-500 mb-8">
+          Contact Arham Ali
+        </h1>
         <div className="flex flex-col item-center  gap-8 justify-center  xl:lg:flex-row ">
           {/* form */}
           <div className="xl:lg:pl-32 p-8 order-2  xl:lg:order-none">
@@ -129,13 +104,15 @@ const page = () => {
                   name="senderEmail"
                   required
                   maxLength={500}
-                  placeholder="Enter our Email"
+                  placeholder="Enter your email"
+                  aria-label="Your email address"
                 />
               </div>
               
               <div>
                 <select
                   name="user_projectType"
+                  aria-label="Project type"
                   className="flex h-10 w-full rounded-md border-white/15 bg-slate-500 dark:bg-[#27272c] px-3 py-2 text-sm ring-offset-background placeholder:text-orange-300 text-orange-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 border-2"
                   required
                 >
@@ -155,6 +132,7 @@ const page = () => {
                 className="h-[150px]"
                 name="message"
                 placeholder="Type your message here"
+                aria-label="Project details and message"
                 required
                 maxLength={1000}
               />
@@ -180,9 +158,9 @@ const page = () => {
                     </div>
                     <div className="flex-1">
                       <p>{items.title}</p>
-                      <h1 className=" font-bold text-orange-400">
+                      <div className="font-bold text-orange-400">
                         {items.description}
-                      </h1>
+                      </div>
                     </div>
                   </li>
                 );

@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
-import Head from "next/head";
+import Link from "next/link";
 
 const Page = () => {
   useEffect(() => {
@@ -19,22 +19,6 @@ const Page = () => {
 
   return (
     <>
-      <Head>
-        <title>Schedule Meeting | Arham Ali</title>
-        <meta
-          name="description"
-          content="Schedule a meeting with Arham Ali. Book a 30-minute consultation to discuss your project needs."
-        />
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            name: "Schedule Meeting",
-            description: "Schedule a meeting with Arham Ali",
-            url: "https://arhamali.me/schedule",
-          })}
-        </script>
-      </Head>
       <motion.section
         initial={{ opacity: 0 }}
         animate={{
@@ -63,7 +47,7 @@ const Page = () => {
 
           <div className="mt-8 text-center">
             <p className="text-gray-600 dark:text-gray-300">
-              Can&apos;t find a suitable time? <a href="/contact" className="text-orange-500 hover:text-orange-600 underline">Contact me directly</a> and we&apos;ll work something out.
+              Can&apos;t find a suitable time? <Link href="/contact" className="text-orange-500 hover:text-orange-600 underline">Contact me directly</Link> and we&apos;ll work something out.
             </p>
           </div>
         </div>
