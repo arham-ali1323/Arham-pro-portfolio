@@ -15,13 +15,13 @@ const Header = () => {
 
 
                 <Link href={"/"}>
-                    <h1 className='font-bold text-3xl flex pl-4'>
+                    <div className='font-bold text-3xl flex pl-4' aria-label='Arham Ali home'>
                         <Image src={arham_Avatar} alt='logo' className='h-15 w-16'>
                         </Image>
 
                         {/* <span className=' pt-4 text-lime-200 text-opacity-50 font-primary '>Muazam Mughal</span>
                        */} <span className='pt-5  text-orange-400'>.</span>
-                    </h1>
+                    </div>
                 </Link>
                 {/* thier we gona add the  nevbar */}
                 <div className=' hidden lg:flex xl:flex items-center pt-2 gap-6'>

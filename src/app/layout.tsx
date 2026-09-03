@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://arham-pro-portfolio.vercel.app"),
   
   // Title & Description - SEO Optimized
-  title: "Arham Ali | Frontend Engineer Specializing in Next.js & React",
+  title: "Arham Ali | Expert Frontend Engineer & Next.js Developer",
   description:
-    "Expert Frontend Engineer specializing in Next.js, React, and AI integration. I build fast, scalable web interfaces with modern design patterns.",
+    "Frontend Engineer building fast, accessible web interfaces with Next.js, React, and practical AI integrations.",
   
   // Keywords for target search intent
   keywords: [
@@ -62,9 +62,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://arham-pro-portfolio.vercel.app",
     siteName: "Arham Ali - Frontend Engineer",
-    title: "Arham Ali | Frontend Engineer Specializing in Next.js & React",
+    title: "Arham Ali | Expert Frontend Engineer & Next.js Developer",
     description:
-      "Expert Frontend Engineer specializing in Next.js, React, and AI integration. I build fast, scalable web interfaces with modern design patterns.",
+      "Frontend Engineer building fast, accessible web interfaces with Next.js, React, and practical AI integrations.",
     images: [
       {
         url: "https://arham-pro-portfolio.vercel.app/arham-avater.png",
