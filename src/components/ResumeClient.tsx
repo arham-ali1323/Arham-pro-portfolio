@@ -156,6 +156,16 @@ const ResumeClient = () => {
             I am a frontend developer who focuses on building responsive, accessible, and performant web applications. My work combines a user-first mindset with a strong foundation in modern JavaScript, component-driven React architecture, and the Next.js framework. I have hands-on experience transforming design concepts into production-ready interfaces and shipping them across a variety of product types, including e-commerce platforms, booking systems, fitness applications, and business management tools.
           </p>
         </div>
+
+        <div className="max-w-3xl mx-auto mb-10 text-gray-600 dark:text-gray-300">
+          <h2 className="text-2xl font-bold text-orange-500 mb-4">Professional Summary</h2>
+          <p className="mb-4">
+            This page summarises my background as a frontend developer. Use the tabs below to explore my education and the technical skills I rely on every day. My education provided a strong foundation in analytical thinking, while my hands-on work with React and Next.js taught me how to build interfaces that are fast, responsive, and easy to maintain.
+          </p>
+          <p>
+            I am comfortable working across the entire frontend, from translating mockups into semantic, accessible markup to structuring component libraries and integrating REST APIs. I value clean code, measurable performance, and clear communication with the designers, product owners, and developers I collaborate with on every project.
+          </p>
+        </div>
         <Tabs className=' flex  flex-col lg:xl:flex-row md:flex-row'
           defaultValue="Skills"
         >

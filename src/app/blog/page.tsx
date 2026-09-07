@@ -25,6 +25,9 @@ const BlogPage = () => {
             <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mt-4">
               I write practical, hands-on articles drawn from my work building real React and Next.js applications. Each post focuses on topics that help developers ship better products faster — covering modern framework features, scalable architecture, state management, styling, and search engine optimization.
             </p>
+            <p className="text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mt-4">
+              Rather than focus on abstract theory, every article explains a real problem and the solution I used to solve it. You will find walkthroughs, code patterns, and reasoning you can apply directly to your own projects. As the site grows, this page will become a library of the practical frontend knowledge I have gathered through hands-on development experience.
+            </p>
           </div>
 
           <h2 className="text-2xl font-bold text-center text-slate-800 dark:text-gray-100 mb-8">

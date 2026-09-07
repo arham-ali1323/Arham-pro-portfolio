@@ -86,6 +86,20 @@ const AboutPage = () => {
                   , building modern web applications and continuously improving
                   my skills through real-world projects.
                 </p>
+                <p>
+                  Along the way I have shipped products across e-commerce, travel
+                  and booking, fitness, and business management. Each project
+                  taught me how to turn a design into a reliable, production-ready
+                  interface — from setting up a scalable component system to
+                  integrating APIs and optimizing every part of the user journey.
+                </p>
+                <p>
+                  I enjoy the full arc of frontend work: collaborating with
+                  designers and product owners in the morning, writing clean React
+                  components in the afternoon, and reviewing performance metrics
+                  before release. This hands-on, end-to-end involvement is what
+                  lets me build interfaces that are both polished and dependable.
+                </p>
               </div>
             </div>
 
@@ -113,6 +127,21 @@ const AboutPage = () => {
                   </span>{" "}
                   and staying up-to-date with modern frontend tools and best
                   practices.
+                </p>
+                <p>
+                  A good approach is about more than writing code. I start every
+                  task by understanding the goal behind it, then choose the
+                  simplest structure that can grow. I keep components small and
+                  focused, write semantic HTML, and test interactions across real
+                  devices and browsers so that what looks good in a design file
+                  also works well in production.
+                </p>
+                <p>
+                  I also believe in being easy to work with — clear communication,
+                  realistic estimates, and a willingness to explain my decisions.
+                  Whether I am working independently or as part of a team, my aim
+                  is to ship work that is understandable to the next developer and
+                  genuinely useful to the end user.
                 </p>
               </div>
             </div>
