@@ -22,7 +22,14 @@ const BlogPage = () => {
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
               Thoughts, tutorials, and insights about web development, programming, and technology.
             </p>
+            <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mt-4">
+              I write practical, hands-on articles drawn from my work building real React and Next.js applications. Each post focuses on topics that help developers ship better products faster — covering modern framework features, scalable architecture, state management, styling, and search engine optimization.
+            </p>
           </div>
+
+          <h2 className="text-2xl font-bold text-center text-slate-800 dark:text-gray-100 mb-8">
+            Latest Frontend Development Articles
+          </h2>
 
           {/* Blog Posts Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

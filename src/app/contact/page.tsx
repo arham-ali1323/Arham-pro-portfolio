@@ -78,6 +78,12 @@ const page = () => {
         <h1 className="text-4xl font-bold text-center text-orange-500 mb-8">
           Contact Arham Ali
         </h1>
+        <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto text-center mb-6">
+          Have a project in mind, a position to fill, or a question about my frontend work? I respond to every serious inquiry within one business day. Whether you need a landing page, a full e-commerce build, or help modernizing an existing Next.js application, share a few details below and I will get back to you with a practical next step.
+        </p>
+        <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto text-center mb-10">
+          I have built responsive React and Next.js products across e-commerce, booking, fitness, and business management. If you are unsure which service fits your goal, describe your idea and I can recommend the most efficient approach during our first conversation.
+        </p>
         <div className="flex flex-col item-center  gap-8 justify-center  xl:lg:flex-row ">
           {/* form */}
           <div className="xl:lg:pl-32 p-8 order-2  xl:lg:order-none">
@@ -92,9 +98,9 @@ const page = () => {
               }}
               className="flex flex-col gap-4 p-8 bg-slate-300 dark:text-white text-black/80  dark:bg-[#27272c] rounded-xl"
             >
-              <h3 className=" text-2xl font-bold text-orange-500">
+              <h2 className=" text-2xl font-bold text-orange-500">
                 Let&apos;s Connect
-              </h3>
+              </h2>
               <p className="text-lg">
                 Get in Connect regarding any query for further
               </p>
@@ -150,6 +156,14 @@ const page = () => {
        xl:lg:order-none mb-  xl:lg:mb-0"
           >
             <ul className="flex  xl:lg:px-32 p-6 flex-col gap-12">
+              <li className="list-none">
+                <h2 className="text-2xl font-bold text-orange-500 mb-4">
+                  Other Ways to Reach Me
+                </h2>
+                <p className="text-gray-600 dark:text-gray-300 mb-2">
+                  Prefer to connect another way? Use any of the channels below, and I will follow up as soon as I can.
+                </p>
+              </li>
               {info.map((items, index) => {
                 return (
                   <li className="  flex items-center gap-6" key={index}>

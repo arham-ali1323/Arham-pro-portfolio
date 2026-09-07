@@ -145,6 +145,17 @@ const ResumeClient = () => {
       className='min-h-[80vh] flex justify-center items-center py-8 lg:xl-py-0'
     >
       <div className=' container mx-auto'>
+        <div className="text-center mb-10">
+          <h1 className="text-4xl md:text-5xl font-bold text-orange-500 mb-4">
+            Resume of Arham Ali
+          </h1>
+          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+            Explore my education, technical skills, and professional background in React, Next.js, and modern frontend development.
+          </p>
+          <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mt-4">
+            I am a frontend developer who focuses on building responsive, accessible, and performant web applications. My work combines a user-first mindset with a strong foundation in modern JavaScript, component-driven React architecture, and the Next.js framework. I have hands-on experience transforming design concepts into production-ready interfaces and shipping them across a variety of product types, including e-commerce platforms, booking systems, fitness applications, and business management tools.
+          </p>
+        </div>
         <Tabs className=' flex  flex-col lg:xl:flex-row md:flex-row'
           defaultValue="Skills"
         >

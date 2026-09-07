@@ -36,8 +36,33 @@ const Page = () => {
               Book a 30-minute consultation to discuss your project needs and how I can help bring your ideas to life.
             </p>
           </div>
-          
+
+          <p className="text-gray-600 dark:text-gray-300 mb-6">
+            Whether you are launching a new website, improving an existing Next.js application, or exploring how AI features could enhance your product, this free consultation is a chance to talk through your goals in a focused setting. We will cover your requirements, the best technical approach, a realistic timeline, and what investing in a quality frontend build looks like for your budget.
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <div className="bg-slate-300 dark:bg-[#27272c] rounded-xl p-6">
+              <h2 className="text-xl font-bold text-orange-500 mb-3">What We Will Discuss</h2>
+              <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
+                <li>Your project goals and target audience</li>
+                <li>The right technology stack and architecture</li>
+                <li>Scope, timeline, and delivery milestones</li>
+                <li>Budget considerations and next steps</li>
+              </ul>
+            </div>
+            <div className="bg-slate-300 dark:bg-[#27272c] rounded-xl p-6">
+              <h2 className="text-xl font-bold text-orange-500 mb-3">Who This Is For</h2>
+              <p className="text-gray-700 dark:text-gray-300">
+                Founders, product managers, and teams who need a reliable frontend developer for a React or Next.js project. If you are unsure whether we are a good fit, the consultation is a low-pressure way to find out without any commitment.
+              </p>
+            </div>
+          </div>
+
           <div className="bg-slate-300 dark:bg-[#27272c] rounded-xl p-8">
+            <h2 className="text-2xl font-bold text-orange-500 mb-4 text-center">
+              Book Your Free Consultation
+            </h2>
             <div 
               className="calendly-inline-widget" 
               data-url="https://calendly.com/arham-ali1323/30min"

@@ -24,7 +24,7 @@ export interface BlogPost {
 export const blogPosts: BlogPost[] = [
  {
   id: "1",
-  title: "Next.js 15 Complete Guide: Features, Performance Improvements, SEO Benefits, and React 19 Integration",
+  title: "Next.js 15: Features, Performance & SEO Guide",
 
   excerpt:
     "Discover everything you need to know about Next.js 15, including React 19 support, performance enhancements, improved SEO capabilities, server components, caching updates, and best practices for building modern web applications in 2025.",
@@ -106,7 +106,7 @@ export const blogPosts: BlogPost[] = [
   id: "2",
 
   title:
-    "Building Scalable React Applications: Best Practices, Architecture Patterns, and Performance Optimization Guide",
+    "Building Scalable React Apps: Best Practices",
 
   excerpt:
     "Learn how to build scalable React applications using modern architecture patterns, component-driven development, state management solutions, performance optimization techniques, and industry best practices for long-term maintainability.",
@@ -202,7 +202,7 @@ export const blogPosts: BlogPost[] = [
   id: "3",
 
   title:
-    "  Best Practices in 2025: Advanced Patterns, Type Safety, and Scalable Application Development",
+    "TypeScript Best Practices for 2025",
 
   excerpt:
     "Discover the most important   best practices in 2025, including advanced typing techniques, scalable architecture patterns, performance optimization, and strategies for building maintainable enterprise-grade applications.",
@@ -261,7 +261,7 @@ export const blogPosts: BlogPost[] = [
   id: "4",
 
   title:
-    "Modern CSS with Tailwind CSS: Building Responsive, Fast, and Scalable User Interfaces",
+    "Modern CSS with Tailwind CSS: Responsive UI",
 
   excerpt:
     "Learn how Tailwind CSS helps developers create modern, responsive, and maintainable user interfaces faster than traditional CSS methodologies while improving development productivity.",
@@ -314,7 +314,7 @@ export const blogPosts: BlogPost[] = [
   id: "5",
 
   title:
-    "State Management in React Applications: Context API, Redux Toolkit, Zustand, and Modern Best Practices",
+    "State Management in React: A Practical Guide",
 
   excerpt:
     "Explore the most effective state management solutions for React applications, including Context API, Redux Toolkit, Zustand, and strategies for building scalable frontend architectures.",
@@ -377,7 +377,7 @@ export const blogPosts: BlogPost[] = [
 },
   {
     id: "6",
-    title: "Next.js 15 Complete Guide: Features, Performance Improvements, SEO Benefits & React 19",
+    title: "Next.js 15 Guide: Features, Performance & SEO",
     excerpt: "Learn everything about Next.js 15, including React 19 integration, caching improvements, Server Components, SEO enhancements, performance optimization, and best practices.",
     content: `
 <h2>Introduction</h2>

@@ -107,6 +107,20 @@ const page = () => {
       >
         <div className="container mb-20 flex flex-col gap-10 mt-10 mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-bold text-center text-orange-500">React and Next.js Projects</h1>
+          <div className="max-w-3xl mx-auto text-center">
+            <p className="text-lg text-gray-600 dark:text-gray-300 mb-4">
+              A selection of web applications I have designed and built, from e-commerce platforms and booking systems to portfolio sites and business management tools. Every project below was shipped with a focus on clean architecture, responsive interfaces, and real-world usability.
+            </p>
+            <p className="text-gray-600 dark:text-gray-300 mb-4">
+              Each application showcases how I apply modern React and Next.js patterns in practice — component-driven development, efficient data fetching, state management, and attention to performance. The tech stack badges on each card reflect the tools used to bring the product to life.
+            </p>
+            <p className="text-gray-600 dark:text-gray-300 mb-4">
+              Want to see how a project like one of these could work for your idea? <Link href="/services" className="text-orange-500 underline">Browse my web development services</Link> or <Link href="/contact" className="text-orange-500 underline">start a conversation about your requirements</Link>.
+            </p>
+          </div>
+          <h2 className="text-2xl font-bold text-center text-slate-800 dark:text-gray-100">
+            Featured Frontend Work
+          </h2>
           {projects.map((project, index) => {
             return (
               <div key={index} className="flex flex-col">
