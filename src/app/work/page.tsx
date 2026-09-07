@@ -1,142 +1,80 @@
 "use client";
+
 import { motion } from "framer-motion";
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import projects from "../../../public/data/projects.json";
 
-const projects = [
-  {
-    num: "01",
-    category: "E-Commerce",
-    title: "ShopHub",
-    description:
-      "A modern e-commerce platform with sleek design and seamless shopping experience, featuring product listings, cart management, and secure checkout.",
-    stack: [
-      { name: "React 19" },
-      { name: "Next.js 15" },
-      { name: "Javascript" },
-      { name: "TailwindCSS" },
-      { name: "Shadcn UI" },
-      { name: "Framer Motion" },
-    ],
-    image: "/asset/ShopHub.png",
-    live: "https://shop-hub-demo.vercel.app/",
-    github: "https://github.com/arham-ali1323/shop-hub",
-  },
-  {
-    num: "02",
-    category: "Travel & Booking",
-    title: "CarRental Pro",
-    description:
-      "A comprehensive car rental booking platform with vehicle search, availability checking, and reservation management system.",
-    stack: [
-      { name: "React 19" },
-      { name: "Next.js 15" },
-      { name: "Javascript" },
-      { name: "TailwindCSS" },
-      { name: "React Hook Form" },
-      { name: "Zustand" },
-    ],
-    image: "/asset/CarRental.png",
-    live: "https://car-rental-app-seven-hazel.vercel.app/",
-    github: "https://github.com/arham-ali1323/car-rental-pro",
-  },
-
-  {
-    num: "03",
-    category: "Portfolio",
-    title: "Personal Portfolio",
-    description:
-      "Professional portfolio website showcasing personal projects, skills, and experience with modern design and smooth animations.",
-    stack: [
-      { name: "React 19" },
-      { name: "Next.js" },
-      { name: "Javascript" },
-      { name: "TailwindCSS" },
-      { name: "Framer Motion" },
-      { name: "React Icons" },
-    ],
-    image: "/asset/portofolio.png",
-    live: "https://arham-pro-portfolio.vercel.app/",
-    github: "https://github.com/arham-ali1323/personal-portfolio",
-  },
-  {
-    num: "04",
-    category: "German Fitness",
-    title: "Gym Manager",
-    description:
-      "A comprehensive fitness and gym management platform with workout tracking, class scheduling, and membership management.",
-    stack: [
-      { name: "React 19" },
-      { name: "Next.js" },
-      { name: "Javascript" },
-      { name: "TailwindCSS" },
-      { name: "Chart.js" },
-      { name: "React Query" },
-    ],
-    image: "/asset/Gym &.png",
-    live: "https://german-fitness-sp.vercel.app/",
-    github: "https://github.com/arham-ali1323/fitlife-manager",
-  },
-  {
-    num: "05",
-    category: "Business Management",
-    title: "AlphaSoft 360",
-    description:
-      "A versatile business management solution for companies, featuring CRM, project tracking, and team collaboration tools.",
-    stack: [
-      { name: "React 19" },
-      { name: "Next.js" },
-      { name: "Javascript" },
-      { name: "TailwindCSS" },
-      { name: "React DnD" },
-      { name: "Date-fns" },
-    ],
-    image: "/asset/AlphaSoft360.png",
-    live: "https://alphasoft-360.vercel.app/",
-    github: "https://github.com/arham-ali1323/alphasoft-360",
-  },
-];
-const page = () => {
+const Page = () => {
   return (
     <>
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        className="min-h-[80vh] "
+        className="min-h-[80vh]"
       >
-        <div className="container mb-20 flex flex-col gap-10 mt-10 mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-bold text-center text-orange-500">React and Next.js Projects</h1>
-          <div className="max-w-3xl mx-auto text-center">
-            <p className="text-lg text-gray-600 dark:text-gray-300 mb-4">
-              A selection of web applications I have designed and built, from e-commerce platforms and booking systems to portfolio sites and business management tools. Every project below was shipped with a focus on clean architecture, responsive interfaces, and real-world usability.
+        <div className="container mx-auto mt-10 mb-20 flex flex-col gap-10 px-4 sm:px-6 lg:px-8">
+          <h1 className="text-center text-4xl font-bold text-orange-500">
+            React and Next.js Projects
+          </h1>
+
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="mb-4 text-lg text-gray-600 dark:text-gray-300">
+              A selection of web applications I have designed and built, from
+              e-commerce platforms and booking systems to portfolio sites and
+              business management tools. Every project below was shipped with a
+              focus on clean architecture, responsive interfaces, and
+              real-world usability.
             </p>
-            <p className="text-gray-600 dark:text-gray-300 mb-4">
-              Each application showcases how I apply modern React and Next.js patterns in practice — component-driven development, efficient data fetching, state management, and attention to performance. The tech stack badges on each card reflect the tools used to bring the product to life.
+
+            <p className="mb-4 text-gray-600 dark:text-gray-300">
+              Each application showcases how I apply modern React and Next.js
+              patterns in practice — component-driven development, efficient
+              data fetching, state management, and attention to performance.
+              The tech stack badges on each card reflect the tools used to
+              bring the product to life.
             </p>
-            <p className="text-gray-600 dark:text-gray-300 mb-4">
-              Want to see how a project like one of these could work for your idea? <Link href="/services" className="text-orange-500 underline">Browse my web development services</Link> or <Link href="/contact" className="text-orange-500 underline">start a conversation about your requirements</Link>.
+
+            <p className="mb-4 text-gray-600 dark:text-gray-300">
+              Want to see how a project like one of these could work for your
+              idea?{" "}
+              <Link
+                href="/services"
+                className="text-orange-500 underline"
+              >
+                Browse my web development services
+              </Link>{" "}
+              or{" "}
+              <Link
+                href="/contact"
+                className="text-orange-500 underline"
+              >
+                start a conversation about your requirements
+              </Link>
+              .
             </p>
           </div>
-          <h2 className="text-2xl font-bold text-center text-slate-800 dark:text-gray-100">
+
+          <h2 className="text-center text-2xl font-bold text-slate-800 dark:text-gray-100">
             Featured Frontend Work
           </h2>
-          {projects.map((project, index) => {
-            return (
-              <div key={index} className="flex flex-col">
-                <Project {...project} />
-              </div>
-            );
-          })}
+
+          {projects.map((project, index) => (
+            <div key={project.title ?? index} className="flex flex-col">
+              <Project {...project} />
+            </div>
+          ))}
         </div>
       </motion.div>
     </>
   );
 };
 
-export default page;
+export default Page;
 
-type ProjectProps = (typeof projects)[0];
+type ProjectProps = (typeof projects)[number];
+
 function Project({
   category,
   title,
@@ -147,43 +85,48 @@ function Project({
   github,
 }: ProjectProps) {
   return (
-    <section className="group bg-orange-200 dark:bg-orange-950/50 rounded-lg overflow-hidden relative hover:bg-orange-300 dark:hover:bg-orange-900/70 transition">
+    <section className="group relative overflow-hidden rounded-lg bg-orange-200 transition hover:bg-orange-300 dark:bg-orange-950/50 dark:hover:bg-orange-900/70">
       <div className="flex flex-col lg:flex-row">
         {/* Content Section */}
-        <div className="flex-1 p-6 sm:p-8 lg:p-10 flex flex-col">
-          <h2 className="text-2xl sm:text-3xl font-bold">{title}</h2>
-          <h3 className="mt-2 text-lg sm:text-xl leading-relaxed font-bold text-white/80 dark:text-orange-300">
+        <div className="flex flex-1 flex-col p-6 sm:p-8 lg:p-10">
+          <h2 className="text-2xl font-bold sm:text-3xl">
+            {title}
+          </h2>
+
+          <h3 className="mt-2 text-lg font-bold leading-relaxed text-white/80 dark:text-orange-300 sm:text-xl">
             {category}
           </h3>
-          <p className="mt-2 leading-relaxed dark:text-gray-300 text-black/60">
+
+          <p className="mt-2 leading-relaxed text-black/60 dark:text-gray-300">
             {description}
           </p>
-          <ul className="flex gap-2 pt-4 flex-wrap">
-            {stack.map((tag, index) => {
-              return (
-                <li
-                  key={index}
-                  className="font-bold bg-yellow-700 py-2 px-4 rounded-lg text-white dark:bg-yellow-600 dark:text-gray-900"
-                >
-                  {tag.name}
-                </li>
-              );
-            })}
+
+          <ul className="flex flex-wrap gap-2 pt-4">
+            {stack.map((tag, index) => (
+              <li
+                key={index}
+                className="rounded-lg bg-yellow-700 px-4 py-2 font-bold text-white dark:bg-yellow-600 dark:text-gray-900"
+              >
+                {tag}
+              </li>
+            ))}
           </ul>
-          <div className="flex gap-4 mt-6">
+
+          <div className="mt-6 flex gap-4">
             <Link
               href={github}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition dark:bg-white dark:text-black dark:hover:bg-gray-200"
+              className="inline-flex items-center gap-2 rounded-lg bg-black px-6 py-3 text-white transition hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200"
             >
               GitHub
             </Link>
+
             <Link
               href={live}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-orange-600 text-white px-6 py-3 rounded-lg hover:bg-orange-700 transition"
+              className="inline-flex items-center gap-2 rounded-lg bg-orange-600 px-6 py-3 text-white transition hover:bg-orange-700"
             >
               Live Demo
             </Link>
@@ -191,15 +134,19 @@ function Project({
         </div>
 
         {/* Image Section */}
-        <div className="relative w-full lg:w-1/2 aspect-video sm:aspect-[4/3] lg:aspect-auto lg:h-auto">
-          <Link href={github} target="_blank" rel="noopener noreferrer">
+        <div className="relative aspect-video w-full sm:aspect-[4/3] lg:h-auto lg:w-1/2">
+          <Link
+            href={github}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Image
               src={image}
               alt={title}
               quality={85}
               width={800}
               height={600}
-              className="w-full h-full object-cover rounded-lg shadow-2xl transition-transform duration-300 group-hover:scale-[1.02]"
+              className="h-full w-full rounded-lg object-cover shadow-2xl transition-transform duration-300 group-hover:scale-[1.02]"
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 40vw"
             />
           </Link>

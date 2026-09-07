@@ -18,7 +18,7 @@ export const portfolioContext = {
     location: "W2 Global",
     portfolio: "https://arham-pro-portfolio.vercel.app",
     github: "https://github.com/arham-ali1323",
-    linkedin: "https://www.linkedin.com/in/arham-ali-973359289/",
+    linkedin: "https://www.linkedin.com/in/arhamaliofficial/",
     whatsapp: "https://wa.me/+923211051323",
   },
   skills: {
@@ -76,7 +76,7 @@ export const portfolioContext = {
       ],
       image: "/asset/ShopHub.png",
       live: "https://shop-hub-demo.vercel.app/",
-      github: "https://github.com/arham-ali1323/shop-hub",
+      github: "https://github.com/arham-ali1323",
     },
     {
       num: "02",
@@ -94,7 +94,7 @@ export const portfolioContext = {
       ],
       image: "/asset/CarRental.png",
       live: "https://car-rental-app-seven-hazel.vercel.app/",
-      github: "https://github.com/arham-ali1323/car-rental-pro",
+      github: "https://github.com/arham-ali1323",
     },
     {
       num: "03",
@@ -112,7 +112,7 @@ export const portfolioContext = {
       ],
       image: "/asset/portofolio.png",
       live: "https://arham-pro-portfolio.vercel.app/",
-      github: "https://github.com/arham-ali1323/personal-portfolio",
+      github: "https://github.com/arham-ali1323",
     },
     {
       num: "04",
@@ -130,7 +130,7 @@ export const portfolioContext = {
       ],
       image: "/asset/Gym &.png",
       live: "https://german-fitness-sp.vercel.app/",
-      github: "https://github.com/arham-ali1323/fitlife-manager",
+      github: "https://github.com/arham-ali1323",
     },
     {
       num: "05",
@@ -148,7 +148,7 @@ export const portfolioContext = {
       ],
       image: "/asset/AlphaSoft360.png",
       live: "https://alphasoft-360.vercel.app/",
-      github: "https://github.com/arham-ali1323/alphasoft-360",
+      github: "https://github.com/arham-ali1323",
     },
   ],
 };

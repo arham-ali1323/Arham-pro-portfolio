@@ -1,9 +1,9 @@
 [
   {
-    "id": "shophub",
+    "id": "lighthouse",
     "num": "01",
     "category": "E-Commerce",
-    "title": "ShopHub",
+    "title": "Light House",
     "description": "A modern e-commerce platform with sleek design and seamless shopping experience, featuring product listings, cart management, and secure checkout.",
     "stack": [
       "React 19",
@@ -14,8 +14,8 @@
       "Framer Motion"
     ],
     "image": "/asset/ShopHub.png",
-    "live": "https://shop-hub-demo.vercel.app/",
-    "github": "https://github.com/arham-ali1323/shop-hub",
+    "live": "https://lighthouseswl.vercel.app/",
+    "github": "https://github.com/arham-ali1323/Light-house",
     "features": [
       "Product catalog with filtering",
       "Shopping cart functionality",
@@ -40,7 +40,7 @@
     ],
     "image": "/asset/CarRental.png",
     "live": "https://car-rental-app-seven-hazel.vercel.app/",
-    "github": "https://github.com/arham-ali1323/car-rental-pro",
+    "github": "https://github.com/arham-ali1323/Car-Rental-app",
     "features": [
       "Vehicle search and filtering",
       "Real-time availability checking",
@@ -65,7 +65,7 @@
     ],
     "image": "/asset/portofolio.png",
     "live": "https://arham-pro-portfolio.vercel.app/",
-    "github": "https://github.com/arham-ali1323/personal-portfolio",
+    "github": "https://github.com/arham-ali1323/Arham-pro-portfolio",
     "features": [
       "Project showcase",
       "Skills display",
@@ -90,7 +90,7 @@
     ],
     "image": "/asset/Gym &.png",
     "live": "https://german-fitness-sp.vercel.app/",
-    "github": "https://github.com/arham-ali1323/fitlife-manager",
+    "github": "https://github.com/arham-ali1323/German-Fitness-sp",
     "features": [
       "Workout tracking",
       "Class scheduling",

@@ -10,7 +10,7 @@ const socials = [
   { icons: <FaGithub />, path: "https://github.com/arham-ali1323" },
   {
     icons: <FaLinkedin />,
-    path: "https://www.linkedin.com/in/arham-ali-973359289/",
+    path: "https://www.linkedin.com/in/arhamaliofficial/",
   },
   { icons: <FaWhatsapp />, path: "https://wa.me/+923211051323" },
 ];

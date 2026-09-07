@@ -11,7 +11,7 @@ Arham Ali is a Frontend Engineer & Front end Developer specializing in building 
 - **Location**: W2 Global
 - **Portfolio**: https://arham-pro-portfolio.vercel.app
 - **GitHub**: https://github.com/arham-ali1323
-- **LinkedIn**: https://www.linkedin.com/in/arham-ali-973359289/
+- **LinkedIn**: https://www.linkedin.com/in/arhamaliofficial/
 - **WhatsApp**: https://wa.me/+923211051323
 
 ## Professional Summary

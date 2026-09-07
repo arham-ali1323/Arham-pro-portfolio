@@ -26,7 +26,7 @@ export default function SchemaMarkup() {
     url: "https://arham-pro-portfolio.vercel.app",
     sameAs: [
       "https://github.com/arham-ali1323",
-      "https://www.linkedin.com/in/arham-ali-973359289/",
+      "https://www.linkedin.com/in/arhamaliofficial/",
     ],
     
     // Profile Image

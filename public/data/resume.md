@@ -6,7 +6,7 @@
 - **Phone**: +923211051323
 - **Location**: W2 Global
 - **GitHub**: https://github.com/arham-ali1323
-- **LinkedIn**: https://www.linkedin.com/in/arham-ali-973359289/
+- **LinkedIn**: https://www.linkedin.com/in/arhamaliofficial/
 - **Portfolio**: https://arham-pro-portfolio.vercel.app
 
 ## Professional Summary
@@ -72,31 +72,31 @@ Frontend Engineer & Front end Developer with expertise in React, Next.js,  , and
 E-Commerce Platform | React 19, Next.js 15,  
 - Modern e-commerce platform with product listings, cart management, and secure checkout
 - [Live Demo](https://shop-hub-demo.vercel.app/)
-- [GitHub](https://github.com/arham-ali1323/shop-hub)
+- [GitHub](https://github.com/arham-ali1323)
 
 ### CarRental Pro
 Car Rental Booking Platform | React 19, Next.js 15,  
 - Comprehensive car rental booking platform with vehicle search and reservation management
 - [Live Demo](https://car-rental-app-seven-hazel.vercel.app/)
-- [GitHub](https://github.com/arham-ali1323/car-rental-pro)
+- [GitHub](https://github.com/arham-ali1323)
 
 ### Personal Portfolio
 Portfolio Website | React 19, Next.js,  
 - Professional portfolio website with AI-powered chatbot
 - [Live Demo](https://arham-pro-portfolio.vercel.app/)
-- [GitHub](https://github.com/arham-ali1323/personal-portfolio)
+- [GitHub](https://github.com/arham-ali1323)
 
 ### Gym Manager
 Fitness Management Platform | React 19, Next.js,  
 - Fitness and gym management platform with workout tracking and class scheduling
 - [Live Demo](https://german-fitness-sp.vercel.app/)
-- [GitHub](https://github.com/arham-ali1323/fitlife-manager)
+- [GitHub](https://github.com/arham-ali1323)
 
 ### AlphaSoft 360
 Business Management Solution | React 19, Next.js,  
 - Business management solution with CRM, project tracking, and team collaboration
 - [Live Demo](https://alphasoft-360.vercel.app/)
-- [GitHub](https://github.com/arham-ali1323/alphasoft-360)
+- [GitHub](https://github.com/arham-ali1323)
 
 ## Services
 

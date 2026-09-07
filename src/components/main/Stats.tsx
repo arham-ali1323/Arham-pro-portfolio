@@ -1,86 +1,96 @@
-"use client"
-import React, { useState, useEffect } from 'react'
-import CountUp from "react-countup"
-interface stats{
+"use client";
+
+import React, { useEffect, useState } from "react";
+import CountUp from "react-countup";
+
+interface Stats {
   num: number;
-  text:string
+  text: string;
 }
 
-const staticStats = [
+const staticStats: Stats[] = [
   {
-    num:3,
-    text:"Months of Experience"
+    num: 3,
+    text: "Months of Experience",
   },
   {
-    num:6,
-    text:"Projects Completed"
+    num: 6,
+    text: "Projects Completed",
   },
   {
-    num:9,
-    text:"Technologies Mastered "
+    num: 9,
+    text: "Technologies Mastered",
   },
-]
+];
 
 const Stats = () => {
-  const [commitCount, setCommitCount] = useState(159)
-  const [loading, setLoading] = useState(true)
+  const [commitCount, setCommitCount] = useState(159);
 
   useEffect(() => {
     const fetchCommitCount = async () => {
       try {
-        const response = await fetch('https://api.github.com/repos/arham-ali1323/Arham-pro-portfolio/stats/contributors')
-        if (response.ok) {
-          const data = await response.json()
-          if (Array.isArray(data) && data.length > 0) {
-            const totalCommits = data.reduce((sum: number, contributor: any) => 
-              sum + (contributor.total || 0), 0)
-            setCommitCount(totalCommits)
-          }
+        const response = await fetch("/api/github-commits", {
+          cache: "no-store",
+        });
+
+        if (!response.ok) return;
+
+        const data = await response.json();
+
+        if (typeof data.commits === "number") {
+          setCommitCount(data.commits);
         }
       } catch (error) {
-        console.error('Failed to fetch commit count:', error)
-      } finally {
-        setLoading(false)
+        console.error("Failed to fetch commit count:", error);
       }
-    }
+    };
 
-    fetchCommitCount()
-  }, [])
+    fetchCommitCount();
 
-  const stat = [
+    // Check for new commits every 60 seconds
+    const interval = setInterval(fetchCommitCount, 60 * 1000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const stats: Stats[] = [
     ...staticStats,
     {
       num: commitCount,
-      text:"Code Commits"
+      text: "Code Commits",
     },
-  ]
+  ];
+
   return (
     <section>
-      <div className='container mx-auto'>
-        <div className='flex flex-wrap gap-6 mt-8  max-w-[80vm] mx-auto xl:mx-w-none'>
-          {
-            stat.map((stats:stats , index)=>{
-              return(
-                <div className='flex-1 flex gap-6 items-center justify-center xl:justify-start'
-                 key={index}>
-                  <CountUp
-                  end ={stats.num}
-                  duration={5}
-                  delay={2}
-                  className="text-4xl xl:text-6xl  text-orange-400 font-bold"/>
-                  <p className={`${stats.text.length < 10 ? "max-w-[60px] ": "max-w-[100px] font-bold  text-xl"}`}>
-                    {stats.text}
-                  </p>
+      <div className="container mx-auto">
+        <div className="mx-auto mt-8 flex max-w-[80vw] flex-wrap gap-6 xl:max-w-none">
+          {stats.map((stat, index) => (
+            <div
+              className="flex flex-1 items-center justify-center gap-6 xl:justify-start"
+              key={index}
+            >
+              <CountUp
+                end={stat.num}
+                duration={2}
+                className="text-4xl font-bold text-orange-400 xl:text-6xl"
+              />
 
-                </div>
-              )
-            })
-          }
+              <p
+                className={`${
+                  stat.text.length < 10
+                    ? "max-w-[60px]"
+                    : "max-w-[100px] font-bold text-xl"
+                }`}
+              >
+                {stat.text}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
-  
-  
-  )
-}
-export default Stats
+  );
+};
+
+export default Stats;

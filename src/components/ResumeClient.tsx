@@ -36,7 +36,7 @@ const about =
     },
     {
       fieldname: "Skype",
-      fieldValue: "arham-ali-973359289"
+      fieldValue: "arhamaliofficial"
     },
     {
       fieldname: "Phone",
